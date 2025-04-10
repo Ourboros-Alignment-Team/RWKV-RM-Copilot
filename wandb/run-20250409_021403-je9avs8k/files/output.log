@@ -1,0 +1,27 @@
+[2025-04-09 02:14:06,204] [INFO] [checkpointing.py:529:forward] Activation Checkpointing Information
+[2025-04-09 02:14:06,204] [INFO] [checkpointing.py:530:forward] ----Partition Activations False, CPU CHECKPOINTING False
+[2025-04-09 02:14:06,204] [INFO] [checkpointing.py:531:forward] ----contiguous Memory Checkpointing False with None total layers
+[2025-04-09 02:14:06,204] [INFO] [checkpointing.py:533:forward] ----Synchronization False
+[2025-04-09 02:14:06,204] [INFO] [checkpointing.py:534:forward] ----Profiling time in checkpointing False
+Epoch 0, Loss: -0.4921875
+/home/li/anaconda3/envs/LLMs/lib/python3.11/site-packages/torch/autograd/__init__.py:266: UserWarning: c10d::broadcast_: an autograd kernel was not registered to the Autograd key(s) but we are trying to backprop through it. This may lead to silently incorrect behavior. This behavior is deprecated and will be removed in a future version of PyTorch. If your operator is differentiable, please ensure you have registered an autograd kernel to the correct Autograd key (e.g. DispatchKey::Autograd, DispatchKey::CompositeImplicitAutograd). If your operator is not differentiable, or to squash this warning and use the previous behavior, please register torch::CppFunction::makeFallthrough() to DispatchKey::Autograd. (Triggered internally at ../torch/csrc/autograd/autograd_not_implemented_fallback.cpp:63.)
+  Variable._execution_engine.run_backward(  # Calls into the C++ engine to run the backward pass
+Epoch 0, Loss: -0.390625
+/home/li/anaconda3/envs/LLMs/lib/python3.11/site-packages/deepspeed/runtime/zero/stage_1_and_2.py:1829: UserWarning: The torch.cuda.*DtypeTensor constructors are no longer recommended. It's best to use methods such as torch.tensor(data, dtype=*, device='cuda') to create tensors. (Triggered internally at ../torch/csrc/tensor/python_tensor.cpp:83.)
+  overflow_gpu = get_accelerator().ByteTensor([overflow])
+Epoch 0, Loss: -0.5078125
+Epoch 0, Loss: -0.25390625
+Epoch 0, Loss: -0.5078125
+Epoch 0, Loss: -0.310546875
+Epoch 0, Loss: -0.29296875
+Epoch 0, Loss: -0.53515625
+Epoch 0, Loss: -0.40234375
+Epoch 0, Loss: -0.51171875
+[2025-04-09 02:14:23,942] [INFO] [logging.py:96:log_dist] [Rank 0] step=10, skipped=10, lr=[1e-05, 1e-05], mom=[(0.9, 0.99), (0.9, 0.99)]
+[2025-04-09 02:14:23,943] [INFO] [timer.py:215:stop] epoch=0/micro_step=10/global_step=10, RunningAvgSamplesPerSec=0.5806289691260396, CurrSamplesPerSec=0.5313394052470334, MemAllocated=5.52GB, MaxMemAllocated=7.09GB
+Epoch 0, Loss: -0.55859375
+Epoch 0, Loss: -0.48046875
+Epoch 0, Loss: -0.546875
+Epoch 0, Loss: -0.453125
+Epoch 0, Loss: -0.58984375
+Epoch 0, Loss: -0.54296875

@@ -1,0 +1,21 @@
+[2025-04-09 03:25:09,989] [INFO] [checkpointing.py:529:forward] Activation Checkpointing Information
+[2025-04-09 03:25:09,989] [INFO] [checkpointing.py:530:forward] ----Partition Activations False, CPU CHECKPOINTING False
+[2025-04-09 03:25:09,989] [INFO] [checkpointing.py:531:forward] ----contiguous Memory Checkpointing False with None total layers
+[2025-04-09 03:25:09,989] [INFO] [checkpointing.py:533:forward] ----Synchronization False
+[2025-04-09 03:25:09,989] [INFO] [checkpointing.py:534:forward] ----Profiling time in checkpointing False
+Epoch 0, Loss: -0.000732421875, Positive Score: 0.053955078125, Negative Score: 0.05322265625
+/home/li/anaconda3/envs/LLMs/lib/python3.11/site-packages/torch/autograd/__init__.py:266: UserWarning: c10d::broadcast_: an autograd kernel was not registered to the Autograd key(s) but we are trying to backprop through it. This may lead to silently incorrect behavior. This behavior is deprecated and will be removed in a future version of PyTorch. If your operator is differentiable, please ensure you have registered an autograd kernel to the correct Autograd key (e.g. DispatchKey::Autograd, DispatchKey::CompositeImplicitAutograd). If your operator is not differentiable, or to squash this warning and use the previous behavior, please register torch::CppFunction::makeFallthrough() to DispatchKey::Autograd. (Triggered internally at ../torch/csrc/autograd/autograd_not_implemented_fallback.cpp:63.)
+  Variable._execution_engine.run_backward(  # Calls into the C++ engine to run the backward pass
+Epoch 0, Loss: -0.0189208984375, Positive Score: -0.01220703125, Negative Score: -0.0311279296875
+Epoch 0, Loss: 0.015869140625, Positive Score: -0.0203857421875, Negative Score: -0.004547119140625
+Epoch 0, Loss: 0.048828125, Positive Score: 0.0311279296875, Negative Score: 0.080078125
+Epoch 0, Loss: 0.04248046875, Positive Score: -0.08447265625, Negative Score: -0.0419921875
+Epoch 0, Loss: -0.0076904296875, Positive Score: 0.018798828125, Negative Score: 0.0111083984375
+Epoch 0, Loss: -0.0106201171875, Positive Score: 0.033447265625, Negative Score: 0.0228271484375
+Epoch 1, Loss: -0.0062255859375, Positive Score: -0.0068359375, Negative Score: -0.0130615234375
+Epoch 1, Loss: -0.0008544921875, Positive Score: 0.019287109375, Negative Score: 0.0184326171875
+Epoch 1, Loss: 0.0032958984375, Positive Score: 0.010009765625, Negative Score: 0.0133056640625
+[2025-04-09 03:25:51,919] [INFO] [logging.py:96:log_dist] [Rank 0] step=10, skipped=10, lr=[1e-05, 1e-05], mom=[(0.9, 0.99), (0.9, 0.99)]
+[2025-04-09 03:25:51,920] [INFO] [timer.py:215:stop] epoch=0/micro_step=10/global_step=10, RunningAvgSamplesPerSec=0.28720586172478313, CurrSamplesPerSec=0.2545048924928258, MemAllocated=5.76GB, MaxMemAllocated=14.71GB
+Epoch 1, Loss: 0.03369140625, Positive Score: 0.026123046875, Negative Score: 0.059814453125
+Epoch 1, Loss: 0.0205078125, Positive Score: 0.0791015625, Negative Score: 0.099609375

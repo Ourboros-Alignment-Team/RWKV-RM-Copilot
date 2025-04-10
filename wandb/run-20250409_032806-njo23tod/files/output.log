@@ -1,0 +1,135 @@
+[2025-04-09 03:28:09,608] [INFO] [checkpointing.py:529:forward] Activation Checkpointing Information
+[2025-04-09 03:28:09,608] [INFO] [checkpointing.py:530:forward] ----Partition Activations False, CPU CHECKPOINTING False
+[2025-04-09 03:28:09,608] [INFO] [checkpointing.py:531:forward] ----contiguous Memory Checkpointing False with None total layers
+[2025-04-09 03:28:09,608] [INFO] [checkpointing.py:533:forward] ----Synchronization False
+[2025-04-09 03:28:09,608] [INFO] [checkpointing.py:534:forward] ----Profiling time in checkpointing False
+Epoch 0, Loss: 1.0, Positive Score: -0.1767578125, Negative Score: -0.173828125
+/home/li/anaconda3/envs/LLMs/lib/python3.11/site-packages/torch/autograd/__init__.py:266: UserWarning: c10d::broadcast_: an autograd kernel was not registered to the Autograd key(s) but we are trying to backprop through it. This may lead to silently incorrect behavior. This behavior is deprecated and will be removed in a future version of PyTorch. If your operator is differentiable, please ensure you have registered an autograd kernel to the correct Autograd key (e.g. DispatchKey::Autograd, DispatchKey::CompositeImplicitAutograd). If your operator is not differentiable, or to squash this warning and use the previous behavior, please register torch::CppFunction::makeFallthrough() to DispatchKey::Autograd. (Triggered internally at ../torch/csrc/autograd/autograd_not_implemented_fallback.cpp:63.)
+  Variable._execution_engine.run_backward(  # Calls into the C++ engine to run the backward pass
+Epoch 0, Loss: 1.0390625, Positive Score: -0.158203125, Negative Score: -0.11962890625
+Epoch 0, Loss: 0.96875, Positive Score: -0.138671875, Negative Score: -0.1708984375
+Epoch 0, Loss: 0.96875, Positive Score: -0.11328125, Negative Score: -0.142578125
+Epoch 0, Loss: 0.921875, Positive Score: -0.03369140625, Negative Score: -0.11376953125
+Epoch 0, Loss: 0.94921875, Positive Score: -0.1259765625, Negative Score: -0.177734375
+Epoch 0, Loss: 0.96875, Positive Score: -0.1220703125, Negative Score: -0.1513671875
+Epoch 0, Loss: 0.96875, Positive Score: -0.16796875, Negative Score: -0.2001953125
+Epoch 0, Loss: 0.94140625, Positive Score: -0.1220703125, Negative Score: -0.1796875
+Epoch 0, Loss: 0.94921875, Positive Score: -0.138671875, Negative Score: -0.1904296875
+[2025-04-09 03:28:24,169] [INFO] [logging.py:96:log_dist] [Rank 0] step=10, skipped=10, lr=[1e-05, 1e-05], mom=[(0.9, 0.99), (0.9, 0.99)]
+[2025-04-09 03:28:24,170] [INFO] [timer.py:215:stop] epoch=0/micro_step=10/global_step=10, RunningAvgSamplesPerSec=0.7253130744590841, CurrSamplesPerSec=1.2048889551520208, MemAllocated=5.77GB, MaxMemAllocated=11.22GB
+Epoch 0, Loss: 1.0078125, Positive Score: -0.1533203125, Negative Score: -0.1484375
+Epoch 0, Loss: 0.9765625, Positive Score: -0.166015625, Negative Score: -0.1875
+Epoch 0, Loss: 1.0, Positive Score: -0.1298828125, Negative Score: -0.12890625
+Epoch 0, Loss: 1.0546875, Positive Score: -0.16015625, Negative Score: -0.1083984375
+Epoch 0, Loss: 0.9140625, Positive Score: -0.083984375, Negative Score: -0.1708984375
+Epoch 1, Loss: 0.9296875, Positive Score: -0.0615234375, Negative Score: -0.130859375
+Epoch 1, Loss: 0.9921875, Positive Score: -0.1162109375, Negative Score: -0.125
+Epoch 1, Loss: 1.0078125, Positive Score: -0.1044921875, Negative Score: -0.09326171875
+Epoch 1, Loss: 1.0625, Positive Score: -0.2578125, Negative Score: -0.1982421875
+Epoch 1, Loss: 0.984375, Positive Score: -0.16015625, Negative Score: -0.177734375
+[2025-04-09 03:28:46,072] [INFO] [logging.py:96:log_dist] [Rank 0] step=20, skipped=20, lr=[1e-05, 1e-05], mom=[(0.9, 0.99), (0.9, 0.99)]
+[2025-04-09 03:28:46,072] [INFO] [timer.py:215:stop] epoch=0/micro_step=20/global_step=20, RunningAvgSamplesPerSec=0.6652044718462649, CurrSamplesPerSec=0.5016871206370798, MemAllocated=5.77GB, MaxMemAllocated=11.99GB
+Epoch 1, Loss: 0.9296875, Positive Score: -0.12353515625, Negative Score: -0.1943359375
+Epoch 1, Loss: 0.9921875, Positive Score: -0.09423828125, Negative Score: -0.1005859375
+Epoch 1, Loss: 0.9609375, Positive Score: -0.146484375, Negative Score: -0.185546875
+Epoch 1, Loss: 0.9765625, Positive Score: -0.1162109375, Negative Score: -0.1396484375
+Epoch 1, Loss: 0.9609375, Positive Score: -0.126953125, Negative Score: -0.16796875
+Epoch 1, Loss: 0.9765625, Positive Score: -0.09130859375, Negative Score: -0.115234375
+Epoch 1, Loss: 0.95703125, Positive Score: -0.10791015625, Negative Score: -0.150390625
+Epoch 1, Loss: 1.015625, Positive Score: -0.11962890625, Negative Score: -0.10791015625
+Epoch 1, Loss: 0.984375, Positive Score: -0.1787109375, Negative Score: -0.1923828125
+Epoch 1, Loss: 0.96875, Positive Score: -0.1533203125, Negative Score: -0.1826171875
+[2025-04-09 03:29:03,639] [INFO] [logging.py:96:log_dist] [Rank 0] step=30, skipped=30, lr=[1e-05, 1e-05], mom=[(0.9, 0.99), (0.9, 0.99)]
+[2025-04-09 03:29:03,639] [INFO] [timer.py:215:stop] epoch=0/micro_step=30/global_step=30, RunningAvgSamplesPerSec=0.6282601525788181, CurrSamplesPerSec=0.6512869127060842, MemAllocated=5.77GB, MaxMemAllocated=12.57GB
+Epoch 1, Loss: 0.953125, Positive Score: -0.1455078125, Negative Score: -0.193359375
+Epoch 2, Loss: 0.96875, Positive Score: -0.1884765625, Negative Score: -0.21875
+Epoch 2, Loss: 0.9453125, Positive Score: -0.11279296875, Negative Score: -0.166015625
+Epoch 2, Loss: 0.9609375, Positive Score: -0.1123046875, Negative Score: -0.150390625
+Epoch 2, Loss: 0.98828125, Positive Score: -0.2060546875, Negative Score: -0.2177734375
+Epoch 2, Loss: 0.97265625, Positive Score: -0.16796875, Negative Score: -0.1943359375
+Epoch 2, Loss: 0.96875, Positive Score: -0.0751953125, Negative Score: -0.1064453125
+Epoch 2, Loss: 0.98046875, Positive Score: -0.154296875, Negative Score: -0.173828125
+Epoch 2, Loss: 0.9765625, Positive Score: -0.1396484375, Negative Score: -0.1630859375
+Epoch 2, Loss: 1.0, Positive Score: -0.1298828125, Negative Score: -0.130859375
+[2025-04-09 03:29:16,651] [INFO] [logging.py:96:log_dist] [Rank 0] step=40, skipped=40, lr=[1e-05, 1e-05], mom=[(0.9, 0.99), (0.9, 0.99)]
+[2025-04-09 03:29:16,652] [INFO] [timer.py:215:stop] epoch=0/micro_step=40/global_step=40, RunningAvgSamplesPerSec=0.6620654352067079, CurrSamplesPerSec=0.9244989904867705, MemAllocated=5.77GB, MaxMemAllocated=12.57GB
+Epoch 2, Loss: 0.96484375, Positive Score: -0.043212890625, Negative Score: -0.07666015625
+Epoch 2, Loss: 1.0, Positive Score: -0.107421875, Negative Score: -0.107421875
+Epoch 2, Loss: 0.9765625, Positive Score: -0.10888671875, Negative Score: -0.1318359375
+Epoch 2, Loss: 1.015625, Positive Score: -0.1298828125, Negative Score: -0.1171875
+Epoch 2, Loss: 0.94921875, Positive Score: -0.091796875, Negative Score: -0.142578125
+Epoch 2, Loss: 0.9765625, Positive Score: -0.1494140625, Negative Score: -0.173828125
+Epoch 2, Loss: 0.9296875, Positive Score: -0.05712890625, Negative Score: -0.1279296875
+Epoch 3, Loss: 0.953125, Positive Score: -0.14453125, Negative Score: -0.19140625
+Epoch 3, Loss: 0.984375, Positive Score: -0.142578125, Negative Score: -0.16015625
+Epoch 3, Loss: 0.98828125, Positive Score: -0.10400390625, Negative Score: -0.1162109375
+[2025-04-09 03:29:37,291] [INFO] [logging.py:96:log_dist] [Rank 0] step=50, skipped=50, lr=[1e-05, 1e-05], mom=[(0.9, 0.99), (0.9, 0.99)]
+[2025-04-09 03:29:37,291] [INFO] [timer.py:215:stop] epoch=0/micro_step=50/global_step=50, RunningAvgSamplesPerSec=0.6164709929871495, CurrSamplesPerSec=0.5206829862592607, MemAllocated=5.77GB, MaxMemAllocated=14.09GB
+Epoch 3, Loss: 0.98828125, Positive Score: -0.09765625, Negative Score: -0.109375
+Epoch 3, Loss: 0.9453125, Positive Score: -0.130859375, Negative Score: -0.185546875
+Epoch 3, Loss: 0.95703125, Positive Score: -0.1357421875, Negative Score: -0.1796875
+Epoch 3, Loss: 0.99609375, Positive Score: -0.1572265625, Negative Score: -0.1611328125
+Epoch 3, Loss: 0.97265625, Positive Score: -0.1328125, Negative Score: -0.1611328125
+Epoch 3, Loss: 1.015625, Positive Score: -0.1552734375, Negative Score: -0.13671875
+Epoch 3, Loss: 1.046875, Positive Score: -0.185546875, Negative Score: -0.1376953125
+Epoch 3, Loss: 0.96875, Positive Score: -0.11083984375, Negative Score: -0.1435546875
+Epoch 3, Loss: 0.984375, Positive Score: -0.09912109375, Negative Score: -0.11572265625
+Epoch 3, Loss: 1.0078125, Positive Score: -0.1650390625, Negative Score: -0.15625
+[2025-04-09 03:29:54,363] [INFO] [logging.py:96:log_dist] [Rank 0] step=60, skipped=60, lr=[1e-05, 1e-05], mom=[(0.9, 0.99), (0.9, 0.99)]
+[2025-04-09 03:29:54,363] [INFO] [timer.py:215:stop] epoch=0/micro_step=60/global_step=60, RunningAvgSamplesPerSec=0.6113105662727331, CurrSamplesPerSec=0.6393204488759049, MemAllocated=5.77GB, MaxMemAllocated=14.09GB
+Epoch 3, Loss: 1.0078125, Positive Score: -0.1298828125, Negative Score: -0.123046875
+Epoch 3, Loss: 1.015625, Positive Score: -0.1650390625, Negative Score: -0.1474609375
+Epoch 3, Loss: 0.92578125, Positive Score: -0.11572265625, Negative Score: -0.189453125
+Epoch 4, Loss: 0.984375, Positive Score: -0.1328125, Negative Score: -0.1484375
+Epoch 4, Loss: 0.98828125, Positive Score: -0.046630859375, Negative Score: -0.0576171875
+Epoch 4, Loss: 1.0, Positive Score: -0.1689453125, Negative Score: -0.16796875
+Epoch 4, Loss: 0.953125, Positive Score: -0.1220703125, Negative Score: -0.1708984375
+Epoch 4, Loss: 1.0234375, Positive Score: -0.12451171875, Negative Score: -0.10205078125
+Epoch 4, Loss: 0.99609375, Positive Score: -0.14453125, Negative Score: -0.1474609375
+Epoch 4, Loss: 0.9296875, Positive Score: -0.08154296875, Negative Score: -0.15234375
+[2025-04-09 03:30:12,202] [INFO] [logging.py:96:log_dist] [Rank 0] step=70, skipped=70, lr=[1e-05, 1e-05], mom=[(0.9, 0.99), (0.9, 0.99)]
+[2025-04-09 03:30:12,202] [INFO] [timer.py:215:stop] epoch=0/micro_step=70/global_step=70, RunningAvgSamplesPerSec=0.604035867623424, CurrSamplesPerSec=0.5778076502855698, MemAllocated=5.77GB, MaxMemAllocated=14.09GB
+Epoch 4, Loss: 0.98046875, Positive Score: -0.091796875, Negative Score: -0.1103515625
+Epoch 4, Loss: 1.0, Positive Score: -0.15234375, Negative Score: -0.154296875
+Epoch 4, Loss: 0.94921875, Positive Score: -0.1357421875, Negative Score: -0.1875
+Epoch 4, Loss: 0.984375, Positive Score: -0.14453125, Negative Score: -0.16015625
+Epoch 4, Loss: 0.890625, Positive Score: -0.1162109375, Negative Score: -0.2236328125
+Epoch 4, Loss: 0.98046875, Positive Score: -0.1201171875, Negative Score: -0.140625
+Epoch 4, Loss: 0.9609375, Positive Score: -0.169921875, Negative Score: -0.208984375
+Epoch 4, Loss: 0.9765625, Positive Score: -0.1171875, Negative Score: -0.1416015625
+Epoch 5, Loss: 0.98828125, Positive Score: -0.11376953125, Negative Score: -0.1259765625
+Epoch 5, Loss: 0.95703125, Positive Score: -0.1279296875, Negative Score: -0.169921875
+[2025-04-09 03:30:28,971] [INFO] [logging.py:96:log_dist] [Rank 0] step=80, skipped=80, lr=[1e-05, 1e-05], mom=[(0.9, 0.99), (0.9, 0.99)]
+[2025-04-09 03:30:28,972] [INFO] [timer.py:215:stop] epoch=0/micro_step=80/global_step=80, RunningAvgSamplesPerSec=0.6036900500991439, CurrSamplesPerSec=0.7103236209179039, MemAllocated=5.77GB, MaxMemAllocated=14.09GB
+Epoch 5, Loss: 0.94140625, Positive Score: -0.10205078125, Negative Score: -0.1591796875
+Epoch 5, Loss: 1.0078125, Positive Score: -0.1796875, Negative Score: -0.173828125
+Epoch 5, Loss: 0.9453125, Positive Score: -0.12060546875, Negative Score: -0.1767578125
+Epoch 5, Loss: 0.96875, Positive Score: -0.1455078125, Negative Score: -0.1787109375
+Epoch 5, Loss: 0.97265625, Positive Score: -0.1435546875, Negative Score: -0.169921875
+Epoch 5, Loss: 1.0390625, Positive Score: -0.1123046875, Negative Score: -0.07568359375
+Epoch 5, Loss: 0.9765625, Positive Score: -0.125, Negative Score: -0.150390625
+Epoch 5, Loss: 0.9921875, Positive Score: -0.1572265625, Negative Score: -0.166015625
+Epoch 5, Loss: 0.98828125, Positive Score: -0.12451171875, Negative Score: -0.134765625
+Epoch 5, Loss: 1.0078125, Positive Score: -0.162109375, Negative Score: -0.1513671875
+[2025-04-09 03:30:43,605] [INFO] [logging.py:96:log_dist] [Rank 0] step=90, skipped=90, lr=[1e-05, 1e-05], mom=[(0.9, 0.99), (0.9, 0.99)]
+[2025-04-09 03:30:43,605] [INFO] [timer.py:215:stop] epoch=0/micro_step=90/global_step=90, RunningAvgSamplesPerSec=0.6120433806605534, CurrSamplesPerSec=0.7295908533959176, MemAllocated=5.77GB, MaxMemAllocated=14.09GB
+Epoch 5, Loss: 0.984375, Positive Score: -0.10546875, Negative Score: -0.1220703125
+Epoch 5, Loss: 0.9765625, Positive Score: -0.15234375, Negative Score: -0.177734375
+Epoch 5, Loss: 0.94921875, Positive Score: -0.1162109375, Negative Score: -0.1669921875
+Epoch 5, Loss: 0.9765625, Positive Score: -0.154296875, Negative Score: -0.1767578125
+Epoch 6, Loss: 0.9765625, Positive Score: -0.095703125, Negative Score: -0.12060546875
+Epoch 6, Loss: 0.97265625, Positive Score: -0.12109375, Negative Score: -0.1484375
+Epoch 6, Loss: 1.0, Positive Score: -0.10498046875, Negative Score: -0.103515625
+Epoch 6, Loss: 1.0078125, Positive Score: -0.158203125, Negative Score: -0.1513671875
+Epoch 6, Loss: 0.9921875, Positive Score: -0.11474609375, Negative Score: -0.1240234375
+Epoch 6, Loss: 1.03125, Positive Score: -0.13671875, Negative Score: -0.10498046875
+[2025-04-09 03:31:00,038] [INFO] [logging.py:96:log_dist] [Rank 0] step=100, skipped=100, lr=[1e-05, 1e-05], mom=[(0.9, 0.99), (0.9, 0.99)]
+[2025-04-09 03:31:00,039] [INFO] [timer.py:215:stop] epoch=0/micro_step=100/global_step=100, RunningAvgSamplesPerSec=0.6122801839523919, CurrSamplesPerSec=0.4675321664231455, MemAllocated=5.77GB, MaxMemAllocated=14.09GB
+Epoch 6, Loss: 0.98046875, Positive Score: -0.12060546875, Negative Score: -0.140625
+Epoch 6, Loss: 0.94140625, Positive Score: -0.146484375, Negative Score: -0.205078125
+Epoch 6, Loss: 0.984375, Positive Score: -0.15625, Negative Score: -0.1728515625
+Epoch 6, Loss: 0.8984375, Positive Score: -0.12109375, Negative Score: -0.220703125
+Epoch 6, Loss: 0.953125, Positive Score: -0.134765625, Negative Score: -0.1796875
+Epoch 6, Loss: 0.94921875, Positive Score: -0.0888671875, Negative Score: -0.138671875
+Epoch 6, Loss: 0.9609375, Positive Score: -0.07177734375, Negative Score: -0.1123046875
+Epoch 6, Loss: 1.0078125, Positive Score: -0.12060546875, Negative Score: -0.1162109375

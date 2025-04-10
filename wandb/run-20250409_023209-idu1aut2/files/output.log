@@ -1,0 +1,17 @@
+[2025-04-09 02:32:12,848] [INFO] [checkpointing.py:529:forward] Activation Checkpointing Information
+[2025-04-09 02:32:12,849] [INFO] [checkpointing.py:530:forward] ----Partition Activations False, CPU CHECKPOINTING False
+[2025-04-09 02:32:12,849] [INFO] [checkpointing.py:531:forward] ----contiguous Memory Checkpointing False with None total layers
+[2025-04-09 02:32:12,849] [INFO] [checkpointing.py:533:forward] ----Synchronization False
+[2025-04-09 02:32:12,849] [INFO] [checkpointing.py:534:forward] ----Profiling time in checkpointing False
+Epoch 0, Loss: 0.0, Positive Score: 0.0, Negative Score: 0.0
+/home/li/anaconda3/envs/LLMs/lib/python3.11/site-packages/torch/autograd/__init__.py:266: UserWarning: c10d::broadcast_: an autograd kernel was not registered to the Autograd key(s) but we are trying to backprop through it. This may lead to silently incorrect behavior. This behavior is deprecated and will be removed in a future version of PyTorch. If your operator is differentiable, please ensure you have registered an autograd kernel to the correct Autograd key (e.g. DispatchKey::Autograd, DispatchKey::CompositeImplicitAutograd). If your operator is not differentiable, or to squash this warning and use the previous behavior, please register torch::CppFunction::makeFallthrough() to DispatchKey::Autograd. (Triggered internally at ../torch/csrc/autograd/autograd_not_implemented_fallback.cpp:63.)
+  Variable._execution_engine.run_backward(  # Calls into the C++ engine to run the backward pass
+/home/li/anaconda3/envs/LLMs/lib/python3.11/site-packages/deepspeed/runtime/zero/stage_1_and_2.py:1829: UserWarning: The torch.cuda.*DtypeTensor constructors are no longer recommended. It's best to use methods such as torch.tensor(data, dtype=*, device='cuda') to create tensors. (Triggered internally at ../torch/csrc/tensor/python_tensor.cpp:83.)
+  overflow_gpu = get_accelerator().ByteTensor([overflow])
+Epoch 0, Loss: 0.0, Positive Score: 0.0, Negative Score: 0.0
+Epoch 0, Loss: 0.0, Positive Score: 0.0, Negative Score: 0.0
+Epoch 0, Loss: 0.0, Positive Score: -5.781650543212891e-06, Negative Score: -5.781650543212891e-06
+Epoch 0, Loss: 0.0, Positive Score: -1.0669231414794922e-05, Negative Score: -1.0669231414794922e-05
+Epoch 0, Loss: 0.0, Positive Score: -1.728534698486328e-05, Negative Score: -1.728534698486328e-05
+Epoch 0, Loss: 0.0, Positive Score: -2.491474151611328e-05, Negative Score: -2.491474151611328e-05
+Epoch 0, Loss: 0.0, Positive Score: -3.314018249511719e-05, Negative Score: -3.314018249511719e-05

@@ -1,0 +1,66 @@
+[2025-04-09 02:28:48,425] [INFO] [checkpointing.py:529:forward] Activation Checkpointing Information
+[2025-04-09 02:28:48,426] [INFO] [checkpointing.py:530:forward] ----Partition Activations False, CPU CHECKPOINTING False
+[2025-04-09 02:28:48,426] [INFO] [checkpointing.py:531:forward] ----contiguous Memory Checkpointing False with None total layers
+[2025-04-09 02:28:48,426] [INFO] [checkpointing.py:533:forward] ----Synchronization False
+[2025-04-09 02:28:48,426] [INFO] [checkpointing.py:534:forward] ----Profiling time in checkpointing False
+Traceback (most recent call last):
+  File "/home/li/MachineLr/RWKV-Development-Tools-ssg/wkv7_reward_model/train_model.py", line 220, in <module>
+    batch_score = model_engine(batch)
+                  ^^^^^^^^^^^^^^^^^^^
+  File "/home/li/anaconda3/envs/LLMs/lib/python3.11/site-packages/torch/nn/modules/module.py", line 1511, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/li/anaconda3/envs/LLMs/lib/python3.11/site-packages/torch/nn/modules/module.py", line 1520, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/li/anaconda3/envs/LLMs/lib/python3.11/site-packages/deepspeed/utils/nvtx.py", line 15, in wrapped_fn
+    ret_val = func(*args, **kwargs)
+              ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/li/anaconda3/envs/LLMs/lib/python3.11/site-packages/deepspeed/runtime/engine.py", line 1736, in forward
+    loss = self.module(*inputs, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/li/anaconda3/envs/LLMs/lib/python3.11/site-packages/torch/nn/modules/module.py", line 1511, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/li/anaconda3/envs/LLMs/lib/python3.11/site-packages/torch/nn/modules/module.py", line 1520, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/li/MachineLr/RWKV-Development-Tools-ssg/wkv7_reward_model/model/model.py", line 252, in forward
+    x, v_first = deepspeed.checkpointing.checkpoint(
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/li/anaconda3/envs/LLMs/lib/python3.11/site-packages/deepspeed/runtime/activation_checkpointing/checkpointing.py", line 713, in checkpoint
+    CheckpointFunction.apply(function, all_outputs, *args)
+  File "/home/li/anaconda3/envs/LLMs/lib/python3.11/site-packages/torch/autograd/function.py", line 553, in apply
+    return super().apply(*args, **kwargs)  # type: ignore[misc]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/li/anaconda3/envs/LLMs/lib/python3.11/site-packages/deepspeed/runtime/activation_checkpointing/checkpointing.py", line 555, in forward
+    outputs = run_function(*inputs_cuda)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/li/anaconda3/envs/LLMs/lib/python3.11/site-packages/torch/nn/modules/module.py", line 1511, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/li/anaconda3/envs/LLMs/lib/python3.11/site-packages/torch/nn/modules/module.py", line 1520, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/li/MachineLr/RWKV-Development-Tools-ssg/wkv7_reward_model/model/block.py", line 27, in forward
+    x_attn, v_first = self.att(
+                      ^^^^^^^^^
+  File "/home/li/anaconda3/envs/LLMs/lib/python3.11/site-packages/torch/nn/modules/module.py", line 1511, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/li/anaconda3/envs/LLMs/lib/python3.11/site-packages/torch/nn/modules/module.py", line 1520, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/li/MachineLr/RWKV-Development-Tools-ssg/wkv7_reward_model/model/att.py", line 159, in forward
+    x = RUN_CUDA_RWKV7g(r, w, k, v, -kk, kk * a)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/li/MachineLr/RWKV-Development-Tools-ssg/wkv7_reward_model/model/rwkvop.py", line 57, in RUN_CUDA_RWKV7g
+    return WindBackstepping.apply(w, q, k, v, a, b).view(B, T, HC)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/li/anaconda3/envs/LLMs/lib/python3.11/site-packages/torch/autograd/function.py", line 553, in apply
+    return super().apply(*args, **kwargs)  # type: ignore[misc]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/li/MachineLr/RWKV-Development-Tools-ssg/wkv7_reward_model/model/rwkvop.py", line 37, in forward
+    sa = torch.empty(B, T, H, C, dtype=torch.float32, device=w.device)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+torch.cuda.OutOfMemoryError: CUDA out of memory. Tried to allocate 690.00 MiB. GPU 0 has a total capacity of 23.68 GiB of which 270.81 MiB is free. Including non-PyTorch memory, this process has 23.22 GiB memory in use. Of the allocated memory 22.38 GiB is allocated by PyTorch, and 357.47 MiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting PYTORCH_CUDA_ALLOC_CONF=expandable_segments:True to avoid fragmentation.  See documentation for Memory Management  (https://pytorch.org/docs/stable/notes/cuda.html#environment-variables)

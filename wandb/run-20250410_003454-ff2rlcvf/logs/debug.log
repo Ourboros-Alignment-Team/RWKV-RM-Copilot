@@ -1,0 +1,29 @@
+2025-04-10 00:34:54,490 INFO    MainThread:5859 [wandb_setup.py:_flush():76] Current SDK version is 0.15.4
+2025-04-10 00:34:54,491 INFO    MainThread:5859 [wandb_setup.py:_flush():76] Configure stats pid to 5859
+2025-04-10 00:34:54,491 INFO    MainThread:5859 [wandb_setup.py:_flush():76] Loading settings from /home/ubuntu/.config/wandb/settings
+2025-04-10 00:34:54,491 INFO    MainThread:5859 [wandb_setup.py:_flush():76] Loading settings from /home/ubuntu/MachineLr/RWKV-RM/wandb/settings
+2025-04-10 00:34:54,491 INFO    MainThread:5859 [wandb_setup.py:_flush():76] Loading settings from environment variables: {}
+2025-04-10 00:34:54,491 INFO    MainThread:5859 [wandb_setup.py:_flush():76] Applying setup settings: {'_disable_service': False}
+2025-04-10 00:34:54,491 INFO    MainThread:5859 [wandb_setup.py:_flush():76] Inferring run settings from compute environment: {'program_relpath': 'train_model.py', 'program': '/home/ubuntu/MachineLr/RWKV-RM/train_model.py'}
+2025-04-10 00:34:54,491 INFO    MainThread:5859 [wandb_setup.py:_flush():76] Applying login settings: {'api_key': '***REDACTED***'}
+2025-04-10 00:34:54,491 INFO    MainThread:5859 [wandb_init.py:_log_setup():507] Logging user logs to /home/ubuntu/MachineLr/RWKV-RM/wandb/run-20250410_003454-ff2rlcvf/logs/debug.log
+2025-04-10 00:34:54,492 INFO    MainThread:5859 [wandb_init.py:_log_setup():508] Logging internal logs to /home/ubuntu/MachineLr/RWKV-RM/wandb/run-20250410_003454-ff2rlcvf/logs/debug-internal.log
+2025-04-10 00:34:54,492 INFO    MainThread:5859 [wandb_init.py:init():547] calling init triggers
+2025-04-10 00:34:54,492 INFO    MainThread:5859 [wandb_init.py:init():554] wandb.init called with sweep_config: {}
+config: {}
+2025-04-10 00:34:54,492 INFO    MainThread:5859 [wandb_init.py:init():596] starting backend
+2025-04-10 00:34:54,493 INFO    MainThread:5859 [wandb_init.py:init():600] setting up manager
+2025-04-10 00:34:54,497 INFO    MainThread:5859 [backend.py:_multiprocessing_setup():106] multiprocessing start_methods=fork,spawn,forkserver, using: spawn
+2025-04-10 00:34:54,501 INFO    MainThread:5859 [wandb_init.py:init():606] backend started and connected
+2025-04-10 00:34:54,504 INFO    MainThread:5859 [wandb_init.py:init():703] updated telemetry
+2025-04-10 00:34:54,505 INFO    MainThread:5859 [wandb_init.py:init():736] communicating run to backend with 60.0 second timeout
+2025-04-10 00:34:55,244 INFO    MainThread:5859 [wandb_run.py:_on_init():2176] communicating current version
+2025-04-10 00:34:55,740 INFO    MainThread:5859 [wandb_run.py:_on_init():2185] got version response upgrade_message: "wandb version 0.19.9 is available!  To upgrade, please run:\n $ pip install wandb --upgrade"
+
+2025-04-10 00:34:55,740 INFO    MainThread:5859 [wandb_init.py:init():787] starting run threads in backend
+2025-04-10 00:35:01,998 INFO    MainThread:5859 [wandb_run.py:_console_start():2155] atexit reg
+2025-04-10 00:35:01,999 INFO    MainThread:5859 [wandb_run.py:_redirect():2010] redirect: 3
+2025-04-10 00:35:01,999 INFO    MainThread:5859 [wandb_run.py:_redirect():2075] Wrapping output streams.
+2025-04-10 00:35:01,999 INFO    MainThread:5859 [wandb_run.py:_redirect():2100] Redirects installed.
+2025-04-10 00:35:02,000 INFO    MainThread:5859 [wandb_init.py:init():828] run started, returning control to user process
+2025-04-10 00:35:49,405 WARNING MsgRouterThr:5859 [router.py:message_loop():77] message_loop has been closed

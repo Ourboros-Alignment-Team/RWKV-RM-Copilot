@@ -1,0 +1,480 @@
+max_length 1235
+[2025-04-09 03:31:34,734] [INFO] [checkpointing.py:529:forward] Activation Checkpointing Information
+[2025-04-09 03:31:34,734] [INFO] [checkpointing.py:530:forward] ----Partition Activations False, CPU CHECKPOINTING False
+[2025-04-09 03:31:34,734] [INFO] [checkpointing.py:531:forward] ----contiguous Memory Checkpointing False with None total layers
+[2025-04-09 03:31:34,734] [INFO] [checkpointing.py:533:forward] ----Synchronization False
+[2025-04-09 03:31:34,734] [INFO] [checkpointing.py:534:forward] ----Profiling time in checkpointing False
+Epoch 0, Loss: 0.984375, Positive Score: -0.55078125, Negative Score: -0.56640625
+/home/li/anaconda3/envs/LLMs/lib/python3.11/site-packages/torch/autograd/__init__.py:266: UserWarning: c10d::broadcast_: an autograd kernel was not registered to the Autograd key(s) but we are trying to backprop through it. This may lead to silently incorrect behavior. This behavior is deprecated and will be removed in a future version of PyTorch. If your operator is differentiable, please ensure you have registered an autograd kernel to the correct Autograd key (e.g. DispatchKey::Autograd, DispatchKey::CompositeImplicitAutograd). If your operator is not differentiable, or to squash this warning and use the previous behavior, please register torch::CppFunction::makeFallthrough() to DispatchKey::Autograd. (Triggered internally at ../torch/csrc/autograd/autograd_not_implemented_fallback.cpp:63.)
+  Variable._execution_engine.run_backward(  # Calls into the C++ engine to run the backward pass
+max_length 1019
+Epoch 0, Loss: 1.0, Positive Score: -0.55859375, Negative Score: -0.5546875
+max_length 1164
+Epoch 0, Loss: 0.98828125, Positive Score: -0.5859375, Negative Score: -0.59765625
+max_length 1110
+Epoch 0, Loss: 1.0234375, Positive Score: -0.625, Negative Score: -0.6015625
+max_length 1360
+Epoch 0, Loss: 0.953125, Positive Score: -0.546875, Negative Score: -0.59375
+max_length 949
+Epoch 0, Loss: 0.96484375, Positive Score: -0.51953125, Negative Score: -0.5546875
+max_length 866
+Epoch 0, Loss: 1.0, Positive Score: -0.55859375, Negative Score: -0.5546875
+max_length 873
+Epoch 0, Loss: 1.0, Positive Score: -0.60546875, Negative Score: -0.6015625
+max_length 968
+Epoch 0, Loss: 1.0234375, Positive Score: -0.5703125, Negative Score: -0.546875
+max_length 944
+Epoch 0, Loss: 0.9921875, Positive Score: -0.5703125, Negative Score: -0.578125
+[2025-04-09 03:31:50,042] [INFO] [logging.py:96:log_dist] [Rank 0] step=10, skipped=10, lr=[1e-05, 1e-05], mom=[(0.9, 0.99), (0.9, 0.99)]
+[2025-04-09 03:31:50,042] [INFO] [timer.py:215:stop] epoch=0/micro_step=10/global_step=10, RunningAvgSamplesPerSec=0.670845337812882, CurrSamplesPerSec=0.8106373265827639, MemAllocated=5.78GB, MaxMemAllocated=9.5GB
+max_length 1369
+Epoch 0, Loss: 0.9609375, Positive Score: -0.56640625, Negative Score: -0.60546875
+max_length 1066
+Epoch 0, Loss: 1.0, Positive Score: -0.59375, Negative Score: -0.59375
+max_length 1322
+Epoch 0, Loss: 0.9296875, Positive Score: -0.53125, Negative Score: -0.6015625
+max_length 769
+Epoch 0, Loss: 1.015625, Positive Score: -0.58984375, Negative Score: -0.578125
+max_length 1129
+Epoch 0, Loss: 1.0234375, Positive Score: -0.640625, Negative Score: -0.6171875
+max_length 966
+Epoch 1, Loss: 0.98828125, Positive Score: -0.6015625, Negative Score: -0.61328125
+max_length 786
+Epoch 1, Loss: 0.9765625, Positive Score: -0.59375, Negative Score: -0.6171875
+max_length 1106
+Epoch 1, Loss: 0.9296875, Positive Score: -0.52734375, Negative Score: -0.59765625
+max_length 871
+Epoch 1, Loss: 1.015625, Positive Score: -0.58203125, Negative Score: -0.56640625
+max_length 1160
+Epoch 1, Loss: 0.96875, Positive Score: -0.55859375, Negative Score: -0.58984375
+[2025-04-09 03:32:10,317] [INFO] [logging.py:96:log_dist] [Rank 0] step=20, skipped=20, lr=[1e-05, 1e-05], mom=[(0.9, 0.99), (0.9, 0.99)]
+[2025-04-09 03:32:10,318] [INFO] [timer.py:215:stop] epoch=0/micro_step=20/global_step=20, RunningAvgSamplesPerSec=0.6796516772046962, CurrSamplesPerSec=0.6402941781265776, MemAllocated=5.78GB, MaxMemAllocated=9.5GB
+max_length 974
+Epoch 1, Loss: 0.94921875, Positive Score: -0.5703125, Negative Score: -0.62109375
+max_length 1050
+Epoch 1, Loss: 0.98046875, Positive Score: -0.54296875, Negative Score: -0.5625
+max_length 918
+Epoch 1, Loss: 1.03125, Positive Score: -0.6328125, Negative Score: -0.59765625
+max_length 1245
+Epoch 1, Loss: 0.98828125, Positive Score: -0.57421875, Negative Score: -0.5859375
+max_length 950
+Epoch 1, Loss: 0.97265625, Positive Score: -0.5703125, Negative Score: -0.59765625
+max_length 930
+Epoch 1, Loss: 0.984375, Positive Score: -0.56640625, Negative Score: -0.58203125
+max_length 751
+Epoch 1, Loss: 1.0, Positive Score: -0.59765625, Negative Score: -0.59375
+max_length 765
+Epoch 1, Loss: 1.03125, Positive Score: -0.62890625, Negative Score: -0.6015625
+max_length 1429
+Epoch 1, Loss: 0.953125, Positive Score: -0.546875, Negative Score: -0.59375
+max_length 936
+Epoch 1, Loss: 0.984375, Positive Score: -0.56640625, Negative Score: -0.58203125
+[2025-04-09 03:32:24,405] [INFO] [logging.py:96:log_dist] [Rank 0] step=30, skipped=30, lr=[1e-05, 1e-05], mom=[(0.9, 0.99), (0.9, 0.99)]
+[2025-04-09 03:32:24,406] [INFO] [timer.py:215:stop] epoch=0/micro_step=30/global_step=30, RunningAvgSamplesPerSec=0.6911123730578667, CurrSamplesPerSec=0.810517333069493, MemAllocated=5.78GB, MaxMemAllocated=9.69GB
+max_length 1047
+Epoch 1, Loss: 0.97265625, Positive Score: -0.54296875, Negative Score: -0.5703125
+max_length 1634
+Epoch 2, Loss: 1.0234375, Positive Score: -0.5625, Negative Score: -0.5390625
+max_length 924
+Epoch 2, Loss: 1.0078125, Positive Score: -0.59375, Negative Score: -0.5859375
+max_length 1122
+Epoch 2, Loss: 0.99609375, Positive Score: -0.59375, Negative Score: -0.59765625
+max_length 842
+Epoch 2, Loss: 0.94921875, Positive Score: -0.55078125, Negative Score: -0.6015625
+max_length 724
+Epoch 2, Loss: 1.0, Positive Score: -0.578125, Negative Score: -0.578125
+max_length 2239
+Epoch 2, Loss: 0.9453125, Positive Score: -0.56640625, Negative Score: -0.62109375
+max_length 592
+Epoch 2, Loss: 0.9921875, Positive Score: -0.5703125, Negative Score: -0.578125
+max_length 1543
+Epoch 2, Loss: 0.99609375, Positive Score: -0.5546875, Negative Score: -0.55859375
+max_length 1232
+Epoch 2, Loss: 0.99609375, Positive Score: -0.59375, Negative Score: -0.59765625
+[2025-04-09 03:32:41,185] [INFO] [logging.py:96:log_dist] [Rank 0] step=40, skipped=40, lr=[1e-05, 1e-05], mom=[(0.9, 0.99), (0.9, 0.99)]
+[2025-04-09 03:32:41,185] [INFO] [timer.py:215:stop] epoch=0/micro_step=40/global_step=40, RunningAvgSamplesPerSec=0.6657983131315865, CurrSamplesPerSec=0.6132962165407483, MemAllocated=5.78GB, MaxMemAllocated=11.52GB
+max_length 2230
+Epoch 2, Loss: 1.015625, Positive Score: -0.58984375, Negative Score: -0.578125
+max_length 887
+Epoch 2, Loss: 1.03125, Positive Score: -0.640625, Negative Score: -0.60546875
+max_length 1249
+Epoch 2, Loss: 0.97265625, Positive Score: -0.578125, Negative Score: -0.60546875
+max_length 1164
+Epoch 2, Loss: 0.953125, Positive Score: -0.5234375, Negative Score: -0.5703125
+max_length 910
+Epoch 2, Loss: 0.9921875, Positive Score: -0.58984375, Negative Score: -0.59765625
+max_length 1181
+Epoch 2, Loss: 1.0078125, Positive Score: -0.59765625, Negative Score: -0.58984375
+max_length 1045
+Epoch 2, Loss: 0.9765625, Positive Score: -0.57421875, Negative Score: -0.59765625
+max_length 870
+Epoch 3, Loss: 0.98046875, Positive Score: -0.57421875, Negative Score: -0.59375
+max_length 1511
+Epoch 3, Loss: 0.96875, Positive Score: -0.578125, Negative Score: -0.609375
+max_length 2131
+Epoch 3, Loss: 1.0078125, Positive Score: -0.578125, Negative Score: -0.5703125
+[2025-04-09 03:33:00,241] [INFO] [logging.py:96:log_dist] [Rank 0] step=50, skipped=50, lr=[1e-05, 1e-05], mom=[(0.9, 0.99), (0.9, 0.99)]
+[2025-04-09 03:33:00,241] [INFO] [timer.py:215:stop] epoch=0/micro_step=50/global_step=50, RunningAvgSamplesPerSec=0.6316862182816958, CurrSamplesPerSec=0.3120767709761365, MemAllocated=5.78GB, MaxMemAllocated=12.59GB
+max_length 637
+Epoch 3, Loss: 0.9921875, Positive Score: -0.6171875, Negative Score: -0.625
+max_length 859
+Epoch 3, Loss: 0.98046875, Positive Score: -0.5859375, Negative Score: -0.60546875
+max_length 906
+Epoch 3, Loss: 0.97265625, Positive Score: -0.53125, Negative Score: -0.55859375
+max_length 1032
+Epoch 3, Loss: 0.9765625, Positive Score: -0.5703125, Negative Score: -0.59375
+max_length 829
+Epoch 3, Loss: 1.015625, Positive Score: -0.58203125, Negative Score: -0.56640625
+max_length 1831
+Epoch 3, Loss: 0.9921875, Positive Score: -0.54296875, Negative Score: -0.55078125
+max_length 2008
+Epoch 3, Loss: 1.0, Positive Score: -0.55859375, Negative Score: -0.55859375
+max_length 977
+Epoch 3, Loss: 0.98828125, Positive Score: -0.59375, Negative Score: -0.60546875
+max_length 713
+Epoch 3, Loss: 0.984375, Positive Score: -0.5859375, Negative Score: -0.6015625
+max_length 1152
+Epoch 3, Loss: 0.99609375, Positive Score: -0.578125, Negative Score: -0.58203125
+[2025-04-09 03:33:15,677] [INFO] [logging.py:96:log_dist] [Rank 0] step=60, skipped=60, lr=[1e-05, 1e-05], mom=[(0.9, 0.99), (0.9, 0.99)]
+[2025-04-09 03:33:15,678] [INFO] [timer.py:215:stop] epoch=0/micro_step=60/global_step=60, RunningAvgSamplesPerSec=0.634888056841898, CurrSamplesPerSec=0.6627816005315774, MemAllocated=5.78GB, MaxMemAllocated=12.59GB
+max_length 787
+Epoch 3, Loss: 0.98046875, Positive Score: -0.5703125, Negative Score: -0.58984375
+max_length 1088
+Epoch 3, Loss: 1.015625, Positive Score: -0.61328125, Negative Score: -0.59765625
+max_length 910
+Epoch 3, Loss: 1.0078125, Positive Score: -0.58984375, Negative Score: -0.58203125
+max_length 884
+Epoch 4, Loss: 0.98046875, Positive Score: -0.59375, Negative Score: -0.61328125
+max_length 1381
+Epoch 4, Loss: 0.95703125, Positive Score: -0.546875, Negative Score: -0.58984375
+max_length 1658
+Epoch 4, Loss: 0.9453125, Positive Score: -0.56640625, Negative Score: -0.62109375
+max_length 811
+Epoch 4, Loss: 1.0078125, Positive Score: -0.58984375, Negative Score: -0.58203125
+max_length 1429
+Epoch 4, Loss: 0.9609375, Positive Score: -0.57421875, Negative Score: -0.61328125
+max_length 1310
+Epoch 4, Loss: 0.98828125, Positive Score: -0.6171875, Negative Score: -0.62890625
+max_length 1246
+Epoch 4, Loss: 0.98046875, Positive Score: -0.53515625, Negative Score: -0.5546875
+[2025-04-09 03:33:31,474] [INFO] [logging.py:96:log_dist] [Rank 0] step=70, skipped=70, lr=[1e-05, 1e-05], mom=[(0.9, 0.99), (0.9, 0.99)]
+[2025-04-09 03:33:31,474] [INFO] [timer.py:215:stop] epoch=0/micro_step=70/global_step=70, RunningAvgSamplesPerSec=0.6356800865370892, CurrSamplesPerSec=0.6110299668517688, MemAllocated=5.78GB, MaxMemAllocated=12.59GB
+max_length 1101
+Epoch 4, Loss: 0.984375, Positive Score: -0.5703125, Negative Score: -0.5859375
+max_length 1435
+Epoch 4, Loss: 0.92578125, Positive Score: -0.5234375, Negative Score: -0.59765625
+max_length 1005
+Epoch 4, Loss: 1.03125, Positive Score: -0.63671875, Negative Score: -0.6015625
+max_length 1597
+Epoch 4, Loss: 0.9921875, Positive Score: -0.5625, Negative Score: -0.5703125
+max_length 1625
+Epoch 4, Loss: 0.98046875, Positive Score: -0.53515625, Negative Score: -0.5546875
+max_length 826
+Epoch 4, Loss: 1.015625, Positive Score: -0.61328125, Negative Score: -0.59765625
+max_length 1018
+Epoch 4, Loss: 0.99609375, Positive Score: -0.5703125, Negative Score: -0.57421875
+max_length 788
+Epoch 4, Loss: 0.98046875, Positive Score: -0.55859375, Negative Score: -0.578125
+max_length 1105
+Epoch 5, Loss: 1.0625, Positive Score: -0.609375, Negative Score: -0.546875
+max_length 600
+Epoch 5, Loss: 0.99609375, Positive Score: -0.58984375, Negative Score: -0.59375
+[2025-04-09 03:33:47,859] [INFO] [logging.py:96:log_dist] [Rank 0] step=80, skipped=80, lr=[1e-05, 1e-05], mom=[(0.9, 0.99), (0.9, 0.99)]
+[2025-04-09 03:33:47,859] [INFO] [timer.py:215:stop] epoch=0/micro_step=80/global_step=80, RunningAvgSamplesPerSec=0.6330747541123695, CurrSamplesPerSec=1.1869873281165144, MemAllocated=5.78GB, MaxMemAllocated=12.59GB
+max_length 1412
+Epoch 5, Loss: 1.0, Positive Score: -0.60546875, Negative Score: -0.60546875
+max_length 1539
+Epoch 5, Loss: 1.015625, Positive Score: -0.55859375, Negative Score: -0.5390625
+max_length 952
+Epoch 5, Loss: 0.98828125, Positive Score: -0.58984375, Negative Score: -0.6015625
+max_length 1392
+Epoch 5, Loss: 0.99609375, Positive Score: -0.59375, Negative Score: -0.59765625
+max_length 1252
+Epoch 5, Loss: 0.95703125, Positive Score: -0.546875, Negative Score: -0.58984375
+max_length 716
+Epoch 5, Loss: 0.94140625, Positive Score: -0.53515625, Negative Score: -0.59375
+max_length 694
+Epoch 5, Loss: 0.98046875, Positive Score: -0.56640625, Negative Score: -0.5859375
+max_length 1319
+Epoch 5, Loss: 0.96484375, Positive Score: -0.52734375, Negative Score: -0.5625
+max_length 849
+Epoch 5, Loss: 0.98828125, Positive Score: -0.60546875, Negative Score: -0.6171875
+max_length 974
+Epoch 5, Loss: 0.9765625, Positive Score: -0.55078125, Negative Score: -0.57421875
+[2025-04-09 03:34:03,744] [INFO] [logging.py:96:log_dist] [Rank 0] step=90, skipped=90, lr=[1e-05, 1e-05], mom=[(0.9, 0.99), (0.9, 0.99)]
+[2025-04-09 03:34:03,745] [INFO] [timer.py:215:stop] epoch=0/micro_step=90/global_step=90, RunningAvgSamplesPerSec=0.6329382403785161, CurrSamplesPerSec=0.7559955256383589, MemAllocated=5.78GB, MaxMemAllocated=12.59GB
+max_length 933
+Epoch 5, Loss: 1.0, Positive Score: -0.59375, Negative Score: -0.59375
+max_length 1282
+Epoch 5, Loss: 1.0, Positive Score: -0.5546875, Negative Score: -0.5546875
+max_length 741
+Epoch 5, Loss: 0.9921875, Positive Score: -0.6171875, Negative Score: -0.625
+max_length 1427
+Epoch 5, Loss: 0.98046875, Positive Score: -0.58984375, Negative Score: -0.609375
+max_length 1715
+Epoch 6, Loss: 0.953125, Positive Score: -0.5546875, Negative Score: -0.6015625
+max_length 767
+Epoch 6, Loss: 1.015625, Positive Score: -0.60546875, Negative Score: -0.58984375
+max_length 929
+Epoch 6, Loss: 0.98828125, Positive Score: -0.56640625, Negative Score: -0.578125
+max_length 1088
+Epoch 6, Loss: 1.03125, Positive Score: -0.59375, Negative Score: -0.55859375
+max_length 1034
+Epoch 6, Loss: 1.0234375, Positive Score: -0.58203125, Negative Score: -0.55859375
+max_length 1593
+Epoch 6, Loss: 1.015625, Positive Score: -0.59765625, Negative Score: -0.578125
+[2025-04-09 03:34:20,280] [INFO] [logging.py:96:log_dist] [Rank 0] step=100, skipped=100, lr=[1e-05, 1e-05], mom=[(0.9, 0.99), (0.9, 0.99)]
+[2025-04-09 03:34:20,281] [INFO] [timer.py:215:stop] epoch=0/micro_step=100/global_step=100, RunningAvgSamplesPerSec=0.6305123932404469, CurrSamplesPerSec=0.489032543608071, MemAllocated=5.78GB, MaxMemAllocated=12.59GB
+max_length 1442
+Epoch 6, Loss: 1.0, Positive Score: -0.53125, Negative Score: -0.53125
+max_length 1239
+Epoch 6, Loss: 0.97265625, Positive Score: -0.57421875, Negative Score: -0.6015625
+max_length 1753
+Epoch 6, Loss: 0.98828125, Positive Score: -0.5625, Negative Score: -0.57421875
+max_length 899
+Epoch 6, Loss: 0.984375, Positive Score: -0.5546875, Negative Score: -0.5703125
+max_length 625
+Epoch 6, Loss: 0.98828125, Positive Score: -0.5703125, Negative Score: -0.58203125
+max_length 1419
+Epoch 6, Loss: 0.96484375, Positive Score: -0.546875, Negative Score: -0.58203125
+max_length 1563
+Epoch 6, Loss: 0.97265625, Positive Score: -0.5703125, Negative Score: -0.59765625
+max_length 774
+Epoch 6, Loss: 1.03125, Positive Score: -0.62109375, Negative Score: -0.59375
+max_length 2281
+Epoch 6, Loss: 0.98046875, Positive Score: -0.58203125, Negative Score: -0.6015625
+max_length 748
+Epoch 6, Loss: 0.99609375, Positive Score: -0.59765625, Negative Score: -0.6015625
+[2025-04-09 03:34:38,712] [INFO] [logging.py:96:log_dist] [Rank 0] step=110, skipped=110, lr=[1e-05, 1e-05], mom=[(0.9, 0.99), (0.9, 0.99)]
+[2025-04-09 03:34:38,712] [INFO] [timer.py:215:stop] epoch=0/micro_step=110/global_step=110, RunningAvgSamplesPerSec=0.6213913104821459, CurrSamplesPerSec=0.9928535819911213, MemAllocated=5.78GB, MaxMemAllocated=12.79GB
+max_length 797
+Epoch 7, Loss: 0.96875, Positive Score: -0.58203125, Negative Score: -0.61328125
+max_length 1745
+Epoch 7, Loss: 0.9765625, Positive Score: -0.56640625, Negative Score: -0.58984375
+max_length 812
+Epoch 7, Loss: 1.015625, Positive Score: -0.59375, Negative Score: -0.578125
+max_length 744
+Epoch 7, Loss: 0.95703125, Positive Score: -0.56640625, Negative Score: -0.609375
+max_length 744
+Epoch 7, Loss: 1.0, Positive Score: -0.58984375, Negative Score: -0.5859375
+max_length 1026
+Epoch 7, Loss: 1.0078125, Positive Score: -0.6015625, Negative Score: -0.59375
+max_length 1438
+Epoch 7, Loss: 1.0, Positive Score: -0.5859375, Negative Score: -0.5859375
+max_length 977
+Epoch 7, Loss: 0.984375, Positive Score: -0.5859375, Negative Score: -0.6015625
+max_length 1250
+Epoch 7, Loss: 0.96875, Positive Score: -0.59765625, Negative Score: -0.62890625
+max_length 1159
+Epoch 7, Loss: 0.99609375, Positive Score: -0.6015625, Negative Score: -0.60546875
+[2025-04-09 03:34:54,294] [INFO] [logging.py:96:log_dist] [Rank 0] step=120, skipped=120, lr=[1e-05, 1e-05], mom=[(0.9, 0.99), (0.9, 0.99)]
+[2025-04-09 03:34:54,295] [INFO] [timer.py:215:stop] epoch=0/micro_step=120/global_step=120, RunningAvgSamplesPerSec=0.6235476562635407, CurrSamplesPerSec=0.46570214610506805, MemAllocated=5.78GB, MaxMemAllocated=12.79GB
+max_length 1447
+Epoch 7, Loss: 1.0078125, Positive Score: -0.6015625, Negative Score: -0.59375
+max_length 1045
+Epoch 7, Loss: 0.97265625, Positive Score: -0.53515625, Negative Score: -0.5625
+max_length 1217
+Epoch 7, Loss: 0.984375, Positive Score: -0.58984375, Negative Score: -0.60546875
+max_length 1104
+Epoch 7, Loss: 1.03125, Positive Score: -0.61328125, Negative Score: -0.5859375
+max_length 996
+Epoch 7, Loss: 1.0, Positive Score: -0.59765625, Negative Score: -0.59765625
+max_length 969
+Epoch 7, Loss: 0.97265625, Positive Score: -0.546875, Negative Score: -0.57421875
+max_length 879
+Epoch 8, Loss: 0.96484375, Positive Score: -0.5625, Negative Score: -0.59765625
+max_length 1452
+Epoch 8, Loss: 0.9765625, Positive Score: -0.57421875, Negative Score: -0.59765625
+max_length 745
+Epoch 8, Loss: 1.0, Positive Score: -0.6015625, Negative Score: -0.6015625
+max_length 800
+Epoch 8, Loss: 1.015625, Positive Score: -0.5625, Negative Score: -0.546875
+[2025-04-09 03:35:09,187] [INFO] [logging.py:96:log_dist] [Rank 0] step=130, skipped=130, lr=[1e-05, 1e-05], mom=[(0.9, 0.99), (0.9, 0.99)]
+[2025-04-09 03:35:09,187] [INFO] [timer.py:215:stop] epoch=0/micro_step=130/global_step=130, RunningAvgSamplesPerSec=0.6276571517642345, CurrSamplesPerSec=0.9184735349230051, MemAllocated=5.78GB, MaxMemAllocated=12.79GB
+max_length 1495
+Epoch 8, Loss: 0.953125, Positive Score: -0.5625, Negative Score: -0.609375
+max_length 910
+Epoch 8, Loss: 0.98828125, Positive Score: -0.53125, Negative Score: -0.54296875
+max_length 839
+Epoch 8, Loss: 0.95703125, Positive Score: -0.55078125, Negative Score: -0.59375
+max_length 1871
+Epoch 8, Loss: 0.96484375, Positive Score: -0.55859375, Negative Score: -0.59375
+max_length 1611
+Epoch 8, Loss: 1.078125, Positive Score: -0.6328125, Negative Score: -0.55078125
+max_length 820
+Epoch 8, Loss: 0.98828125, Positive Score: -0.61328125, Negative Score: -0.625
+max_length 1059
+Epoch 8, Loss: 1.015625, Positive Score: -0.59375, Negative Score: -0.58203125
+max_length 1108
+Epoch 8, Loss: 1.0, Positive Score: -0.60546875, Negative Score: -0.60546875
+max_length 958
+Epoch 8, Loss: 1.015625, Positive Score: -0.609375, Negative Score: -0.58984375
+max_length 1096
+Epoch 8, Loss: 1.0, Positive Score: -0.59375, Negative Score: -0.59375
+[2025-04-09 03:35:25,756] [INFO] [logging.py:96:log_dist] [Rank 0] step=140, skipped=140, lr=[1e-05, 1e-05], mom=[(0.9, 0.99), (0.9, 0.99)]
+[2025-04-09 03:35:25,757] [INFO] [timer.py:215:stop] epoch=0/micro_step=140/global_step=140, RunningAvgSamplesPerSec=0.6260046089462561, CurrSamplesPerSec=0.6645653726326971, MemAllocated=5.78GB, MaxMemAllocated=12.79GB
+max_length 657
+Epoch 8, Loss: 0.984375, Positive Score: -0.5703125, Negative Score: -0.5859375
+max_length 805
+Epoch 9, Loss: 0.99609375, Positive Score: -0.59375, Negative Score: -0.59765625
+max_length 709
+Epoch 9, Loss: 0.9765625, Positive Score: -0.5625, Negative Score: -0.5859375
+max_length 1254
+Epoch 9, Loss: 0.97265625, Positive Score: -0.5703125, Negative Score: -0.59765625
+max_length 772
+Epoch 9, Loss: 0.9609375, Positive Score: -0.5546875, Negative Score: -0.59375
+max_length 1154
+Epoch 9, Loss: 1.015625, Positive Score: -0.6171875, Negative Score: -0.59765625
+max_length 1054
+Epoch 9, Loss: 0.98828125, Positive Score: -0.61328125, Negative Score: -0.625
+max_length 999
+Epoch 9, Loss: 1.0078125, Positive Score: -0.58203125, Negative Score: -0.57421875
+max_length 1534
+Epoch 9, Loss: 1.0078125, Positive Score: -0.5703125, Negative Score: -0.5625
+max_length 986
+Epoch 9, Loss: 1.0078125, Positive Score: -0.59375, Negative Score: -0.5859375
+[2025-04-09 03:35:40,948] [INFO] [logging.py:96:log_dist] [Rank 0] step=150, skipped=150, lr=[1e-05, 1e-05], mom=[(0.9, 0.99), (0.9, 0.99)]
+[2025-04-09 03:35:40,948] [INFO] [timer.py:215:stop] epoch=0/micro_step=150/global_step=150, RunningAvgSamplesPerSec=0.628482722074683, CurrSamplesPerSec=0.7559060113240715, MemAllocated=5.78GB, MaxMemAllocated=12.79GB
+max_length 724
+Epoch 9, Loss: 1.0234375, Positive Score: -0.57421875, Negative Score: -0.55078125
+max_length 633
+Epoch 9, Loss: 1.0, Positive Score: -0.625, Negative Score: -0.625
+max_length 937
+Epoch 9, Loss: 1.03125, Positive Score: -0.625, Negative Score: -0.58984375
+max_length 2040
+Epoch 9, Loss: 1.0, Positive Score: -0.51953125, Negative Score: -0.51953125
+max_length 1055
+Epoch 9, Loss: 0.98828125, Positive Score: -0.55859375, Negative Score: -0.5703125
+max_length 1092
+Epoch 9, Loss: 1.0, Positive Score: -0.5859375, Negative Score: -0.5859375
+max_length 955
+Epoch 9, Loss: 1.0, Positive Score: -0.61328125, Negative Score: -0.61328125
+max_length 1298
+Epoch 10, Loss: 0.96875, Positive Score: -0.62109375, Negative Score: -0.65234375
+max_length 1255
+Epoch 10, Loss: 0.98828125, Positive Score: -0.58984375, Negative Score: -0.6015625
+max_length 792
+Epoch 10, Loss: 0.9765625, Positive Score: -0.5546875, Negative Score: -0.578125
+[2025-04-09 03:35:56,267] [INFO] [logging.py:96:log_dist] [Rank 0] step=160, skipped=160, lr=[1e-05, 1e-05], mom=[(0.9, 0.99), (0.9, 0.99)]
+[2025-04-09 03:35:56,268] [INFO] [timer.py:215:stop] epoch=0/micro_step=160/global_step=160, RunningAvgSamplesPerSec=0.6303173351921508, CurrSamplesPerSec=0.9187103240749056, MemAllocated=5.78GB, MaxMemAllocated=12.79GB
+max_length 1372
+Epoch 10, Loss: 0.9609375, Positive Score: -0.5546875, Negative Score: -0.59375
+max_length 1169
+Epoch 10, Loss: 0.9921875, Positive Score: -0.57421875, Negative Score: -0.58203125
+max_length 1401
+Epoch 10, Loss: 0.9453125, Positive Score: -0.5546875, Negative Score: -0.609375
+max_length 877
+Epoch 10, Loss: 1.0, Positive Score: -0.59375, Negative Score: -0.58984375
+max_length 917
+Epoch 10, Loss: 0.9921875, Positive Score: -0.55078125, Negative Score: -0.55859375
+max_length 524
+Epoch 10, Loss: 1.0078125, Positive Score: -0.6171875, Negative Score: -0.609375
+max_length 838
+Epoch 10, Loss: 0.96484375, Positive Score: -0.55078125, Negative Score: -0.5859375
+max_length 1040
+Epoch 10, Loss: 0.9921875, Positive Score: -0.59765625, Negative Score: -0.60546875
+max_length 1446
+Epoch 10, Loss: 0.95703125, Positive Score: -0.59765625, Negative Score: -0.640625
+max_length 1148
+Epoch 10, Loss: 0.9765625, Positive Score: -0.56640625, Negative Score: -0.58984375
+[2025-04-09 03:36:11,174] [INFO] [logging.py:96:log_dist] [Rank 0] step=170, skipped=170, lr=[1e-05, 1e-05], mom=[(0.9, 0.99), (0.9, 0.99)]
+[2025-04-09 03:36:11,175] [INFO] [timer.py:215:stop] epoch=0/micro_step=170/global_step=170, RunningAvgSamplesPerSec=0.6327266679798849, CurrSamplesPerSec=0.6635349580376988, MemAllocated=5.78GB, MaxMemAllocated=12.79GB
+max_length 1093
+Epoch 10, Loss: 1.0, Positive Score: -0.578125, Negative Score: -0.578125
+max_length 1310
+Epoch 10, Loss: 0.9921875, Positive Score: -0.59375, Negative Score: -0.6015625
+max_length 740
+Epoch 10, Loss: 0.9921875, Positive Score: -0.58203125, Negative Score: -0.58984375
+max_length 1659
+Epoch 11, Loss: 1.015625, Positive Score: -0.5546875, Negative Score: -0.53515625
+max_length 1550
+Epoch 11, Loss: 0.98828125, Positive Score: -0.52734375, Negative Score: -0.5390625
+max_length 1038
+Epoch 11, Loss: 0.9921875, Positive Score: -0.55859375, Negative Score: -0.56640625
+max_length 1721
+Epoch 11, Loss: 0.98828125, Positive Score: -0.59765625, Negative Score: -0.609375
+max_length 1459
+Epoch 11, Loss: 0.9921875, Positive Score: -0.62109375, Negative Score: -0.62890625
+max_length 1129
+Epoch 11, Loss: 1.0234375, Positive Score: -0.6171875, Negative Score: -0.59375
+max_length 1562
+Epoch 11, Loss: 1.015625, Positive Score: -0.59375, Negative Score: -0.58203125
+[2025-04-09 03:36:31,191] [INFO] [logging.py:96:log_dist] [Rank 0] step=180, skipped=180, lr=[1e-05, 1e-05], mom=[(0.9, 0.99), (0.9, 0.99)]
+[2025-04-09 03:36:31,192] [INFO] [timer.py:215:stop] epoch=0/micro_step=180/global_step=180, RunningAvgSamplesPerSec=0.6237137321199204, CurrSamplesPerSec=0.41820272408318143, MemAllocated=5.78GB, MaxMemAllocated=12.79GB
+max_length 1965
+Epoch 11, Loss: 1.0, Positive Score: -0.55859375, Negative Score: -0.55859375
+max_length 872
+Epoch 11, Loss: 0.99609375, Positive Score: -0.56640625, Negative Score: -0.5703125
+max_length 967
+Epoch 11, Loss: 0.97265625, Positive Score: -0.5390625, Negative Score: -0.56640625
+max_length 1086
+Epoch 11, Loss: 1.046875, Positive Score: -0.609375, Negative Score: -0.5625
+max_length 518
+Epoch 11, Loss: 0.95703125, Positive Score: -0.5859375, Negative Score: -0.62890625
+max_length 706
+Epoch 11, Loss: 0.99609375, Positive Score: -0.59765625, Negative Score: -0.6015625
+max_length 933
+Epoch 11, Loss: 0.97265625, Positive Score: -0.625, Negative Score: -0.65234375
+max_length 648
+Epoch 11, Loss: 0.97265625, Positive Score: -0.58203125, Negative Score: -0.609375
+max_length 1530
+Epoch 11, Loss: 0.97265625, Positive Score: -0.5546875, Negative Score: -0.58203125
+max_length 919
+Epoch 12, Loss: 1.015625, Positive Score: -0.609375, Negative Score: -0.58984375
+[2025-04-09 03:36:45,715] [INFO] [logging.py:96:log_dist] [Rank 0] step=190, skipped=190, lr=[1e-05, 1e-05], mom=[(0.9, 0.99), (0.9, 0.99)]
+[2025-04-09 03:36:45,715] [INFO] [timer.py:215:stop] epoch=0/micro_step=190/global_step=190, RunningAvgSamplesPerSec=0.6271743385115273, CurrSamplesPerSec=0.6885601091241064, MemAllocated=5.78GB, MaxMemAllocated=12.79GB
+max_length 1614
+Epoch 12, Loss: 0.90625, Positive Score: -0.515625, Negative Score: -0.609375
+max_length 653
+Epoch 12, Loss: 0.95703125, Positive Score: -0.5859375, Negative Score: -0.62890625
+max_length 1046
+Epoch 12, Loss: 0.96484375, Positive Score: -0.55859375, Negative Score: -0.59375
+max_length 868
+Epoch 12, Loss: 0.95703125, Positive Score: -0.57421875, Negative Score: -0.6171875
+max_length 975
+Epoch 12, Loss: 1.015625, Positive Score: -0.58984375, Negative Score: -0.57421875
+max_length 1098
+Epoch 12, Loss: 0.9609375, Positive Score: -0.5625, Negative Score: -0.6015625
+max_length 1382
+Epoch 12, Loss: 0.99609375, Positive Score: -0.5546875, Negative Score: -0.55859375
+max_length 945
+Epoch 12, Loss: 0.96875, Positive Score: -0.546875, Negative Score: -0.578125
+max_length 1390
+Epoch 12, Loss: 0.9921875, Positive Score: -0.5859375, Negative Score: -0.59375
+max_length 997
+Epoch 12, Loss: 0.97265625, Positive Score: -0.5546875, Negative Score: -0.58203125
+[2025-04-09 03:37:00,888] [INFO] [logging.py:96:log_dist] [Rank 0] step=200, skipped=200, lr=[1e-05, 1e-05], mom=[(0.9, 0.99), (0.9, 0.99)]
+[2025-04-09 03:37:00,889] [INFO] [timer.py:215:stop] epoch=0/micro_step=200/global_step=200, RunningAvgSamplesPerSec=0.6288280270783945, CurrSamplesPerSec=0.7528936016221401, MemAllocated=5.78GB, MaxMemAllocated=12.79GB
+max_length 870
+Epoch 12, Loss: 1.0078125, Positive Score: -0.578125, Negative Score: -0.5703125
+max_length 999
+Epoch 12, Loss: 0.99609375, Positive Score: -0.58984375, Negative Score: -0.59375
+max_length 904
+Epoch 12, Loss: 0.984375, Positive Score: -0.5625, Negative Score: -0.578125
+max_length 842
+Epoch 12, Loss: 0.98046875, Positive Score: -0.58984375, Negative Score: -0.609375
+max_length 1020
+Epoch 13, Loss: 1.015625, Positive Score: -0.5859375, Negative Score: -0.57421875
+max_length 1468
+Epoch 13, Loss: 1.03125, Positive Score: -0.578125, Negative Score: -0.546875
+max_length 1482
+Epoch 13, Loss: 0.90625, Positive Score: -0.482421875, Negative Score: -0.57421875
+max_length 817
+Epoch 13, Loss: 0.94921875, Positive Score: -0.5546875, Negative Score: -0.60546875
+max_length 1535
+Epoch 13, Loss: 0.99609375, Positive Score: -0.5703125, Negative Score: -0.57421875
+max_length 873
+Epoch 13, Loss: 0.9921875, Positive Score: -0.5546875, Negative Score: -0.5625
+[2025-04-09 03:37:16,510] [INFO] [logging.py:96:log_dist] [Rank 0] step=210, skipped=210, lr=[1e-05, 1e-05], mom=[(0.9, 0.99), (0.9, 0.99)]
+[2025-04-09 03:37:16,511] [INFO] [timer.py:215:stop] epoch=0/micro_step=210/global_step=210, RunningAvgSamplesPerSec=0.6296521103205835, CurrSamplesPerSec=0.7354637206296123, MemAllocated=5.78GB, MaxMemAllocated=12.79GB
+max_length 1034
+Epoch 13, Loss: 0.97265625, Positive Score: -0.55859375, Negative Score: -0.5859375
+max_length 1831
+Epoch 13, Loss: 0.953125, Positive Score: -0.59765625, Negative Score: -0.64453125
+max_length 1020
+Epoch 13, Loss: 1.015625, Positive Score: -0.57421875, Negative Score: -0.55859375
+max_length 1001
+Epoch 13, Loss: 0.9296875, Positive Score: -0.55078125, Negative Score: -0.62109375
+max_length 720
+Epoch 13, Loss: 0.99609375, Positive Score: -0.57421875, Negative Score: -0.578125
+max_length 699

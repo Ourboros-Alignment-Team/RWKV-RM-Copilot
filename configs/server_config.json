@@ -1,0 +1,38 @@
+{
+    "host": "10.0.5.101",
+    "port": "4514",
+    "train_tokenizer": "/home/ubuntu/MachineLr/RWKV-RM-Copilot/vocabs/rwkv_vocab_ourborous_rm.txt",
+    "infer_tokenizer": "/home/ubuntu/MachineLr/RWKV-RM-Copilot/vocabs/rwkv_vocab_ourborous_rm.txt",
+    "model": {
+        "load_model": "/home/ubuntu/MachineLr/datadisk/rwkv-checkpoint/rwkv_rw_model_0.4b_epoch100可用.pth",
+        "n_embd": -1,
+        "n_layer": -1,
+        "vocab_size": -1,
+        "ctx_len": 3072,
+        "dtype": "bf16",
+        "head_size": 64,
+        "head_size_a": 64,
+        "head_size_divisor": 8,
+        "CHUNK_LEN": 16
+    },
+    "deepspeed": {
+        "zero": true,
+        "ds_stage": 1,
+        "offload_optimizer": false,
+        "offload_param_stage3": false,
+        "gradient_accumulation_steps": 1
+    },
+    "train": {
+        "grad_cp": 1,
+        "dropout": 0,
+        "lr_init": 1e-6,
+        "warmup_steps": 0,
+        "lr_final": 1e-6,
+        "beta1": 0.9,
+        "beta2": 0.99,
+        "adam_eps": 1.0e-8,
+        "optimzer_style": "adam",
+        "weight_decay": 0.01,
+        "adamw_mode": true
+    }
+}

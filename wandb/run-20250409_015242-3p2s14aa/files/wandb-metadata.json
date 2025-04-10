@@ -1,0 +1,171 @@
+{
+    "os": "Linux-5.15.0-56-generic-x86_64-with-glibc2.35",
+    "python": "3.11.3",
+    "heartbeatAt": "2025-04-08T17:52:43.934581",
+    "startedAt": "2025-04-08T17:52:42.264055",
+    "docker": null,
+    "cuda": null,
+    "args": [
+        "--local_rank=0"
+    ],
+    "state": "running",
+    "program": "/home/li/MachineLr/RWKV-Development-Tools-ssg/wkv7_reward_model/train_model.py",
+    "codePath": "wkv7_reward_model/train_model.py",
+    "git": {
+        "remote": "https://github.com/Ourboros-Alignment-Team/RWKV-Development-Tools/",
+        "commit": "b3e3ad2be127c455ebd8016fef792fbe69c99362"
+    },
+    "email": "870326915@qq.com",
+    "root": "/home/li/MachineLr/RWKV-Development-Tools-ssg",
+    "host": "serverssg",
+    "username": "li",
+    "executable": "/home/li/anaconda3/envs/LLMs/bin/python",
+    "cpu_count": 12,
+    "cpu_count_logical": 24,
+    "cpu_freq": {
+        "current": 3405.29875,
+        "min": 1200.0,
+        "max": 4650.0
+    },
+    "cpu_freq_per_core": [
+        {
+            "current": 3500.0,
+            "min": 1200.0,
+            "max": 4600.0
+        },
+        {
+            "current": 3500.0,
+            "min": 1200.0,
+            "max": 4600.0
+        },
+        {
+            "current": 3500.0,
+            "min": 1200.0,
+            "max": 4600.0
+        },
+        {
+            "current": 3500.0,
+            "min": 1200.0,
+            "max": 4600.0
+        },
+        {
+            "current": 3500.0,
+            "min": 1200.0,
+            "max": 4600.0
+        },
+        {
+            "current": 3500.0,
+            "min": 1200.0,
+            "max": 4800.0
+        },
+        {
+            "current": 3500.0,
+            "min": 1200.0,
+            "max": 4600.0
+        },
+        {
+            "current": 3500.0,
+            "min": 1200.0,
+            "max": 4600.0
+        },
+        {
+            "current": 3500.0,
+            "min": 1200.0,
+            "max": 4700.0
+        },
+        {
+            "current": 3500.0,
+            "min": 1200.0,
+            "max": 4600.0
+        },
+        {
+            "current": 3500.0,
+            "min": 1200.0,
+            "max": 4800.0
+        },
+        {
+            "current": 3500.0,
+            "min": 1200.0,
+            "max": 4700.0
+        },
+        {
+            "current": 1200.003,
+            "min": 1200.0,
+            "max": 4600.0
+        },
+        {
+            "current": 3500.0,
+            "min": 1200.0,
+            "max": 4600.0
+        },
+        {
+            "current": 3500.0,
+            "min": 1200.0,
+            "max": 4600.0
+        },
+        {
+            "current": 3500.0,
+            "min": 1200.0,
+            "max": 4600.0
+        },
+        {
+            "current": 3500.0,
+            "min": 1200.0,
+            "max": 4600.0
+        },
+        {
+            "current": 3500.0,
+            "min": 1200.0,
+            "max": 4800.0
+        },
+        {
+            "current": 3500.0,
+            "min": 1200.0,
+            "max": 4600.0
+        },
+        {
+            "current": 3500.0,
+            "min": 1200.0,
+            "max": 4600.0
+        },
+        {
+            "current": 3500.0,
+            "min": 1200.0,
+            "max": 4700.0
+        },
+        {
+            "current": 3500.0,
+            "min": 1200.0,
+            "max": 4600.0
+        },
+        {
+            "current": 3500.0,
+            "min": 1200.0,
+            "max": 4800.0
+        },
+        {
+            "current": 3500.0,
+            "min": 1200.0,
+            "max": 4700.0
+        }
+    ],
+    "disk": {
+        "total": 937.3148765563965,
+        "used": 691.6730308532715
+    },
+    "gpu": "NVIDIA GeForce RTX 3090",
+    "gpu_count": 2,
+    "gpu_devices": [
+        {
+            "name": "NVIDIA GeForce RTX 3090",
+            "memory_total": 25769803776
+        },
+        {
+            "name": "NVIDIA GeForce RTX 3090",
+            "memory_total": 25769803776
+        }
+    ],
+    "memory": {
+        "total": 251.3879165649414
+    }
+}

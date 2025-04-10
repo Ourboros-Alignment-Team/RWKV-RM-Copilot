@@ -1,0 +1,52 @@
+[2025-04-09 01:57:00,525] [INFO] [checkpointing.py:529:forward] Activation Checkpointing Information
+[2025-04-09 01:57:00,525] [INFO] [checkpointing.py:530:forward] ----Partition Activations False, CPU CHECKPOINTING False
+[2025-04-09 01:57:00,525] [INFO] [checkpointing.py:531:forward] ----contiguous Memory Checkpointing False with None total layers
+[2025-04-09 01:57:00,525] [INFO] [checkpointing.py:533:forward] ----Synchronization False
+[2025-04-09 01:57:00,525] [INFO] [checkpointing.py:534:forward] ----Profiling time in checkpointing False
+Epoch 0, Loss: -1.4765625
+Epoch 0, Loss: -1.5234375
+/home/li/anaconda3/envs/LLMs/lib/python3.11/site-packages/torch/autograd/__init__.py:266: UserWarning: c10d::broadcast_: an autograd kernel was not registered to the Autograd key(s) but we are trying to backprop through it. This may lead to silently incorrect behavior. This behavior is deprecated and will be removed in a future version of PyTorch. If your operator is differentiable, please ensure you have registered an autograd kernel to the correct Autograd key (e.g. DispatchKey::Autograd, DispatchKey::CompositeImplicitAutograd). If your operator is not differentiable, or to squash this warning and use the previous behavior, please register torch::CppFunction::makeFallthrough() to DispatchKey::Autograd. (Triggered internally at ../torch/csrc/autograd/autograd_not_implemented_fallback.cpp:63.)
+  Variable._execution_engine.run_backward(  # Calls into the C++ engine to run the backward pass
+/home/li/anaconda3/envs/LLMs/lib/python3.11/site-packages/deepspeed/runtime/zero/stage_1_and_2.py:1829: UserWarning: The torch.cuda.*DtypeTensor constructors are no longer recommended. It's best to use methods such as torch.tensor(data, dtype=*, device='cuda') to create tensors. (Triggered internally at ../torch/csrc/tensor/python_tensor.cpp:83.)
+  overflow_gpu = get_accelerator().ByteTensor([overflow])
+Epoch 0, Loss: -1.578125
+Epoch 0, Loss: -1.6640625
+Epoch 0, Loss: -1.609375
+Epoch 0, Loss: -1.5546875
+Epoch 0, Loss: -1.390625
+Epoch 0, Loss: -1.546875
+Epoch 0, Loss: -1.796875
+Epoch 0, Loss: -1.609375
+[2025-04-09 01:57:18,781] [INFO] [logging.py:96:log_dist] [Rank 0] step=10, skipped=10, lr=[1e-05, 1e-05], mom=[(0.9, 0.99), (0.9, 0.99)]
+[2025-04-09 01:57:18,782] [INFO] [timer.py:215:stop] epoch=0/micro_step=10/global_step=10, RunningAvgSamplesPerSec=0.5268715227441435, CurrSamplesPerSec=0.7029881030317475, MemAllocated=5.52GB, MaxMemAllocated=8.79GB
+Epoch 0, Loss: -1.671875
+Epoch 0, Loss: -1.53125
+Epoch 0, Loss: -1.7421875
+Epoch 0, Loss: -1.640625
+Epoch 0, Loss: -1.359375
+Epoch 0, Loss: -1.6640625
+Epoch 0, Loss: -1.7734375
+Epoch 0, Loss: -1.640625
+Epoch 0, Loss: -1.5625
+Epoch 0, Loss: -1.7109375
+[2025-04-09 01:57:35,841] [INFO] [logging.py:96:log_dist] [Rank 0] step=20, skipped=20, lr=[1e-05, 1e-05], mom=[(0.9, 0.99), (0.9, 0.99)]
+[2025-04-09 01:57:35,841] [INFO] [timer.py:215:stop] epoch=0/micro_step=20/global_step=20, RunningAvgSamplesPerSec=0.5584375497756493, CurrSamplesPerSec=0.4997069765784991, MemAllocated=5.52GB, MaxMemAllocated=8.79GB
+Epoch 0, Loss: -1.484375
+Epoch 0, Loss: -1.578125
+Epoch 0, Loss: -1.4609375
+Epoch 0, Loss: -1.6875
+Epoch 0, Loss: -1.71875
+Epoch 0, Loss: -1.4375
+Epoch 0, Loss: -1.5390625
+Epoch 0, Loss: -1.65625
+Epoch 0, Loss: -1.4609375
+Epoch 0, Loss: -1.578125
+[2025-04-09 01:57:51,655] [INFO] [logging.py:96:log_dist] [Rank 0] step=30, skipped=30, lr=[1e-05, 1e-05], mom=[(0.9, 0.99), (0.9, 0.99)]
+[2025-04-09 01:57:51,655] [INFO] [timer.py:215:stop] epoch=0/micro_step=30/global_step=30, RunningAvgSamplesPerSec=0.5828640551205145, CurrSamplesPerSec=0.6089960815960755, MemAllocated=5.52GB, MaxMemAllocated=8.79GB
+Epoch 0, Loss: -1.578125
+Epoch 0, Loss: -1.5546875
+Epoch 0, Loss: -1.4375
+Epoch 0, Loss: -1.7109375
+Epoch 0, Loss: -1.578125
+Epoch 0, Loss: -1.4375
+Epoch 0, Loss: -1.3828125

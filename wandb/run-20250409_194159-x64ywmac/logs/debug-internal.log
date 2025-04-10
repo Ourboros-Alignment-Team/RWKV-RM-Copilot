@@ -1,0 +1,1228 @@
+2025-04-09 19:41:59,394 INFO    StreamThr :445005 [internal.py:wandb_internal():86] W&B internal server running at pid: 445005, started at: 2025-04-09 19:41:59.393985
+2025-04-09 19:41:59,398 DEBUG   HandlerThread:445005 [handler.py:handle_request():144] handle_request: status
+2025-04-09 19:41:59,401 INFO    WriterThread:445005 [datastore.py:open_for_write():85] open: /home/li/MachineLr/RWKV-Development-Tools-ssg/wkv7_reward_model/wandb/run-20250409_194159-x64ywmac/run-x64ywmac.wandb
+2025-04-09 19:41:59,402 DEBUG   SenderThread:445005 [sender.py:send():369] send: header
+2025-04-09 19:41:59,403 DEBUG   SenderThread:445005 [sender.py:send():369] send: run
+2025-04-09 19:42:00,145 INFO    SenderThread:445005 [dir_watcher.py:__init__():211] watching files in: /home/li/MachineLr/RWKV-Development-Tools-ssg/wkv7_reward_model/wandb/run-20250409_194159-x64ywmac/files
+2025-04-09 19:42:00,145 INFO    SenderThread:445005 [sender.py:_start_run_threads():1100] run started: x64ywmac with start time 1744198919.392183
+2025-04-09 19:42:00,146 DEBUG   SenderThread:445005 [sender.py:send_request():396] send_request: summary_record
+2025-04-09 19:42:00,147 INFO    SenderThread:445005 [sender.py:_save_file():1354] saving file wandb-summary.json with policy end
+2025-04-09 19:42:00,155 DEBUG   HandlerThread:445005 [handler.py:handle_request():144] handle_request: check_version
+2025-04-09 19:42:00,156 DEBUG   SenderThread:445005 [sender.py:send_request():396] send_request: check_version
+2025-04-09 19:42:00,459 DEBUG   HandlerThread:445005 [handler.py:handle_request():144] handle_request: run_start
+2025-04-09 19:42:00,498 DEBUG   HandlerThread:445005 [system_info.py:__init__():31] System info init
+2025-04-09 19:42:00,498 DEBUG   HandlerThread:445005 [system_info.py:__init__():46] System info init done
+2025-04-09 19:42:00,498 INFO    HandlerThread:445005 [system_monitor.py:start():181] Starting system monitor
+2025-04-09 19:42:00,499 INFO    SystemMonitor:445005 [system_monitor.py:_start():145] Starting system asset monitoring threads
+2025-04-09 19:42:00,499 INFO    HandlerThread:445005 [system_monitor.py:probe():201] Collecting system info
+2025-04-09 19:42:00,500 INFO    SystemMonitor:445005 [interfaces.py:start():190] Started cpu monitoring
+2025-04-09 19:42:00,500 INFO    SystemMonitor:445005 [interfaces.py:start():190] Started disk monitoring
+2025-04-09 19:42:00,502 INFO    SystemMonitor:445005 [interfaces.py:start():190] Started gpu monitoring
+2025-04-09 19:42:00,504 INFO    SystemMonitor:445005 [interfaces.py:start():190] Started memory monitoring
+2025-04-09 19:42:00,506 INFO    SystemMonitor:445005 [interfaces.py:start():190] Started network monitoring
+2025-04-09 19:42:00,536 DEBUG   HandlerThread:445005 [system_info.py:probe():195] Probing system
+2025-04-09 19:42:00,539 DEBUG   HandlerThread:445005 [system_info.py:_probe_git():180] Probing git
+2025-04-09 19:42:00,551 DEBUG   HandlerThread:445005 [system_info.py:_probe_git():188] Probing git done
+2025-04-09 19:42:00,551 DEBUG   HandlerThread:445005 [system_info.py:probe():240] Probing system done
+2025-04-09 19:42:00,551 DEBUG   HandlerThread:445005 [system_monitor.py:probe():210] {'os': 'Linux-5.15.0-56-generic-x86_64-with-glibc2.35', 'python': '3.11.3', 'heartbeatAt': '2025-04-09T11:42:00.536471', 'startedAt': '2025-04-09T11:41:59.382906', 'docker': None, 'cuda': None, 'args': ('--local_rank=0',), 'state': 'running', 'program': '/home/li/MachineLr/RWKV-Development-Tools-ssg/wkv7_reward_model/train_model.py', 'codePath': 'wkv7_reward_model/train_model.py', 'git': {'remote': 'https://github.com/Ourboros-Alignment-Team/RWKV-Development-Tools/', 'commit': 'b3e3ad2be127c455ebd8016fef792fbe69c99362'}, 'email': '870326915@qq.com', 'root': '/home/li/MachineLr/RWKV-Development-Tools-ssg', 'host': 'serverssg', 'username': 'li', 'executable': '/home/li/anaconda3/envs/LLMs/bin/python', 'cpu_count': 12, 'cpu_count_logical': 24, 'cpu_freq': {'current': 3412.0783333333334, 'min': 1200.0, 'max': 4650.0}, 'cpu_freq_per_core': [{'current': 3500.0, 'min': 1200.0, 'max': 4600.0}, {'current': 3500.0, 'min': 1200.0, 'max': 4600.0}, {'current': 3500.0, 'min': 1200.0, 'max': 4600.0}, {'current': 3500.0, 'min': 1200.0, 'max': 4600.0}, {'current': 3500.0, 'min': 1200.0, 'max': 4600.0}, {'current': 1200.012, 'min': 1200.0, 'max': 4800.0}, {'current': 3500.0, 'min': 1200.0, 'max': 4600.0}, {'current': 3500.0, 'min': 1200.0, 'max': 4600.0}, {'current': 3500.0, 'min': 1200.0, 'max': 4700.0}, {'current': 3500.0, 'min': 1200.0, 'max': 4600.0}, {'current': 3500.0, 'min': 1200.0, 'max': 4800.0}, {'current': 3500.0, 'min': 1200.0, 'max': 4700.0}, {'current': 3500.0, 'min': 1200.0, 'max': 4600.0}, {'current': 3500.0, 'min': 1200.0, 'max': 4600.0}, {'current': 3500.0, 'min': 1200.0, 'max': 4600.0}, {'current': 3500.0, 'min': 1200.0, 'max': 4600.0}, {'current': 3500.0, 'min': 1200.0, 'max': 4600.0}, {'current': 3500.0, 'min': 1200.0, 'max': 4800.0}, {'current': 3500.0, 'min': 1200.0, 'max': 4600.0}, {'current': 3500.0, 'min': 1200.0, 'max': 4600.0}, {'current': 3500.0, 'min': 1200.0, 'max': 4700.0}, {'current': 3500.0, 'min': 1200.0, 'max': 4600.0}, {'current': 3500.0, 'min': 1200.0, 'max': 4800.0}, {'current': 3500.0, 'min': 1200.0, 'max': 4700.0}], 'disk': {'total': 937.3148765563965, 'used': 692.1056861877441}, 'gpu': 'NVIDIA GeForce RTX 3090', 'gpu_count': 2, 'gpu_devices': [{'name': 'NVIDIA GeForce RTX 3090', 'memory_total': 25769803776}, {'name': 'NVIDIA GeForce RTX 3090', 'memory_total': 25769803776}], 'memory': {'total': 251.3879165649414}}
+2025-04-09 19:42:00,551 INFO    HandlerThread:445005 [system_monitor.py:probe():211] Finished collecting system info
+2025-04-09 19:42:00,551 INFO    HandlerThread:445005 [system_monitor.py:probe():214] Publishing system info
+2025-04-09 19:42:00,551 DEBUG   HandlerThread:445005 [system_info.py:_save_pip():51] Saving list of pip packages installed into the current environment
+2025-04-09 19:42:00,552 DEBUG   HandlerThread:445005 [system_info.py:_save_pip():67] Saving pip packages done
+2025-04-09 19:42:00,552 DEBUG   HandlerThread:445005 [system_info.py:_save_conda():74] Saving list of conda packages installed into the current environment
+2025-04-09 19:42:01,148 INFO    Thread-12 :445005 [dir_watcher.py:_on_file_created():272] file/dir created: /home/li/MachineLr/RWKV-Development-Tools-ssg/wkv7_reward_model/wandb/run-20250409_194159-x64ywmac/files/requirements.txt
+2025-04-09 19:42:01,148 INFO    Thread-12 :445005 [dir_watcher.py:_on_file_created():272] file/dir created: /home/li/MachineLr/RWKV-Development-Tools-ssg/wkv7_reward_model/wandb/run-20250409_194159-x64ywmac/files/wandb-summary.json
+2025-04-09 19:42:01,148 INFO    Thread-12 :445005 [dir_watcher.py:_on_file_created():272] file/dir created: /home/li/MachineLr/RWKV-Development-Tools-ssg/wkv7_reward_model/wandb/run-20250409_194159-x64ywmac/files/conda-environment.yaml
+2025-04-09 19:42:02,417 DEBUG   HandlerThread:445005 [system_info.py:_save_conda():86] Saving conda packages done
+2025-04-09 19:42:02,418 INFO    HandlerThread:445005 [system_monitor.py:probe():216] Finished publishing system info
+2025-04-09 19:42:02,425 DEBUG   SenderThread:445005 [sender.py:send():369] send: files
+2025-04-09 19:42:02,426 INFO    SenderThread:445005 [sender.py:_save_file():1354] saving file wandb-metadata.json with policy now
+2025-04-09 19:42:02,433 DEBUG   HandlerThread:445005 [handler.py:handle_request():144] handle_request: stop_status
+2025-04-09 19:42:02,434 DEBUG   SenderThread:445005 [sender.py:send_request():396] send_request: stop_status
+2025-04-09 19:42:02,868 DEBUG   SenderThread:445005 [sender.py:send():369] send: telemetry
+2025-04-09 19:42:03,074 DEBUG   HandlerThread:445005 [handler.py:handle_request():144] handle_request: partial_history
+2025-04-09 19:42:03,074 DEBUG   SenderThread:445005 [sender.py:send():369] send: history
+2025-04-09 19:42:03,075 DEBUG   SenderThread:445005 [sender.py:send_request():396] send_request: summary_record
+2025-04-09 19:42:03,075 INFO    SenderThread:445005 [sender.py:_save_file():1354] saving file wandb-summary.json with policy end
+2025-04-09 19:42:03,146 INFO    Thread-12 :445005 [dir_watcher.py:_on_file_modified():289] file/dir modified: /home/li/MachineLr/RWKV-Development-Tools-ssg/wkv7_reward_model/wandb/run-20250409_194159-x64ywmac/files/wandb-summary.json
+2025-04-09 19:42:03,147 INFO    Thread-12 :445005 [dir_watcher.py:_on_file_modified():289] file/dir modified: /home/li/MachineLr/RWKV-Development-Tools-ssg/wkv7_reward_model/wandb/run-20250409_194159-x64ywmac/files/conda-environment.yaml
+2025-04-09 19:42:03,147 INFO    Thread-12 :445005 [dir_watcher.py:_on_file_created():272] file/dir created: /home/li/MachineLr/RWKV-Development-Tools-ssg/wkv7_reward_model/wandb/run-20250409_194159-x64ywmac/files/output.log
+2025-04-09 19:42:03,147 INFO    Thread-12 :445005 [dir_watcher.py:_on_file_created():272] file/dir created: /home/li/MachineLr/RWKV-Development-Tools-ssg/wkv7_reward_model/wandb/run-20250409_194159-x64ywmac/files/wandb-metadata.json
+2025-04-09 19:42:03,282 INFO    wandb-upload_0:445005 [upload_job.py:push():133] Uploaded file /tmp/tmp5d9hwm0jwandb/vobmgqmg-wandb-metadata.json
+2025-04-09 19:42:05,097 DEBUG   HandlerThread:445005 [handler.py:handle_request():144] handle_request: partial_history
+2025-04-09 19:42:05,097 DEBUG   HandlerThread:445005 [handler.py:handle_request():144] handle_request: status_report
+2025-04-09 19:42:05,098 DEBUG   SenderThread:445005 [sender.py:send():369] send: history
+2025-04-09 19:42:05,098 DEBUG   SenderThread:445005 [sender.py:send_request():396] send_request: summary_record
+2025-04-09 19:42:05,098 INFO    SenderThread:445005 [sender.py:_save_file():1354] saving file wandb-summary.json with policy end
+2025-04-09 19:42:05,147 INFO    Thread-12 :445005 [dir_watcher.py:_on_file_modified():289] file/dir modified: /home/li/MachineLr/RWKV-Development-Tools-ssg/wkv7_reward_model/wandb/run-20250409_194159-x64ywmac/files/wandb-summary.json
+2025-04-09 19:42:05,147 INFO    Thread-12 :445005 [dir_watcher.py:_on_file_modified():289] file/dir modified: /home/li/MachineLr/RWKV-Development-Tools-ssg/wkv7_reward_model/wandb/run-20250409_194159-x64ywmac/files/output.log
+2025-04-09 19:42:06,147 INFO    Thread-12 :445005 [dir_watcher.py:_on_file_modified():289] file/dir modified: /home/li/MachineLr/RWKV-Development-Tools-ssg/wkv7_reward_model/wandb/run-20250409_194159-x64ywmac/files/output.log
+2025-04-09 19:42:07,148 INFO    Thread-12 :445005 [dir_watcher.py:_on_file_modified():289] file/dir modified: /home/li/MachineLr/RWKV-Development-Tools-ssg/wkv7_reward_model/wandb/run-20250409_194159-x64ywmac/files/output.log
+2025-04-09 19:42:08,035 DEBUG   HandlerThread:445005 [handler.py:handle_request():144] handle_request: partial_history
+2025-04-09 19:42:08,036 DEBUG   SenderThread:445005 [sender.py:send():369] send: history
+2025-04-09 19:42:08,037 DEBUG   SenderThread:445005 [sender.py:send_request():396] send_request: summary_record
+2025-04-09 19:42:08,037 INFO    SenderThread:445005 [sender.py:_save_file():1354] saving file wandb-summary.json with policy end
+2025-04-09 19:42:08,148 INFO    Thread-12 :445005 [dir_watcher.py:_on_file_modified():289] file/dir modified: /home/li/MachineLr/RWKV-Development-Tools-ssg/wkv7_reward_model/wandb/run-20250409_194159-x64ywmac/files/wandb-summary.json
+2025-04-09 19:42:09,149 INFO    Thread-12 :445005 [dir_watcher.py:_on_file_modified():289] file/dir modified: /home/li/MachineLr/RWKV-Development-Tools-ssg/wkv7_reward_model/wandb/run-20250409_194159-x64ywmac/files/output.log
+2025-04-09 19:42:09,994 DEBUG   HandlerThread:445005 [handler.py:handle_request():144] handle_request: partial_history
+2025-04-09 19:42:09,995 DEBUG   SenderThread:445005 [sender.py:send():369] send: history
+2025-04-09 19:42:09,995 DEBUG   SenderThread:445005 [sender.py:send_request():396] send_request: summary_record
+2025-04-09 19:42:09,996 INFO    SenderThread:445005 [sender.py:_save_file():1354] saving file wandb-summary.json with policy end
+2025-04-09 19:42:10,149 INFO    Thread-12 :445005 [dir_watcher.py:_on_file_modified():289] file/dir modified: /home/li/MachineLr/RWKV-Development-Tools-ssg/wkv7_reward_model/wandb/run-20250409_194159-x64ywmac/files/wandb-summary.json
+2025-04-09 19:42:10,996 DEBUG   HandlerThread:445005 [handler.py:handle_request():144] handle_request: status_report
+2025-04-09 19:42:11,149 INFO    Thread-12 :445005 [dir_watcher.py:_on_file_modified():289] file/dir modified: /home/li/MachineLr/RWKV-Development-Tools-ssg/wkv7_reward_model/wandb/run-20250409_194159-x64ywmac/files/output.log
+2025-04-09 19:42:11,216 DEBUG   HandlerThread:445005 [handler.py:handle_request():144] handle_request: partial_history
+2025-04-09 19:42:11,217 DEBUG   SenderThread:445005 [sender.py:send():369] send: history
+2025-04-09 19:42:11,218 DEBUG   SenderThread:445005 [sender.py:send_request():396] send_request: summary_record
+2025-04-09 19:42:11,218 INFO    SenderThread:445005 [sender.py:_save_file():1354] saving file wandb-summary.json with policy end
+2025-04-09 19:42:12,150 INFO    Thread-12 :445005 [dir_watcher.py:_on_file_modified():289] file/dir modified: /home/li/MachineLr/RWKV-Development-Tools-ssg/wkv7_reward_model/wandb/run-20250409_194159-x64ywmac/files/wandb-summary.json
+2025-04-09 19:42:12,746 DEBUG   HandlerThread:445005 [handler.py:handle_request():144] handle_request: partial_history
+2025-04-09 19:42:12,747 DEBUG   SenderThread:445005 [sender.py:send():369] send: history
+2025-04-09 19:42:12,748 DEBUG   SenderThread:445005 [sender.py:send_request():396] send_request: summary_record
+2025-04-09 19:42:12,748 INFO    SenderThread:445005 [sender.py:_save_file():1354] saving file wandb-summary.json with policy end
+2025-04-09 19:42:13,150 INFO    Thread-12 :445005 [dir_watcher.py:_on_file_modified():289] file/dir modified: /home/li/MachineLr/RWKV-Development-Tools-ssg/wkv7_reward_model/wandb/run-20250409_194159-x64ywmac/files/wandb-summary.json
+2025-04-09 19:42:13,151 INFO    Thread-12 :445005 [dir_watcher.py:_on_file_modified():289] file/dir modified: /home/li/MachineLr/RWKV-Development-Tools-ssg/wkv7_reward_model/wandb/run-20250409_194159-x64ywmac/files/output.log
+2025-04-09 19:42:14,129 DEBUG   HandlerThread:445005 [handler.py:handle_request():144] handle_request: partial_history
+2025-04-09 19:42:14,130 DEBUG   SenderThread:445005 [sender.py:send():369] send: history
+2025-04-09 19:42:14,130 DEBUG   SenderThread:445005 [sender.py:send_request():396] send_request: summary_record
+2025-04-09 19:42:14,131 INFO    SenderThread:445005 [sender.py:_save_file():1354] saving file wandb-summary.json with policy end
+2025-04-09 19:42:14,151 INFO    Thread-12 :445005 [dir_watcher.py:_on_file_modified():289] file/dir modified: /home/li/MachineLr/RWKV-Development-Tools-ssg/wkv7_reward_model/wandb/run-20250409_194159-x64ywmac/files/wandb-summary.json
+2025-04-09 19:42:15,151 INFO    Thread-12 :445005 [dir_watcher.py:_on_file_modified():289] file/dir modified: /home/li/MachineLr/RWKV-Development-Tools-ssg/wkv7_reward_model/wandb/run-20250409_194159-x64ywmac/files/output.log
+2025-04-09 19:42:15,762 DEBUG   HandlerThread:445005 [handler.py:handle_request():144] handle_request: partial_history
+2025-04-09 19:42:15,763 DEBUG   SenderThread:445005 [sender.py:send():369] send: history
+2025-04-09 19:42:15,763 DEBUG   SenderThread:445005 [sender.py:send_request():396] send_request: summary_record
+2025-04-09 19:42:15,764 INFO    SenderThread:445005 [sender.py:_save_file():1354] saving file wandb-summary.json with policy end
+2025-04-09 19:42:16,151 INFO    Thread-12 :445005 [dir_watcher.py:_on_file_modified():289] file/dir modified: /home/li/MachineLr/RWKV-Development-Tools-ssg/wkv7_reward_model/wandb/run-20250409_194159-x64ywmac/files/wandb-summary.json
+2025-04-09 19:42:16,765 DEBUG   HandlerThread:445005 [handler.py:handle_request():144] handle_request: status_report
+2025-04-09 19:42:17,152 INFO    Thread-12 :445005 [dir_watcher.py:_on_file_modified():289] file/dir modified: /home/li/MachineLr/RWKV-Development-Tools-ssg/wkv7_reward_model/wandb/run-20250409_194159-x64ywmac/files/output.log
+2025-04-09 19:42:17,259 DEBUG   HandlerThread:445005 [handler.py:handle_request():144] handle_request: partial_history
+2025-04-09 19:42:17,260 DEBUG   SenderThread:445005 [sender.py:send():369] send: history
+2025-04-09 19:42:17,261 DEBUG   SenderThread:445005 [sender.py:send_request():396] send_request: summary_record
+2025-04-09 19:42:17,261 INFO    SenderThread:445005 [sender.py:_save_file():1354] saving file wandb-summary.json with policy end
+2025-04-09 19:42:17,434 DEBUG   HandlerThread:445005 [handler.py:handle_request():144] handle_request: stop_status
+2025-04-09 19:42:17,434 DEBUG   SenderThread:445005 [sender.py:send_request():396] send_request: stop_status
+2025-04-09 19:42:18,153 INFO    Thread-12 :445005 [dir_watcher.py:_on_file_modified():289] file/dir modified: /home/li/MachineLr/RWKV-Development-Tools-ssg/wkv7_reward_model/wandb/run-20250409_194159-x64ywmac/files/wandb-summary.json
+2025-04-09 19:42:18,967 DEBUG   HandlerThread:445005 [handler.py:handle_request():144] handle_request: partial_history
+2025-04-09 19:42:18,968 DEBUG   SenderThread:445005 [sender.py:send():369] send: history
+2025-04-09 19:42:18,969 DEBUG   SenderThread:445005 [sender.py:send_request():396] send_request: summary_record
+2025-04-09 19:42:18,969 INFO    SenderThread:445005 [sender.py:_save_file():1354] saving file wandb-summary.json with policy end
+2025-04-09 19:42:19,153 INFO    Thread-12 :445005 [dir_watcher.py:_on_file_modified():289] file/dir modified: /home/li/MachineLr/RWKV-Development-Tools-ssg/wkv7_reward_model/wandb/run-20250409_194159-x64ywmac/files/wandb-summary.json
+2025-04-09 19:42:19,153 INFO    Thread-12 :445005 [dir_watcher.py:_on_file_modified():289] file/dir modified: /home/li/MachineLr/RWKV-Development-Tools-ssg/wkv7_reward_model/wandb/run-20250409_194159-x64ywmac/files/output.log
+2025-04-09 19:42:20,598 DEBUG   HandlerThread:445005 [handler.py:handle_request():144] handle_request: partial_history
+2025-04-09 19:42:20,599 DEBUG   SenderThread:445005 [sender.py:send():369] send: history
+2025-04-09 19:42:20,599 DEBUG   SenderThread:445005 [sender.py:send_request():396] send_request: summary_record
+2025-04-09 19:42:20,600 INFO    SenderThread:445005 [sender.py:_save_file():1354] saving file wandb-summary.json with policy end
+2025-04-09 19:42:21,154 INFO    Thread-12 :445005 [dir_watcher.py:_on_file_modified():289] file/dir modified: /home/li/MachineLr/RWKV-Development-Tools-ssg/wkv7_reward_model/wandb/run-20250409_194159-x64ywmac/files/wandb-summary.json
+2025-04-09 19:42:21,154 INFO    Thread-12 :445005 [dir_watcher.py:_on_file_modified():289] file/dir modified: /home/li/MachineLr/RWKV-Development-Tools-ssg/wkv7_reward_model/wandb/run-20250409_194159-x64ywmac/files/output.log
+2025-04-09 19:42:21,915 DEBUG   HandlerThread:445005 [handler.py:handle_request():144] handle_request: partial_history
+2025-04-09 19:42:21,916 DEBUG   HandlerThread:445005 [handler.py:handle_request():144] handle_request: status_report
+2025-04-09 19:42:21,916 DEBUG   SenderThread:445005 [sender.py:send():369] send: history
+2025-04-09 19:42:21,917 DEBUG   SenderThread:445005 [sender.py:send_request():396] send_request: summary_record
+2025-04-09 19:42:21,917 INFO    SenderThread:445005 [sender.py:_save_file():1354] saving file wandb-summary.json with policy end
+2025-04-09 19:42:22,154 INFO    Thread-12 :445005 [dir_watcher.py:_on_file_modified():289] file/dir modified: /home/li/MachineLr/RWKV-Development-Tools-ssg/wkv7_reward_model/wandb/run-20250409_194159-x64ywmac/files/wandb-summary.json
+2025-04-09 19:42:23,155 INFO    Thread-12 :445005 [dir_watcher.py:_on_file_modified():289] file/dir modified: /home/li/MachineLr/RWKV-Development-Tools-ssg/wkv7_reward_model/wandb/run-20250409_194159-x64ywmac/files/output.log
+2025-04-09 19:42:23,365 DEBUG   HandlerThread:445005 [handler.py:handle_request():144] handle_request: partial_history
+2025-04-09 19:42:23,367 DEBUG   SenderThread:445005 [sender.py:send():369] send: history
+2025-04-09 19:42:23,367 DEBUG   SenderThread:445005 [sender.py:send_request():396] send_request: summary_record
+2025-04-09 19:42:23,367 INFO    SenderThread:445005 [sender.py:_save_file():1354] saving file wandb-summary.json with policy end
+2025-04-09 19:42:24,155 INFO    Thread-12 :445005 [dir_watcher.py:_on_file_modified():289] file/dir modified: /home/li/MachineLr/RWKV-Development-Tools-ssg/wkv7_reward_model/wandb/run-20250409_194159-x64ywmac/files/wandb-summary.json
+2025-04-09 19:42:24,356 DEBUG   HandlerThread:445005 [handler.py:handle_request():144] handle_request: partial_history
+2025-04-09 19:42:24,357 DEBUG   SenderThread:445005 [sender.py:send():369] send: history
+2025-04-09 19:42:24,357 DEBUG   SenderThread:445005 [sender.py:send_request():396] send_request: summary_record
+2025-04-09 19:42:24,358 INFO    SenderThread:445005 [sender.py:_save_file():1354] saving file wandb-summary.json with policy end
+2025-04-09 19:42:25,155 INFO    Thread-12 :445005 [dir_watcher.py:_on_file_modified():289] file/dir modified: /home/li/MachineLr/RWKV-Development-Tools-ssg/wkv7_reward_model/wandb/run-20250409_194159-x64ywmac/files/wandb-summary.json
+2025-04-09 19:42:25,156 INFO    Thread-12 :445005 [dir_watcher.py:_on_file_modified():289] file/dir modified: /home/li/MachineLr/RWKV-Development-Tools-ssg/wkv7_reward_model/wandb/run-20250409_194159-x64ywmac/files/output.log
+2025-04-09 19:42:25,406 DEBUG   HandlerThread:445005 [handler.py:handle_request():144] handle_request: partial_history
+2025-04-09 19:42:25,407 DEBUG   SenderThread:445005 [sender.py:send():369] send: history
+2025-04-09 19:42:25,408 DEBUG   SenderThread:445005 [sender.py:send_request():396] send_request: summary_record
+2025-04-09 19:42:25,408 INFO    SenderThread:445005 [sender.py:_save_file():1354] saving file wandb-summary.json with policy end
+2025-04-09 19:42:26,156 INFO    Thread-12 :445005 [dir_watcher.py:_on_file_modified():289] file/dir modified: /home/li/MachineLr/RWKV-Development-Tools-ssg/wkv7_reward_model/wandb/run-20250409_194159-x64ywmac/files/wandb-summary.json
+2025-04-09 19:42:26,368 DEBUG   HandlerThread:445005 [handler.py:handle_request():144] handle_request: partial_history
+2025-04-09 19:42:26,370 DEBUG   SenderThread:445005 [sender.py:send():369] send: history
+2025-04-09 19:42:26,370 DEBUG   SenderThread:445005 [sender.py:send_request():396] send_request: summary_record
+2025-04-09 19:42:26,370 INFO    SenderThread:445005 [sender.py:_save_file():1354] saving file wandb-summary.json with policy end
+2025-04-09 19:42:27,156 INFO    Thread-12 :445005 [dir_watcher.py:_on_file_modified():289] file/dir modified: /home/li/MachineLr/RWKV-Development-Tools-ssg/wkv7_reward_model/wandb/run-20250409_194159-x64ywmac/files/wandb-summary.json
+2025-04-09 19:42:27,157 INFO    Thread-12 :445005 [dir_watcher.py:_on_file_modified():289] file/dir modified: /home/li/MachineLr/RWKV-Development-Tools-ssg/wkv7_reward_model/wandb/run-20250409_194159-x64ywmac/files/output.log
+2025-04-09 19:42:27,371 DEBUG   HandlerThread:445005 [handler.py:handle_request():144] handle_request: status_report
+2025-04-09 19:42:27,761 DEBUG   HandlerThread:445005 [handler.py:handle_request():144] handle_request: partial_history
+2025-04-09 19:42:27,762 DEBUG   SenderThread:445005 [sender.py:send():369] send: history
+2025-04-09 19:42:27,762 DEBUG   SenderThread:445005 [sender.py:send_request():396] send_request: summary_record
+2025-04-09 19:42:27,763 INFO    SenderThread:445005 [sender.py:_save_file():1354] saving file wandb-summary.json with policy end
+2025-04-09 19:42:28,157 INFO    Thread-12 :445005 [dir_watcher.py:_on_file_modified():289] file/dir modified: /home/li/MachineLr/RWKV-Development-Tools-ssg/wkv7_reward_model/wandb/run-20250409_194159-x64ywmac/files/wandb-summary.json
+2025-04-09 19:42:28,913 DEBUG   HandlerThread:445005 [handler.py:handle_request():144] handle_request: partial_history
+2025-04-09 19:42:28,914 DEBUG   SenderThread:445005 [sender.py:send():369] send: history
+2025-04-09 19:42:28,915 DEBUG   SenderThread:445005 [sender.py:send_request():396] send_request: summary_record
+2025-04-09 19:42:28,915 INFO    SenderThread:445005 [sender.py:_save_file():1354] saving file wandb-summary.json with policy end
+2025-04-09 19:42:29,157 INFO    Thread-12 :445005 [dir_watcher.py:_on_file_modified():289] file/dir modified: /home/li/MachineLr/RWKV-Development-Tools-ssg/wkv7_reward_model/wandb/run-20250409_194159-x64ywmac/files/wandb-summary.json
+2025-04-09 19:42:29,158 INFO    Thread-12 :445005 [dir_watcher.py:_on_file_modified():289] file/dir modified: /home/li/MachineLr/RWKV-Development-Tools-ssg/wkv7_reward_model/wandb/run-20250409_194159-x64ywmac/files/output.log
+2025-04-09 19:42:30,108 DEBUG   HandlerThread:445005 [handler.py:handle_request():144] handle_request: partial_history
+2025-04-09 19:42:30,109 DEBUG   SenderThread:445005 [sender.py:send():369] send: history
+2025-04-09 19:42:30,110 DEBUG   SenderThread:445005 [sender.py:send_request():396] send_request: summary_record
+2025-04-09 19:42:30,110 INFO    SenderThread:445005 [sender.py:_save_file():1354] saving file wandb-summary.json with policy end
+2025-04-09 19:42:30,158 INFO    Thread-12 :445005 [dir_watcher.py:_on_file_modified():289] file/dir modified: /home/li/MachineLr/RWKV-Development-Tools-ssg/wkv7_reward_model/wandb/run-20250409_194159-x64ywmac/files/wandb-summary.json
+2025-04-09 19:42:31,158 INFO    Thread-12 :445005 [dir_watcher.py:_on_file_modified():289] file/dir modified: /home/li/MachineLr/RWKV-Development-Tools-ssg/wkv7_reward_model/wandb/run-20250409_194159-x64ywmac/files/output.log
+2025-04-09 19:42:31,437 DEBUG   HandlerThread:445005 [handler.py:handle_request():144] handle_request: partial_history
+2025-04-09 19:42:31,438 DEBUG   SenderThread:445005 [sender.py:send():369] send: history
+2025-04-09 19:42:31,438 DEBUG   SenderThread:445005 [sender.py:send_request():396] send_request: summary_record
+2025-04-09 19:42:31,439 INFO    SenderThread:445005 [sender.py:_save_file():1354] saving file wandb-summary.json with policy end
+2025-04-09 19:42:32,158 INFO    Thread-12 :445005 [dir_watcher.py:_on_file_modified():289] file/dir modified: /home/li/MachineLr/RWKV-Development-Tools-ssg/wkv7_reward_model/wandb/run-20250409_194159-x64ywmac/files/wandb-summary.json
+2025-04-09 19:42:32,404 DEBUG   HandlerThread:445005 [handler.py:handle_request():144] handle_request: status_report
+2025-04-09 19:42:32,433 DEBUG   HandlerThread:445005 [handler.py:handle_request():144] handle_request: stop_status
+2025-04-09 19:42:32,572 DEBUG   HandlerThread:445005 [handler.py:handle_request():144] handle_request: partial_history
+2025-04-09 19:42:32,702 DEBUG   SenderThread:445005 [sender.py:send_request():396] send_request: stop_status
+2025-04-09 19:42:32,947 DEBUG   SenderThread:445005 [sender.py:send():369] send: history
+2025-04-09 19:42:32,948 DEBUG   SenderThread:445005 [sender.py:send_request():396] send_request: summary_record
+2025-04-09 19:42:32,948 INFO    SenderThread:445005 [sender.py:_save_file():1354] saving file wandb-summary.json with policy end
+2025-04-09 19:42:33,159 INFO    Thread-12 :445005 [dir_watcher.py:_on_file_modified():289] file/dir modified: /home/li/MachineLr/RWKV-Development-Tools-ssg/wkv7_reward_model/wandb/run-20250409_194159-x64ywmac/files/wandb-summary.json
+2025-04-09 19:42:33,159 INFO    Thread-12 :445005 [dir_watcher.py:_on_file_modified():289] file/dir modified: /home/li/MachineLr/RWKV-Development-Tools-ssg/wkv7_reward_model/wandb/run-20250409_194159-x64ywmac/files/output.log
+2025-04-09 19:42:33,159 INFO    Thread-12 :445005 [dir_watcher.py:_on_file_modified():289] file/dir modified: /home/li/MachineLr/RWKV-Development-Tools-ssg/wkv7_reward_model/wandb/run-20250409_194159-x64ywmac/files/config.yaml
+2025-04-09 19:42:35,160 INFO    Thread-12 :445005 [dir_watcher.py:_on_file_modified():289] file/dir modified: /home/li/MachineLr/RWKV-Development-Tools-ssg/wkv7_reward_model/wandb/run-20250409_194159-x64ywmac/files/output.log
+2025-04-09 19:42:37,950 DEBUG   HandlerThread:445005 [handler.py:handle_request():144] handle_request: status_report
+2025-04-09 19:42:39,532 DEBUG   HandlerThread:445005 [handler.py:handle_request():144] handle_request: partial_history
+2025-04-09 19:42:39,533 DEBUG   SenderThread:445005 [sender.py:send():369] send: history
+2025-04-09 19:42:39,533 DEBUG   SenderThread:445005 [sender.py:send_request():396] send_request: summary_record
+2025-04-09 19:42:39,536 INFO    SenderThread:445005 [sender.py:_save_file():1354] saving file wandb-summary.json with policy end
+2025-04-09 19:42:40,162 INFO    Thread-12 :445005 [dir_watcher.py:_on_file_modified():289] file/dir modified: /home/li/MachineLr/RWKV-Development-Tools-ssg/wkv7_reward_model/wandb/run-20250409_194159-x64ywmac/files/wandb-summary.json
+2025-04-09 19:42:41,163 INFO    Thread-12 :445005 [dir_watcher.py:_on_file_modified():289] file/dir modified: /home/li/MachineLr/RWKV-Development-Tools-ssg/wkv7_reward_model/wandb/run-20250409_194159-x64ywmac/files/output.log
+2025-04-09 19:42:41,544 DEBUG   HandlerThread:445005 [handler.py:handle_request():144] handle_request: partial_history
+2025-04-09 19:42:41,546 DEBUG   SenderThread:445005 [sender.py:send():369] send: history
+2025-04-09 19:42:41,546 DEBUG   SenderThread:445005 [sender.py:send_request():396] send_request: summary_record
+2025-04-09 19:42:41,548 INFO    SenderThread:445005 [sender.py:_save_file():1354] saving file wandb-summary.json with policy end
+2025-04-09 19:42:42,163 INFO    Thread-12 :445005 [dir_watcher.py:_on_file_modified():289] file/dir modified: /home/li/MachineLr/RWKV-Development-Tools-ssg/wkv7_reward_model/wandb/run-20250409_194159-x64ywmac/files/wandb-summary.json
+2025-04-09 19:42:42,928 DEBUG   HandlerThread:445005 [handler.py:handle_request():144] handle_request: partial_history
+2025-04-09 19:42:42,929 DEBUG   SenderThread:445005 [sender.py:send():369] send: history
+2025-04-09 19:42:42,929 DEBUG   SenderThread:445005 [sender.py:send_request():396] send_request: summary_record
+2025-04-09 19:42:42,930 INFO    SenderThread:445005 [sender.py:_save_file():1354] saving file wandb-summary.json with policy end
+2025-04-09 19:42:43,164 INFO    Thread-12 :445005 [dir_watcher.py:_on_file_modified():289] file/dir modified: /home/li/MachineLr/RWKV-Development-Tools-ssg/wkv7_reward_model/wandb/run-20250409_194159-x64ywmac/files/wandb-summary.json
+2025-04-09 19:42:43,164 INFO    Thread-12 :445005 [dir_watcher.py:_on_file_modified():289] file/dir modified: /home/li/MachineLr/RWKV-Development-Tools-ssg/wkv7_reward_model/wandb/run-20250409_194159-x64ywmac/files/output.log
+2025-04-09 19:42:43,931 DEBUG   HandlerThread:445005 [handler.py:handle_request():144] handle_request: status_report
+2025-04-09 19:42:44,261 DEBUG   HandlerThread:445005 [handler.py:handle_request():144] handle_request: partial_history
+2025-04-09 19:42:44,262 DEBUG   SenderThread:445005 [sender.py:send():369] send: history
+2025-04-09 19:42:44,262 DEBUG   SenderThread:445005 [sender.py:send_request():396] send_request: summary_record
+2025-04-09 19:42:44,265 INFO    SenderThread:445005 [sender.py:_save_file():1354] saving file wandb-summary.json with policy end
+2025-04-09 19:42:45,164 INFO    Thread-12 :445005 [dir_watcher.py:_on_file_modified():289] file/dir modified: /home/li/MachineLr/RWKV-Development-Tools-ssg/wkv7_reward_model/wandb/run-20250409_194159-x64ywmac/files/wandb-summary.json
+2025-04-09 19:42:45,165 INFO    Thread-12 :445005 [dir_watcher.py:_on_file_modified():289] file/dir modified: /home/li/MachineLr/RWKV-Development-Tools-ssg/wkv7_reward_model/wandb/run-20250409_194159-x64ywmac/files/output.log
+2025-04-09 19:42:45,764 DEBUG   HandlerThread:445005 [handler.py:handle_request():144] handle_request: partial_history
+2025-04-09 19:42:45,766 DEBUG   SenderThread:445005 [sender.py:send():369] send: history
+2025-04-09 19:42:45,766 DEBUG   SenderThread:445005 [sender.py:send_request():396] send_request: summary_record
+2025-04-09 19:42:45,767 INFO    SenderThread:445005 [sender.py:_save_file():1354] saving file wandb-summary.json with policy end
+2025-04-09 19:42:46,165 INFO    Thread-12 :445005 [dir_watcher.py:_on_file_modified():289] file/dir modified: /home/li/MachineLr/RWKV-Development-Tools-ssg/wkv7_reward_model/wandb/run-20250409_194159-x64ywmac/files/wandb-summary.json
+2025-04-09 19:42:47,165 INFO    Thread-12 :445005 [dir_watcher.py:_on_file_modified():289] file/dir modified: /home/li/MachineLr/RWKV-Development-Tools-ssg/wkv7_reward_model/wandb/run-20250409_194159-x64ywmac/files/output.log
+2025-04-09 19:42:47,222 DEBUG   HandlerThread:445005 [handler.py:handle_request():144] handle_request: partial_history
+2025-04-09 19:42:47,223 DEBUG   SenderThread:445005 [sender.py:send():369] send: history
+2025-04-09 19:42:47,223 DEBUG   SenderThread:445005 [sender.py:send_request():396] send_request: summary_record
+2025-04-09 19:42:47,224 INFO    SenderThread:445005 [sender.py:_save_file():1354] saving file wandb-summary.json with policy end
+2025-04-09 19:42:47,434 DEBUG   HandlerThread:445005 [handler.py:handle_request():144] handle_request: stop_status
+2025-04-09 19:42:47,434 DEBUG   SenderThread:445005 [sender.py:send_request():396] send_request: stop_status
+2025-04-09 19:42:48,166 INFO    Thread-12 :445005 [dir_watcher.py:_on_file_modified():289] file/dir modified: /home/li/MachineLr/RWKV-Development-Tools-ssg/wkv7_reward_model/wandb/run-20250409_194159-x64ywmac/files/wandb-summary.json
+2025-04-09 19:42:48,893 DEBUG   HandlerThread:445005 [handler.py:handle_request():144] handle_request: partial_history
+2025-04-09 19:42:48,894 DEBUG   SenderThread:445005 [sender.py:send():369] send: history
+2025-04-09 19:42:48,894 DEBUG   SenderThread:445005 [sender.py:send_request():396] send_request: summary_record
+2025-04-09 19:42:48,895 INFO    SenderThread:445005 [sender.py:_save_file():1354] saving file wandb-summary.json with policy end
+2025-04-09 19:42:49,166 INFO    Thread-12 :445005 [dir_watcher.py:_on_file_modified():289] file/dir modified: /home/li/MachineLr/RWKV-Development-Tools-ssg/wkv7_reward_model/wandb/run-20250409_194159-x64ywmac/files/wandb-summary.json
+2025-04-09 19:42:49,166 INFO    Thread-12 :445005 [dir_watcher.py:_on_file_modified():289] file/dir modified: /home/li/MachineLr/RWKV-Development-Tools-ssg/wkv7_reward_model/wandb/run-20250409_194159-x64ywmac/files/output.log
+2025-04-09 19:42:49,896 DEBUG   HandlerThread:445005 [handler.py:handle_request():144] handle_request: status_report
+2025-04-09 19:42:50,430 DEBUG   HandlerThread:445005 [handler.py:handle_request():144] handle_request: partial_history
+2025-04-09 19:42:50,432 DEBUG   SenderThread:445005 [sender.py:send():369] send: history
+2025-04-09 19:42:50,432 DEBUG   SenderThread:445005 [sender.py:send_request():396] send_request: summary_record
+2025-04-09 19:42:50,432 INFO    SenderThread:445005 [sender.py:_save_file():1354] saving file wandb-summary.json with policy end
+2025-04-09 19:42:51,167 INFO    Thread-12 :445005 [dir_watcher.py:_on_file_modified():289] file/dir modified: /home/li/MachineLr/RWKV-Development-Tools-ssg/wkv7_reward_model/wandb/run-20250409_194159-x64ywmac/files/wandb-summary.json
+2025-04-09 19:42:51,167 INFO    Thread-12 :445005 [dir_watcher.py:_on_file_modified():289] file/dir modified: /home/li/MachineLr/RWKV-Development-Tools-ssg/wkv7_reward_model/wandb/run-20250409_194159-x64ywmac/files/output.log
+2025-04-09 19:42:52,194 DEBUG   HandlerThread:445005 [handler.py:handle_request():144] handle_request: partial_history
+2025-04-09 19:42:52,196 DEBUG   SenderThread:445005 [sender.py:send():369] send: history
+2025-04-09 19:42:52,196 DEBUG   SenderThread:445005 [sender.py:send_request():396] send_request: summary_record
+2025-04-09 19:42:52,196 INFO    SenderThread:445005 [sender.py:_save_file():1354] saving file wandb-summary.json with policy end
+2025-04-09 19:42:53,168 INFO    Thread-12 :445005 [dir_watcher.py:_on_file_modified():289] file/dir modified: /home/li/MachineLr/RWKV-Development-Tools-ssg/wkv7_reward_model/wandb/run-20250409_194159-x64ywmac/files/wandb-summary.json
+2025-04-09 19:42:53,168 INFO    Thread-12 :445005 [dir_watcher.py:_on_file_modified():289] file/dir modified: /home/li/MachineLr/RWKV-Development-Tools-ssg/wkv7_reward_model/wandb/run-20250409_194159-x64ywmac/files/output.log
+2025-04-09 19:42:53,308 DEBUG   HandlerThread:445005 [handler.py:handle_request():144] handle_request: partial_history
+2025-04-09 19:42:53,309 DEBUG   SenderThread:445005 [sender.py:send():369] send: history
+2025-04-09 19:42:53,309 DEBUG   SenderThread:445005 [sender.py:send_request():396] send_request: summary_record
+2025-04-09 19:42:53,310 INFO    SenderThread:445005 [sender.py:_save_file():1354] saving file wandb-summary.json with policy end
+2025-04-09 19:42:54,168 INFO    Thread-12 :445005 [dir_watcher.py:_on_file_modified():289] file/dir modified: /home/li/MachineLr/RWKV-Development-Tools-ssg/wkv7_reward_model/wandb/run-20250409_194159-x64ywmac/files/wandb-summary.json
+2025-04-09 19:42:55,169 INFO    Thread-12 :445005 [dir_watcher.py:_on_file_modified():289] file/dir modified: /home/li/MachineLr/RWKV-Development-Tools-ssg/wkv7_reward_model/wandb/run-20250409_194159-x64ywmac/files/output.log
+2025-04-09 19:42:55,311 DEBUG   HandlerThread:445005 [handler.py:handle_request():144] handle_request: status_report
+2025-04-09 19:42:55,505 DEBUG   HandlerThread:445005 [handler.py:handle_request():144] handle_request: partial_history
+2025-04-09 19:42:55,506 DEBUG   SenderThread:445005 [sender.py:send():369] send: history
+2025-04-09 19:42:55,506 DEBUG   SenderThread:445005 [sender.py:send_request():396] send_request: summary_record
+2025-04-09 19:42:55,506 INFO    SenderThread:445005 [sender.py:_save_file():1354] saving file wandb-summary.json with policy end
+2025-04-09 19:42:56,169 INFO    Thread-12 :445005 [dir_watcher.py:_on_file_modified():289] file/dir modified: /home/li/MachineLr/RWKV-Development-Tools-ssg/wkv7_reward_model/wandb/run-20250409_194159-x64ywmac/files/wandb-summary.json
+2025-04-09 19:42:57,169 INFO    Thread-12 :445005 [dir_watcher.py:_on_file_modified():289] file/dir modified: /home/li/MachineLr/RWKV-Development-Tools-ssg/wkv7_reward_model/wandb/run-20250409_194159-x64ywmac/files/output.log
+2025-04-09 19:42:57,440 DEBUG   HandlerThread:445005 [handler.py:handle_request():144] handle_request: partial_history
+2025-04-09 19:42:57,441 DEBUG   SenderThread:445005 [sender.py:send():369] send: history
+2025-04-09 19:42:57,441 DEBUG   SenderThread:445005 [sender.py:send_request():396] send_request: summary_record
+2025-04-09 19:42:57,442 INFO    SenderThread:445005 [sender.py:_save_file():1354] saving file wandb-summary.json with policy end
+2025-04-09 19:42:58,170 INFO    Thread-12 :445005 [dir_watcher.py:_on_file_modified():289] file/dir modified: /home/li/MachineLr/RWKV-Development-Tools-ssg/wkv7_reward_model/wandb/run-20250409_194159-x64ywmac/files/wandb-summary.json
+2025-04-09 19:42:59,170 INFO    Thread-12 :445005 [dir_watcher.py:_on_file_modified():289] file/dir modified: /home/li/MachineLr/RWKV-Development-Tools-ssg/wkv7_reward_model/wandb/run-20250409_194159-x64ywmac/files/output.log
+2025-04-09 19:42:59,263 DEBUG   HandlerThread:445005 [handler.py:handle_request():144] handle_request: partial_history
+2025-04-09 19:42:59,265 DEBUG   SenderThread:445005 [sender.py:send():369] send: history
+2025-04-09 19:42:59,265 DEBUG   SenderThread:445005 [sender.py:send_request():396] send_request: summary_record
+2025-04-09 19:42:59,265 INFO    SenderThread:445005 [sender.py:_save_file():1354] saving file wandb-summary.json with policy end
+2025-04-09 19:43:00,171 INFO    Thread-12 :445005 [dir_watcher.py:_on_file_modified():289] file/dir modified: /home/li/MachineLr/RWKV-Development-Tools-ssg/wkv7_reward_model/wandb/run-20250409_194159-x64ywmac/files/wandb-summary.json
+2025-04-09 19:43:00,506 DEBUG   SystemMonitor:445005 [system_monitor.py:_start():159] Starting system metrics aggregation loop
+2025-04-09 19:43:00,508 DEBUG   SenderThread:445005 [sender.py:send():369] send: stats
+2025-04-09 19:43:00,509 DEBUG   HandlerThread:445005 [handler.py:handle_request():144] handle_request: status_report
+2025-04-09 19:43:01,036 DEBUG   HandlerThread:445005 [handler.py:handle_request():144] handle_request: partial_history
+2025-04-09 19:43:01,038 DEBUG   SenderThread:445005 [sender.py:send():369] send: history
+2025-04-09 19:43:01,038 DEBUG   SenderThread:445005 [sender.py:send_request():396] send_request: summary_record
+2025-04-09 19:43:01,038 INFO    SenderThread:445005 [sender.py:_save_file():1354] saving file wandb-summary.json with policy end
+2025-04-09 19:43:01,171 INFO    Thread-12 :445005 [dir_watcher.py:_on_file_modified():289] file/dir modified: /home/li/MachineLr/RWKV-Development-Tools-ssg/wkv7_reward_model/wandb/run-20250409_194159-x64ywmac/files/wandb-summary.json
+2025-04-09 19:43:01,171 INFO    Thread-12 :445005 [dir_watcher.py:_on_file_modified():289] file/dir modified: /home/li/MachineLr/RWKV-Development-Tools-ssg/wkv7_reward_model/wandb/run-20250409_194159-x64ywmac/files/output.log
+2025-04-09 19:43:02,294 DEBUG   HandlerThread:445005 [handler.py:handle_request():144] handle_request: partial_history
+2025-04-09 19:43:02,295 DEBUG   SenderThread:445005 [sender.py:send():369] send: history
+2025-04-09 19:43:02,295 DEBUG   SenderThread:445005 [sender.py:send_request():396] send_request: summary_record
+2025-04-09 19:43:02,296 INFO    SenderThread:445005 [sender.py:_save_file():1354] saving file wandb-summary.json with policy end
+2025-04-09 19:43:02,434 DEBUG   HandlerThread:445005 [handler.py:handle_request():144] handle_request: stop_status
+2025-04-09 19:43:02,435 DEBUG   SenderThread:445005 [sender.py:send_request():396] send_request: stop_status
+2025-04-09 19:43:03,172 INFO    Thread-12 :445005 [dir_watcher.py:_on_file_modified():289] file/dir modified: /home/li/MachineLr/RWKV-Development-Tools-ssg/wkv7_reward_model/wandb/run-20250409_194159-x64ywmac/files/wandb-summary.json
+2025-04-09 19:43:03,172 INFO    Thread-12 :445005 [dir_watcher.py:_on_file_modified():289] file/dir modified: /home/li/MachineLr/RWKV-Development-Tools-ssg/wkv7_reward_model/wandb/run-20250409_194159-x64ywmac/files/output.log
+2025-04-09 19:43:03,222 DEBUG   HandlerThread:445005 [handler.py:handle_request():144] handle_request: partial_history
+2025-04-09 19:43:03,224 DEBUG   SenderThread:445005 [sender.py:send():369] send: history
+2025-04-09 19:43:03,224 DEBUG   SenderThread:445005 [sender.py:send_request():396] send_request: summary_record
+2025-04-09 19:43:03,224 INFO    SenderThread:445005 [sender.py:_save_file():1354] saving file wandb-summary.json with policy end
+2025-04-09 19:43:04,122 DEBUG   HandlerThread:445005 [handler.py:handle_request():144] handle_request: partial_history
+2025-04-09 19:43:04,123 DEBUG   SenderThread:445005 [sender.py:send():369] send: history
+2025-04-09 19:43:04,123 DEBUG   SenderThread:445005 [sender.py:send_request():396] send_request: summary_record
+2025-04-09 19:43:04,124 INFO    SenderThread:445005 [sender.py:_save_file():1354] saving file wandb-summary.json with policy end
+2025-04-09 19:43:04,172 INFO    Thread-12 :445005 [dir_watcher.py:_on_file_modified():289] file/dir modified: /home/li/MachineLr/RWKV-Development-Tools-ssg/wkv7_reward_model/wandb/run-20250409_194159-x64ywmac/files/wandb-summary.json
+2025-04-09 19:43:05,148 DEBUG   HandlerThread:445005 [handler.py:handle_request():144] handle_request: partial_history
+2025-04-09 19:43:05,150 DEBUG   SenderThread:445005 [sender.py:send():369] send: history
+2025-04-09 19:43:05,150 DEBUG   SenderThread:445005 [sender.py:send_request():396] send_request: summary_record
+2025-04-09 19:43:05,150 INFO    SenderThread:445005 [sender.py:_save_file():1354] saving file wandb-summary.json with policy end
+2025-04-09 19:43:05,173 INFO    Thread-12 :445005 [dir_watcher.py:_on_file_modified():289] file/dir modified: /home/li/MachineLr/RWKV-Development-Tools-ssg/wkv7_reward_model/wandb/run-20250409_194159-x64ywmac/files/wandb-summary.json
+2025-04-09 19:43:05,173 INFO    Thread-12 :445005 [dir_watcher.py:_on_file_modified():289] file/dir modified: /home/li/MachineLr/RWKV-Development-Tools-ssg/wkv7_reward_model/wandb/run-20250409_194159-x64ywmac/files/output.log
+2025-04-09 19:43:06,151 DEBUG   HandlerThread:445005 [handler.py:handle_request():144] handle_request: status_report
+2025-04-09 19:43:06,159 DEBUG   HandlerThread:445005 [handler.py:handle_request():144] handle_request: partial_history
+2025-04-09 19:43:06,160 DEBUG   SenderThread:445005 [sender.py:send():369] send: history
+2025-04-09 19:43:06,161 DEBUG   SenderThread:445005 [sender.py:send_request():396] send_request: summary_record
+2025-04-09 19:43:06,161 INFO    SenderThread:445005 [sender.py:_save_file():1354] saving file wandb-summary.json with policy end
+2025-04-09 19:43:06,173 INFO    Thread-12 :445005 [dir_watcher.py:_on_file_modified():289] file/dir modified: /home/li/MachineLr/RWKV-Development-Tools-ssg/wkv7_reward_model/wandb/run-20250409_194159-x64ywmac/files/wandb-summary.json
+2025-04-09 19:43:07,022 DEBUG   HandlerThread:445005 [handler.py:handle_request():144] handle_request: partial_history
+2025-04-09 19:43:07,023 DEBUG   SenderThread:445005 [sender.py:send():369] send: history
+2025-04-09 19:43:07,023 DEBUG   SenderThread:445005 [sender.py:send_request():396] send_request: summary_record
+2025-04-09 19:43:07,024 INFO    SenderThread:445005 [sender.py:_save_file():1354] saving file wandb-summary.json with policy end
+2025-04-09 19:43:07,174 INFO    Thread-12 :445005 [dir_watcher.py:_on_file_modified():289] file/dir modified: /home/li/MachineLr/RWKV-Development-Tools-ssg/wkv7_reward_model/wandb/run-20250409_194159-x64ywmac/files/wandb-summary.json
+2025-04-09 19:43:07,174 INFO    Thread-12 :445005 [dir_watcher.py:_on_file_modified():289] file/dir modified: /home/li/MachineLr/RWKV-Development-Tools-ssg/wkv7_reward_model/wandb/run-20250409_194159-x64ywmac/files/output.log
+2025-04-09 19:43:07,904 DEBUG   HandlerThread:445005 [handler.py:handle_request():144] handle_request: partial_history
+2025-04-09 19:43:07,905 DEBUG   SenderThread:445005 [sender.py:send():369] send: history
+2025-04-09 19:43:07,906 DEBUG   SenderThread:445005 [sender.py:send_request():396] send_request: summary_record
+2025-04-09 19:43:07,906 INFO    SenderThread:445005 [sender.py:_save_file():1354] saving file wandb-summary.json with policy end
+2025-04-09 19:43:08,174 INFO    Thread-12 :445005 [dir_watcher.py:_on_file_modified():289] file/dir modified: /home/li/MachineLr/RWKV-Development-Tools-ssg/wkv7_reward_model/wandb/run-20250409_194159-x64ywmac/files/wandb-summary.json
+2025-04-09 19:43:09,130 DEBUG   HandlerThread:445005 [handler.py:handle_request():144] handle_request: partial_history
+2025-04-09 19:43:09,131 DEBUG   SenderThread:445005 [sender.py:send():369] send: history
+2025-04-09 19:43:09,131 DEBUG   SenderThread:445005 [sender.py:send_request():396] send_request: summary_record
+2025-04-09 19:43:09,132 INFO    SenderThread:445005 [sender.py:_save_file():1354] saving file wandb-summary.json with policy end
+2025-04-09 19:43:09,174 INFO    Thread-12 :445005 [dir_watcher.py:_on_file_modified():289] file/dir modified: /home/li/MachineLr/RWKV-Development-Tools-ssg/wkv7_reward_model/wandb/run-20250409_194159-x64ywmac/files/wandb-summary.json
+2025-04-09 19:43:09,175 INFO    Thread-12 :445005 [dir_watcher.py:_on_file_modified():289] file/dir modified: /home/li/MachineLr/RWKV-Development-Tools-ssg/wkv7_reward_model/wandb/run-20250409_194159-x64ywmac/files/output.log
+2025-04-09 19:43:10,655 DEBUG   HandlerThread:445005 [handler.py:handle_request():144] handle_request: partial_history
+2025-04-09 19:43:10,656 DEBUG   SenderThread:445005 [sender.py:send():369] send: history
+2025-04-09 19:43:10,656 DEBUG   SenderThread:445005 [sender.py:send_request():396] send_request: summary_record
+2025-04-09 19:43:10,656 INFO    SenderThread:445005 [sender.py:_save_file():1354] saving file wandb-summary.json with policy end
+2025-04-09 19:43:11,175 INFO    Thread-12 :445005 [dir_watcher.py:_on_file_modified():289] file/dir modified: /home/li/MachineLr/RWKV-Development-Tools-ssg/wkv7_reward_model/wandb/run-20250409_194159-x64ywmac/files/wandb-summary.json
+2025-04-09 19:43:11,176 INFO    Thread-12 :445005 [dir_watcher.py:_on_file_modified():289] file/dir modified: /home/li/MachineLr/RWKV-Development-Tools-ssg/wkv7_reward_model/wandb/run-20250409_194159-x64ywmac/files/output.log
+2025-04-09 19:43:11,657 DEBUG   HandlerThread:445005 [handler.py:handle_request():144] handle_request: status_report
+2025-04-09 19:43:12,359 DEBUG   HandlerThread:445005 [handler.py:handle_request():144] handle_request: partial_history
+2025-04-09 19:43:12,360 DEBUG   SenderThread:445005 [sender.py:send():369] send: history
+2025-04-09 19:43:12,360 DEBUG   SenderThread:445005 [sender.py:send_request():396] send_request: summary_record
+2025-04-09 19:43:12,360 INFO    SenderThread:445005 [sender.py:_save_file():1354] saving file wandb-summary.json with policy end
+2025-04-09 19:43:13,177 INFO    Thread-12 :445005 [dir_watcher.py:_on_file_modified():289] file/dir modified: /home/li/MachineLr/RWKV-Development-Tools-ssg/wkv7_reward_model/wandb/run-20250409_194159-x64ywmac/files/wandb-summary.json
+2025-04-09 19:43:13,177 INFO    Thread-12 :445005 [dir_watcher.py:_on_file_modified():289] file/dir modified: /home/li/MachineLr/RWKV-Development-Tools-ssg/wkv7_reward_model/wandb/run-20250409_194159-x64ywmac/files/output.log
+2025-04-09 19:43:15,365 DEBUG   HandlerThread:445005 [handler.py:handle_request():144] handle_request: partial_history
+2025-04-09 19:43:15,366 DEBUG   SenderThread:445005 [sender.py:send():369] send: history
+2025-04-09 19:43:15,366 DEBUG   SenderThread:445005 [sender.py:send_request():396] send_request: summary_record
+2025-04-09 19:43:15,366 INFO    SenderThread:445005 [sender.py:_save_file():1354] saving file wandb-summary.json with policy end
+2025-04-09 19:43:16,178 INFO    Thread-12 :445005 [dir_watcher.py:_on_file_modified():289] file/dir modified: /home/li/MachineLr/RWKV-Development-Tools-ssg/wkv7_reward_model/wandb/run-20250409_194159-x64ywmac/files/wandb-summary.json
+2025-04-09 19:43:16,373 DEBUG   HandlerThread:445005 [handler.py:handle_request():144] handle_request: partial_history
+2025-04-09 19:43:16,374 DEBUG   SenderThread:445005 [sender.py:send():369] send: history
+2025-04-09 19:43:16,375 DEBUG   SenderThread:445005 [sender.py:send_request():396] send_request: summary_record
+2025-04-09 19:43:16,375 INFO    SenderThread:445005 [sender.py:_save_file():1354] saving file wandb-summary.json with policy end
+2025-04-09 19:43:17,178 INFO    Thread-12 :445005 [dir_watcher.py:_on_file_modified():289] file/dir modified: /home/li/MachineLr/RWKV-Development-Tools-ssg/wkv7_reward_model/wandb/run-20250409_194159-x64ywmac/files/wandb-summary.json
+2025-04-09 19:43:17,179 INFO    Thread-12 :445005 [dir_watcher.py:_on_file_modified():289] file/dir modified: /home/li/MachineLr/RWKV-Development-Tools-ssg/wkv7_reward_model/wandb/run-20250409_194159-x64ywmac/files/output.log
+2025-04-09 19:43:17,376 DEBUG   HandlerThread:445005 [handler.py:handle_request():144] handle_request: status_report
+2025-04-09 19:43:17,434 DEBUG   HandlerThread:445005 [handler.py:handle_request():144] handle_request: stop_status
+2025-04-09 19:43:17,434 DEBUG   SenderThread:445005 [sender.py:send_request():396] send_request: stop_status
+2025-04-09 19:43:17,929 DEBUG   HandlerThread:445005 [handler.py:handle_request():144] handle_request: partial_history
+2025-04-09 19:43:17,930 DEBUG   SenderThread:445005 [sender.py:send():369] send: history
+2025-04-09 19:43:17,930 DEBUG   SenderThread:445005 [sender.py:send_request():396] send_request: summary_record
+2025-04-09 19:43:17,930 INFO    SenderThread:445005 [sender.py:_save_file():1354] saving file wandb-summary.json with policy end
+2025-04-09 19:43:18,179 INFO    Thread-12 :445005 [dir_watcher.py:_on_file_modified():289] file/dir modified: /home/li/MachineLr/RWKV-Development-Tools-ssg/wkv7_reward_model/wandb/run-20250409_194159-x64ywmac/files/wandb-summary.json
+2025-04-09 19:43:19,179 INFO    Thread-12 :445005 [dir_watcher.py:_on_file_modified():289] file/dir modified: /home/li/MachineLr/RWKV-Development-Tools-ssg/wkv7_reward_model/wandb/run-20250409_194159-x64ywmac/files/output.log
+2025-04-09 19:43:20,089 DEBUG   HandlerThread:445005 [handler.py:handle_request():144] handle_request: partial_history
+2025-04-09 19:43:20,090 DEBUG   SenderThread:445005 [sender.py:send():369] send: history
+2025-04-09 19:43:20,091 DEBUG   SenderThread:445005 [sender.py:send_request():396] send_request: summary_record
+2025-04-09 19:43:20,091 INFO    SenderThread:445005 [sender.py:_save_file():1354] saving file wandb-summary.json with policy end
+2025-04-09 19:43:20,180 INFO    Thread-12 :445005 [dir_watcher.py:_on_file_modified():289] file/dir modified: /home/li/MachineLr/RWKV-Development-Tools-ssg/wkv7_reward_model/wandb/run-20250409_194159-x64ywmac/files/wandb-summary.json
+2025-04-09 19:43:21,180 INFO    Thread-12 :445005 [dir_watcher.py:_on_file_modified():289] file/dir modified: /home/li/MachineLr/RWKV-Development-Tools-ssg/wkv7_reward_model/wandb/run-20250409_194159-x64ywmac/files/output.log
+2025-04-09 19:43:21,301 DEBUG   HandlerThread:445005 [handler.py:handle_request():144] handle_request: partial_history
+2025-04-09 19:43:21,302 DEBUG   SenderThread:445005 [sender.py:send():369] send: history
+2025-04-09 19:43:21,303 DEBUG   SenderThread:445005 [sender.py:send_request():396] send_request: summary_record
+2025-04-09 19:43:21,303 INFO    SenderThread:445005 [sender.py:_save_file():1354] saving file wandb-summary.json with policy end
+2025-04-09 19:43:22,181 INFO    Thread-12 :445005 [dir_watcher.py:_on_file_modified():289] file/dir modified: /home/li/MachineLr/RWKV-Development-Tools-ssg/wkv7_reward_model/wandb/run-20250409_194159-x64ywmac/files/wandb-summary.json
+2025-04-09 19:43:22,688 DEBUG   HandlerThread:445005 [handler.py:handle_request():144] handle_request: status_report
+2025-04-09 19:43:23,022 DEBUG   HandlerThread:445005 [handler.py:handle_request():144] handle_request: partial_history
+2025-04-09 19:43:23,023 DEBUG   SenderThread:445005 [sender.py:send():369] send: history
+2025-04-09 19:43:23,023 DEBUG   SenderThread:445005 [sender.py:send_request():396] send_request: summary_record
+2025-04-09 19:43:23,024 INFO    SenderThread:445005 [sender.py:_save_file():1354] saving file wandb-summary.json with policy end
+2025-04-09 19:43:23,181 INFO    Thread-12 :445005 [dir_watcher.py:_on_file_modified():289] file/dir modified: /home/li/MachineLr/RWKV-Development-Tools-ssg/wkv7_reward_model/wandb/run-20250409_194159-x64ywmac/files/wandb-summary.json
+2025-04-09 19:43:23,181 INFO    Thread-12 :445005 [dir_watcher.py:_on_file_modified():289] file/dir modified: /home/li/MachineLr/RWKV-Development-Tools-ssg/wkv7_reward_model/wandb/run-20250409_194159-x64ywmac/files/output.log
+2025-04-09 19:43:24,313 DEBUG   HandlerThread:445005 [handler.py:handle_request():144] handle_request: partial_history
+2025-04-09 19:43:24,314 DEBUG   SenderThread:445005 [sender.py:send():369] send: history
+2025-04-09 19:43:24,314 DEBUG   SenderThread:445005 [sender.py:send_request():396] send_request: summary_record
+2025-04-09 19:43:24,314 INFO    SenderThread:445005 [sender.py:_save_file():1354] saving file wandb-summary.json with policy end
+2025-04-09 19:43:25,182 INFO    Thread-12 :445005 [dir_watcher.py:_on_file_modified():289] file/dir modified: /home/li/MachineLr/RWKV-Development-Tools-ssg/wkv7_reward_model/wandb/run-20250409_194159-x64ywmac/files/wandb-summary.json
+2025-04-09 19:43:25,182 INFO    Thread-12 :445005 [dir_watcher.py:_on_file_modified():289] file/dir modified: /home/li/MachineLr/RWKV-Development-Tools-ssg/wkv7_reward_model/wandb/run-20250409_194159-x64ywmac/files/output.log
+2025-04-09 19:43:25,372 DEBUG   HandlerThread:445005 [handler.py:handle_request():144] handle_request: partial_history
+2025-04-09 19:43:25,373 DEBUG   SenderThread:445005 [sender.py:send():369] send: history
+2025-04-09 19:43:25,373 DEBUG   SenderThread:445005 [sender.py:send_request():396] send_request: summary_record
+2025-04-09 19:43:25,374 INFO    SenderThread:445005 [sender.py:_save_file():1354] saving file wandb-summary.json with policy end
+2025-04-09 19:43:26,182 INFO    Thread-12 :445005 [dir_watcher.py:_on_file_modified():289] file/dir modified: /home/li/MachineLr/RWKV-Development-Tools-ssg/wkv7_reward_model/wandb/run-20250409_194159-x64ywmac/files/wandb-summary.json
+2025-04-09 19:43:26,240 DEBUG   HandlerThread:445005 [handler.py:handle_request():144] handle_request: partial_history
+2025-04-09 19:43:26,241 DEBUG   SenderThread:445005 [sender.py:send():369] send: history
+2025-04-09 19:43:26,242 DEBUG   SenderThread:445005 [sender.py:send_request():396] send_request: summary_record
+2025-04-09 19:43:26,242 INFO    SenderThread:445005 [sender.py:_save_file():1354] saving file wandb-summary.json with policy end
+2025-04-09 19:43:26,883 DEBUG   HandlerThread:445005 [handler.py:handle_request():144] handle_request: partial_history
+2025-04-09 19:43:26,885 DEBUG   SenderThread:445005 [sender.py:send():369] send: history
+2025-04-09 19:43:26,885 DEBUG   SenderThread:445005 [sender.py:send_request():396] send_request: summary_record
+2025-04-09 19:43:26,885 INFO    SenderThread:445005 [sender.py:_save_file():1354] saving file wandb-summary.json with policy end
+2025-04-09 19:43:27,183 INFO    Thread-12 :445005 [dir_watcher.py:_on_file_modified():289] file/dir modified: /home/li/MachineLr/RWKV-Development-Tools-ssg/wkv7_reward_model/wandb/run-20250409_194159-x64ywmac/files/wandb-summary.json
+2025-04-09 19:43:27,183 INFO    Thread-12 :445005 [dir_watcher.py:_on_file_modified():289] file/dir modified: /home/li/MachineLr/RWKV-Development-Tools-ssg/wkv7_reward_model/wandb/run-20250409_194159-x64ywmac/files/output.log
+2025-04-09 19:43:27,618 DEBUG   HandlerThread:445005 [handler.py:handle_request():144] handle_request: partial_history
+2025-04-09 19:43:27,618 DEBUG   SenderThread:445005 [sender.py:send():369] send: history
+2025-04-09 19:43:27,619 DEBUG   SenderThread:445005 [sender.py:send_request():396] send_request: summary_record
+2025-04-09 19:43:27,619 INFO    SenderThread:445005 [sender.py:_save_file():1354] saving file wandb-summary.json with policy end
+2025-04-09 19:43:28,183 INFO    Thread-12 :445005 [dir_watcher.py:_on_file_modified():289] file/dir modified: /home/li/MachineLr/RWKV-Development-Tools-ssg/wkv7_reward_model/wandb/run-20250409_194159-x64ywmac/files/wandb-summary.json
+2025-04-09 19:43:28,620 DEBUG   HandlerThread:445005 [handler.py:handle_request():144] handle_request: status_report
+2025-04-09 19:43:28,901 DEBUG   HandlerThread:445005 [handler.py:handle_request():144] handle_request: partial_history
+2025-04-09 19:43:28,902 DEBUG   SenderThread:445005 [sender.py:send():369] send: history
+2025-04-09 19:43:28,902 DEBUG   SenderThread:445005 [sender.py:send_request():396] send_request: summary_record
+2025-04-09 19:43:28,902 INFO    SenderThread:445005 [sender.py:_save_file():1354] saving file wandb-summary.json with policy end
+2025-04-09 19:43:29,184 INFO    Thread-12 :445005 [dir_watcher.py:_on_file_modified():289] file/dir modified: /home/li/MachineLr/RWKV-Development-Tools-ssg/wkv7_reward_model/wandb/run-20250409_194159-x64ywmac/files/wandb-summary.json
+2025-04-09 19:43:29,184 INFO    Thread-12 :445005 [dir_watcher.py:_on_file_modified():289] file/dir modified: /home/li/MachineLr/RWKV-Development-Tools-ssg/wkv7_reward_model/wandb/run-20250409_194159-x64ywmac/files/output.log
+2025-04-09 19:43:30,485 DEBUG   HandlerThread:445005 [handler.py:handle_request():144] handle_request: partial_history
+2025-04-09 19:43:30,486 DEBUG   SenderThread:445005 [sender.py:send():369] send: history
+2025-04-09 19:43:30,486 DEBUG   SenderThread:445005 [sender.py:send_request():396] send_request: summary_record
+2025-04-09 19:43:30,487 INFO    SenderThread:445005 [sender.py:_save_file():1354] saving file wandb-summary.json with policy end
+2025-04-09 19:43:30,509 DEBUG   SenderThread:445005 [sender.py:send():369] send: stats
+2025-04-09 19:43:31,184 INFO    Thread-12 :445005 [dir_watcher.py:_on_file_modified():289] file/dir modified: /home/li/MachineLr/RWKV-Development-Tools-ssg/wkv7_reward_model/wandb/run-20250409_194159-x64ywmac/files/wandb-summary.json
+2025-04-09 19:43:31,185 INFO    Thread-12 :445005 [dir_watcher.py:_on_file_modified():289] file/dir modified: /home/li/MachineLr/RWKV-Development-Tools-ssg/wkv7_reward_model/wandb/run-20250409_194159-x64ywmac/files/output.log
+2025-04-09 19:43:31,785 DEBUG   HandlerThread:445005 [handler.py:handle_request():144] handle_request: partial_history
+2025-04-09 19:43:31,788 DEBUG   SenderThread:445005 [sender.py:send():369] send: history
+2025-04-09 19:43:31,788 DEBUG   SenderThread:445005 [sender.py:send_request():396] send_request: summary_record
+2025-04-09 19:43:31,789 INFO    SenderThread:445005 [sender.py:_save_file():1354] saving file wandb-summary.json with policy end
+2025-04-09 19:43:32,185 INFO    Thread-12 :445005 [dir_watcher.py:_on_file_modified():289] file/dir modified: /home/li/MachineLr/RWKV-Development-Tools-ssg/wkv7_reward_model/wandb/run-20250409_194159-x64ywmac/files/wandb-summary.json
+2025-04-09 19:43:32,434 DEBUG   HandlerThread:445005 [handler.py:handle_request():144] handle_request: stop_status
+2025-04-09 19:43:32,435 DEBUG   SenderThread:445005 [sender.py:send_request():396] send_request: stop_status
+2025-04-09 19:43:33,185 INFO    Thread-12 :445005 [dir_watcher.py:_on_file_modified():289] file/dir modified: /home/li/MachineLr/RWKV-Development-Tools-ssg/wkv7_reward_model/wandb/run-20250409_194159-x64ywmac/files/output.log
+2025-04-09 19:43:33,696 DEBUG   HandlerThread:445005 [handler.py:handle_request():144] handle_request: status_report
+2025-04-09 19:43:33,724 DEBUG   HandlerThread:445005 [handler.py:handle_request():144] handle_request: partial_history
+2025-04-09 19:43:33,726 DEBUG   SenderThread:445005 [sender.py:send():369] send: history
+2025-04-09 19:43:33,726 DEBUG   SenderThread:445005 [sender.py:send_request():396] send_request: summary_record
+2025-04-09 19:43:33,726 INFO    SenderThread:445005 [sender.py:_save_file():1354] saving file wandb-summary.json with policy end
+2025-04-09 19:43:34,186 INFO    Thread-12 :445005 [dir_watcher.py:_on_file_modified():289] file/dir modified: /home/li/MachineLr/RWKV-Development-Tools-ssg/wkv7_reward_model/wandb/run-20250409_194159-x64ywmac/files/wandb-summary.json
+2025-04-09 19:43:35,168 DEBUG   HandlerThread:445005 [handler.py:handle_request():144] handle_request: partial_history
+2025-04-09 19:43:35,169 DEBUG   SenderThread:445005 [sender.py:send():369] send: history
+2025-04-09 19:43:35,169 DEBUG   SenderThread:445005 [sender.py:send_request():396] send_request: summary_record
+2025-04-09 19:43:35,169 INFO    SenderThread:445005 [sender.py:_save_file():1354] saving file wandb-summary.json with policy end
+2025-04-09 19:43:35,186 INFO    Thread-12 :445005 [dir_watcher.py:_on_file_modified():289] file/dir modified: /home/li/MachineLr/RWKV-Development-Tools-ssg/wkv7_reward_model/wandb/run-20250409_194159-x64ywmac/files/wandb-summary.json
+2025-04-09 19:43:35,186 INFO    Thread-12 :445005 [dir_watcher.py:_on_file_modified():289] file/dir modified: /home/li/MachineLr/RWKV-Development-Tools-ssg/wkv7_reward_model/wandb/run-20250409_194159-x64ywmac/files/output.log
+2025-04-09 19:43:36,833 DEBUG   HandlerThread:445005 [handler.py:handle_request():144] handle_request: partial_history
+2025-04-09 19:43:36,834 DEBUG   SenderThread:445005 [sender.py:send():369] send: history
+2025-04-09 19:43:36,834 DEBUG   SenderThread:445005 [sender.py:send_request():396] send_request: summary_record
+2025-04-09 19:43:36,834 INFO    SenderThread:445005 [sender.py:_save_file():1354] saving file wandb-summary.json with policy end
+2025-04-09 19:43:37,187 INFO    Thread-12 :445005 [dir_watcher.py:_on_file_modified():289] file/dir modified: /home/li/MachineLr/RWKV-Development-Tools-ssg/wkv7_reward_model/wandb/run-20250409_194159-x64ywmac/files/wandb-summary.json
+2025-04-09 19:43:37,187 INFO    Thread-12 :445005 [dir_watcher.py:_on_file_modified():289] file/dir modified: /home/li/MachineLr/RWKV-Development-Tools-ssg/wkv7_reward_model/wandb/run-20250409_194159-x64ywmac/files/output.log
+2025-04-09 19:43:38,420 DEBUG   HandlerThread:445005 [handler.py:handle_request():144] handle_request: partial_history
+2025-04-09 19:43:38,421 DEBUG   SenderThread:445005 [sender.py:send():369] send: history
+2025-04-09 19:43:38,421 DEBUG   SenderThread:445005 [sender.py:send_request():396] send_request: summary_record
+2025-04-09 19:43:38,421 INFO    SenderThread:445005 [sender.py:_save_file():1354] saving file wandb-summary.json with policy end
+2025-04-09 19:43:39,188 INFO    Thread-12 :445005 [dir_watcher.py:_on_file_modified():289] file/dir modified: /home/li/MachineLr/RWKV-Development-Tools-ssg/wkv7_reward_model/wandb/run-20250409_194159-x64ywmac/files/wandb-summary.json
+2025-04-09 19:43:39,188 INFO    Thread-12 :445005 [dir_watcher.py:_on_file_modified():289] file/dir modified: /home/li/MachineLr/RWKV-Development-Tools-ssg/wkv7_reward_model/wandb/run-20250409_194159-x64ywmac/files/output.log
+2025-04-09 19:43:39,422 DEBUG   HandlerThread:445005 [handler.py:handle_request():144] handle_request: status_report
+2025-04-09 19:43:40,058 DEBUG   HandlerThread:445005 [handler.py:handle_request():144] handle_request: partial_history
+2025-04-09 19:43:40,059 DEBUG   SenderThread:445005 [sender.py:send():369] send: history
+2025-04-09 19:43:40,059 DEBUG   SenderThread:445005 [sender.py:send_request():396] send_request: summary_record
+2025-04-09 19:43:40,059 INFO    SenderThread:445005 [sender.py:_save_file():1354] saving file wandb-summary.json with policy end
+2025-04-09 19:43:40,188 INFO    Thread-12 :445005 [dir_watcher.py:_on_file_modified():289] file/dir modified: /home/li/MachineLr/RWKV-Development-Tools-ssg/wkv7_reward_model/wandb/run-20250409_194159-x64ywmac/files/wandb-summary.json
+2025-04-09 19:43:41,189 INFO    Thread-12 :445005 [dir_watcher.py:_on_file_modified():289] file/dir modified: /home/li/MachineLr/RWKV-Development-Tools-ssg/wkv7_reward_model/wandb/run-20250409_194159-x64ywmac/files/output.log
+2025-04-09 19:43:41,259 DEBUG   HandlerThread:445005 [handler.py:handle_request():144] handle_request: partial_history
+2025-04-09 19:43:41,260 DEBUG   SenderThread:445005 [sender.py:send():369] send: history
+2025-04-09 19:43:41,260 DEBUG   SenderThread:445005 [sender.py:send_request():396] send_request: summary_record
+2025-04-09 19:43:41,260 INFO    SenderThread:445005 [sender.py:_save_file():1354] saving file wandb-summary.json with policy end
+2025-04-09 19:43:42,189 INFO    Thread-12 :445005 [dir_watcher.py:_on_file_modified():289] file/dir modified: /home/li/MachineLr/RWKV-Development-Tools-ssg/wkv7_reward_model/wandb/run-20250409_194159-x64ywmac/files/wandb-summary.json
+2025-04-09 19:43:42,435 DEBUG   HandlerThread:445005 [handler.py:handle_request():144] handle_request: partial_history
+2025-04-09 19:43:42,436 DEBUG   SenderThread:445005 [sender.py:send():369] send: history
+2025-04-09 19:43:42,436 DEBUG   SenderThread:445005 [sender.py:send_request():396] send_request: summary_record
+2025-04-09 19:43:42,436 INFO    SenderThread:445005 [sender.py:_save_file():1354] saving file wandb-summary.json with policy end
+2025-04-09 19:43:43,189 INFO    Thread-12 :445005 [dir_watcher.py:_on_file_modified():289] file/dir modified: /home/li/MachineLr/RWKV-Development-Tools-ssg/wkv7_reward_model/wandb/run-20250409_194159-x64ywmac/files/wandb-summary.json
+2025-04-09 19:43:43,190 INFO    Thread-12 :445005 [dir_watcher.py:_on_file_modified():289] file/dir modified: /home/li/MachineLr/RWKV-Development-Tools-ssg/wkv7_reward_model/wandb/run-20250409_194159-x64ywmac/files/output.log
+2025-04-09 19:43:44,033 DEBUG   HandlerThread:445005 [handler.py:handle_request():144] handle_request: partial_history
+2025-04-09 19:43:44,034 DEBUG   SenderThread:445005 [sender.py:send():369] send: history
+2025-04-09 19:43:44,034 DEBUG   SenderThread:445005 [sender.py:send_request():396] send_request: summary_record
+2025-04-09 19:43:44,034 INFO    SenderThread:445005 [sender.py:_save_file():1354] saving file wandb-summary.json with policy end
+2025-04-09 19:43:44,190 INFO    Thread-12 :445005 [dir_watcher.py:_on_file_modified():289] file/dir modified: /home/li/MachineLr/RWKV-Development-Tools-ssg/wkv7_reward_model/wandb/run-20250409_194159-x64ywmac/files/wandb-summary.json
+2025-04-09 19:43:44,965 DEBUG   HandlerThread:445005 [handler.py:handle_request():144] handle_request: partial_history
+2025-04-09 19:43:44,967 DEBUG   HandlerThread:445005 [handler.py:handle_request():144] handle_request: status_report
+2025-04-09 19:43:44,967 DEBUG   SenderThread:445005 [sender.py:send():369] send: history
+2025-04-09 19:43:44,967 DEBUG   SenderThread:445005 [sender.py:send_request():396] send_request: summary_record
+2025-04-09 19:43:44,967 INFO    SenderThread:445005 [sender.py:_save_file():1354] saving file wandb-summary.json with policy end
+2025-04-09 19:43:45,191 INFO    Thread-12 :445005 [dir_watcher.py:_on_file_modified():289] file/dir modified: /home/li/MachineLr/RWKV-Development-Tools-ssg/wkv7_reward_model/wandb/run-20250409_194159-x64ywmac/files/wandb-summary.json
+2025-04-09 19:43:45,191 INFO    Thread-12 :445005 [dir_watcher.py:_on_file_modified():289] file/dir modified: /home/li/MachineLr/RWKV-Development-Tools-ssg/wkv7_reward_model/wandb/run-20250409_194159-x64ywmac/files/output.log
+2025-04-09 19:43:46,314 DEBUG   HandlerThread:445005 [handler.py:handle_request():144] handle_request: partial_history
+2025-04-09 19:43:46,314 DEBUG   SenderThread:445005 [sender.py:send():369] send: history
+2025-04-09 19:43:46,315 DEBUG   SenderThread:445005 [sender.py:send_request():396] send_request: summary_record
+2025-04-09 19:43:46,315 INFO    SenderThread:445005 [sender.py:_save_file():1354] saving file wandb-summary.json with policy end
+2025-04-09 19:43:47,191 INFO    Thread-12 :445005 [dir_watcher.py:_on_file_modified():289] file/dir modified: /home/li/MachineLr/RWKV-Development-Tools-ssg/wkv7_reward_model/wandb/run-20250409_194159-x64ywmac/files/wandb-summary.json
+2025-04-09 19:43:47,192 INFO    Thread-12 :445005 [dir_watcher.py:_on_file_modified():289] file/dir modified: /home/li/MachineLr/RWKV-Development-Tools-ssg/wkv7_reward_model/wandb/run-20250409_194159-x64ywmac/files/output.log
+2025-04-09 19:43:47,434 DEBUG   HandlerThread:445005 [handler.py:handle_request():144] handle_request: stop_status
+2025-04-09 19:43:47,435 DEBUG   SenderThread:445005 [sender.py:send_request():396] send_request: stop_status
+2025-04-09 19:43:47,987 DEBUG   HandlerThread:445005 [handler.py:handle_request():144] handle_request: partial_history
+2025-04-09 19:43:47,988 DEBUG   SenderThread:445005 [sender.py:send():369] send: history
+2025-04-09 19:43:47,989 DEBUG   SenderThread:445005 [sender.py:send_request():396] send_request: summary_record
+2025-04-09 19:43:47,989 INFO    SenderThread:445005 [sender.py:_save_file():1354] saving file wandb-summary.json with policy end
+2025-04-09 19:43:48,192 INFO    Thread-12 :445005 [dir_watcher.py:_on_file_modified():289] file/dir modified: /home/li/MachineLr/RWKV-Development-Tools-ssg/wkv7_reward_model/wandb/run-20250409_194159-x64ywmac/files/wandb-summary.json
+2025-04-09 19:43:48,746 DEBUG   HandlerThread:445005 [handler.py:handle_request():144] handle_request: partial_history
+2025-04-09 19:43:48,747 DEBUG   SenderThread:445005 [sender.py:send():369] send: history
+2025-04-09 19:43:48,747 DEBUG   SenderThread:445005 [sender.py:send_request():396] send_request: summary_record
+2025-04-09 19:43:48,747 INFO    SenderThread:445005 [sender.py:_save_file():1354] saving file wandb-summary.json with policy end
+2025-04-09 19:43:49,192 INFO    Thread-12 :445005 [dir_watcher.py:_on_file_modified():289] file/dir modified: /home/li/MachineLr/RWKV-Development-Tools-ssg/wkv7_reward_model/wandb/run-20250409_194159-x64ywmac/files/wandb-summary.json
+2025-04-09 19:43:49,193 INFO    Thread-12 :445005 [dir_watcher.py:_on_file_modified():289] file/dir modified: /home/li/MachineLr/RWKV-Development-Tools-ssg/wkv7_reward_model/wandb/run-20250409_194159-x64ywmac/files/output.log
+2025-04-09 19:43:49,474 DEBUG   HandlerThread:445005 [handler.py:handle_request():144] handle_request: partial_history
+2025-04-09 19:43:49,475 DEBUG   SenderThread:445005 [sender.py:send():369] send: history
+2025-04-09 19:43:49,476 DEBUG   SenderThread:445005 [sender.py:send_request():396] send_request: summary_record
+2025-04-09 19:43:49,476 INFO    SenderThread:445005 [sender.py:_save_file():1354] saving file wandb-summary.json with policy end
+2025-04-09 19:43:50,193 INFO    Thread-12 :445005 [dir_watcher.py:_on_file_modified():289] file/dir modified: /home/li/MachineLr/RWKV-Development-Tools-ssg/wkv7_reward_model/wandb/run-20250409_194159-x64ywmac/files/wandb-summary.json
+2025-04-09 19:43:50,476 DEBUG   HandlerThread:445005 [handler.py:handle_request():144] handle_request: status_report
+2025-04-09 19:43:50,639 DEBUG   HandlerThread:445005 [handler.py:handle_request():144] handle_request: partial_history
+2025-04-09 19:43:50,640 DEBUG   SenderThread:445005 [sender.py:send():369] send: history
+2025-04-09 19:43:50,640 DEBUG   SenderThread:445005 [sender.py:send_request():396] send_request: summary_record
+2025-04-09 19:43:50,640 INFO    SenderThread:445005 [sender.py:_save_file():1354] saving file wandb-summary.json with policy end
+2025-04-09 19:43:51,193 INFO    Thread-12 :445005 [dir_watcher.py:_on_file_modified():289] file/dir modified: /home/li/MachineLr/RWKV-Development-Tools-ssg/wkv7_reward_model/wandb/run-20250409_194159-x64ywmac/files/wandb-summary.json
+2025-04-09 19:43:51,193 INFO    Thread-12 :445005 [dir_watcher.py:_on_file_modified():289] file/dir modified: /home/li/MachineLr/RWKV-Development-Tools-ssg/wkv7_reward_model/wandb/run-20250409_194159-x64ywmac/files/output.log
+2025-04-09 19:43:52,304 DEBUG   HandlerThread:445005 [handler.py:handle_request():144] handle_request: partial_history
+2025-04-09 19:43:52,306 DEBUG   SenderThread:445005 [sender.py:send():369] send: history
+2025-04-09 19:43:52,306 DEBUG   SenderThread:445005 [sender.py:send_request():396] send_request: summary_record
+2025-04-09 19:43:52,306 INFO    SenderThread:445005 [sender.py:_save_file():1354] saving file wandb-summary.json with policy end
+2025-04-09 19:43:53,194 INFO    Thread-12 :445005 [dir_watcher.py:_on_file_modified():289] file/dir modified: /home/li/MachineLr/RWKV-Development-Tools-ssg/wkv7_reward_model/wandb/run-20250409_194159-x64ywmac/files/wandb-summary.json
+2025-04-09 19:43:53,194 INFO    Thread-12 :445005 [dir_watcher.py:_on_file_modified():289] file/dir modified: /home/li/MachineLr/RWKV-Development-Tools-ssg/wkv7_reward_model/wandb/run-20250409_194159-x64ywmac/files/output.log
+2025-04-09 19:43:53,672 DEBUG   HandlerThread:445005 [handler.py:handle_request():144] handle_request: partial_history
+2025-04-09 19:43:53,673 DEBUG   SenderThread:445005 [sender.py:send():369] send: history
+2025-04-09 19:43:53,673 DEBUG   SenderThread:445005 [sender.py:send_request():396] send_request: summary_record
+2025-04-09 19:43:53,674 INFO    SenderThread:445005 [sender.py:_save_file():1354] saving file wandb-summary.json with policy end
+2025-04-09 19:43:54,194 INFO    Thread-12 :445005 [dir_watcher.py:_on_file_modified():289] file/dir modified: /home/li/MachineLr/RWKV-Development-Tools-ssg/wkv7_reward_model/wandb/run-20250409_194159-x64ywmac/files/wandb-summary.json
+2025-04-09 19:43:55,195 INFO    Thread-12 :445005 [dir_watcher.py:_on_file_modified():289] file/dir modified: /home/li/MachineLr/RWKV-Development-Tools-ssg/wkv7_reward_model/wandb/run-20250409_194159-x64ywmac/files/output.log
+2025-04-09 19:43:55,482 DEBUG   HandlerThread:445005 [handler.py:handle_request():144] handle_request: partial_history
+2025-04-09 19:43:55,483 DEBUG   SenderThread:445005 [sender.py:send():369] send: history
+2025-04-09 19:43:55,483 DEBUG   HandlerThread:445005 [handler.py:handle_request():144] handle_request: status_report
+2025-04-09 19:43:55,483 DEBUG   SenderThread:445005 [sender.py:send_request():396] send_request: summary_record
+2025-04-09 19:43:55,483 INFO    SenderThread:445005 [sender.py:_save_file():1354] saving file wandb-summary.json with policy end
+2025-04-09 19:43:56,195 INFO    Thread-12 :445005 [dir_watcher.py:_on_file_modified():289] file/dir modified: /home/li/MachineLr/RWKV-Development-Tools-ssg/wkv7_reward_model/wandb/run-20250409_194159-x64ywmac/files/wandb-summary.json
+2025-04-09 19:43:56,492 DEBUG   HandlerThread:445005 [handler.py:handle_request():144] handle_request: partial_history
+2025-04-09 19:43:56,493 DEBUG   SenderThread:445005 [sender.py:send():369] send: history
+2025-04-09 19:43:56,493 DEBUG   SenderThread:445005 [sender.py:send_request():396] send_request: summary_record
+2025-04-09 19:43:56,493 INFO    SenderThread:445005 [sender.py:_save_file():1354] saving file wandb-summary.json with policy end
+2025-04-09 19:43:57,196 INFO    Thread-12 :445005 [dir_watcher.py:_on_file_modified():289] file/dir modified: /home/li/MachineLr/RWKV-Development-Tools-ssg/wkv7_reward_model/wandb/run-20250409_194159-x64ywmac/files/wandb-summary.json
+2025-04-09 19:43:57,196 INFO    Thread-12 :445005 [dir_watcher.py:_on_file_modified():289] file/dir modified: /home/li/MachineLr/RWKV-Development-Tools-ssg/wkv7_reward_model/wandb/run-20250409_194159-x64ywmac/files/output.log
+2025-04-09 19:43:57,929 DEBUG   HandlerThread:445005 [handler.py:handle_request():144] handle_request: partial_history
+2025-04-09 19:43:57,930 DEBUG   SenderThread:445005 [sender.py:send():369] send: history
+2025-04-09 19:43:57,930 DEBUG   SenderThread:445005 [sender.py:send_request():396] send_request: summary_record
+2025-04-09 19:43:57,931 INFO    SenderThread:445005 [sender.py:_save_file():1354] saving file wandb-summary.json with policy end
+2025-04-09 19:43:58,196 INFO    Thread-12 :445005 [dir_watcher.py:_on_file_modified():289] file/dir modified: /home/li/MachineLr/RWKV-Development-Tools-ssg/wkv7_reward_model/wandb/run-20250409_194159-x64ywmac/files/wandb-summary.json
+2025-04-09 19:43:59,196 INFO    Thread-12 :445005 [dir_watcher.py:_on_file_modified():289] file/dir modified: /home/li/MachineLr/RWKV-Development-Tools-ssg/wkv7_reward_model/wandb/run-20250409_194159-x64ywmac/files/output.log
+2025-04-09 19:43:59,319 DEBUG   HandlerThread:445005 [handler.py:handle_request():144] handle_request: partial_history
+2025-04-09 19:43:59,320 DEBUG   SenderThread:445005 [sender.py:send():369] send: history
+2025-04-09 19:43:59,320 DEBUG   SenderThread:445005 [sender.py:send_request():396] send_request: summary_record
+2025-04-09 19:43:59,320 INFO    SenderThread:445005 [sender.py:_save_file():1354] saving file wandb-summary.json with policy end
+2025-04-09 19:44:00,197 INFO    Thread-12 :445005 [dir_watcher.py:_on_file_modified():289] file/dir modified: /home/li/MachineLr/RWKV-Development-Tools-ssg/wkv7_reward_model/wandb/run-20250409_194159-x64ywmac/files/wandb-summary.json
+2025-04-09 19:44:00,510 DEBUG   SenderThread:445005 [sender.py:send():369] send: stats
+2025-04-09 19:44:00,511 DEBUG   HandlerThread:445005 [handler.py:handle_request():144] handle_request: status_report
+2025-04-09 19:44:00,982 DEBUG   HandlerThread:445005 [handler.py:handle_request():144] handle_request: partial_history
+2025-04-09 19:44:00,983 DEBUG   SenderThread:445005 [sender.py:send():369] send: history
+2025-04-09 19:44:00,983 DEBUG   SenderThread:445005 [sender.py:send_request():396] send_request: summary_record
+2025-04-09 19:44:00,983 INFO    SenderThread:445005 [sender.py:_save_file():1354] saving file wandb-summary.json with policy end
+2025-04-09 19:44:01,197 INFO    Thread-12 :445005 [dir_watcher.py:_on_file_modified():289] file/dir modified: /home/li/MachineLr/RWKV-Development-Tools-ssg/wkv7_reward_model/wandb/run-20250409_194159-x64ywmac/files/wandb-summary.json
+2025-04-09 19:44:01,197 INFO    Thread-12 :445005 [dir_watcher.py:_on_file_modified():289] file/dir modified: /home/li/MachineLr/RWKV-Development-Tools-ssg/wkv7_reward_model/wandb/run-20250409_194159-x64ywmac/files/output.log
+2025-04-09 19:44:02,434 DEBUG   HandlerThread:445005 [handler.py:handle_request():144] handle_request: stop_status
+2025-04-09 19:44:02,435 DEBUG   SenderThread:445005 [sender.py:send_request():396] send_request: stop_status
+2025-04-09 19:44:03,198 INFO    Thread-12 :445005 [dir_watcher.py:_on_file_modified():289] file/dir modified: /home/li/MachineLr/RWKV-Development-Tools-ssg/wkv7_reward_model/wandb/run-20250409_194159-x64ywmac/files/output.log
+2025-04-09 19:44:03,621 DEBUG   HandlerThread:445005 [handler.py:handle_request():144] handle_request: partial_history
+2025-04-09 19:44:03,622 DEBUG   SenderThread:445005 [sender.py:send():369] send: history
+2025-04-09 19:44:03,623 DEBUG   SenderThread:445005 [sender.py:send_request():396] send_request: summary_record
+2025-04-09 19:44:03,623 INFO    SenderThread:445005 [sender.py:_save_file():1354] saving file wandb-summary.json with policy end
+2025-04-09 19:44:04,198 INFO    Thread-12 :445005 [dir_watcher.py:_on_file_modified():289] file/dir modified: /home/li/MachineLr/RWKV-Development-Tools-ssg/wkv7_reward_model/wandb/run-20250409_194159-x64ywmac/files/wandb-summary.json
+2025-04-09 19:44:05,199 INFO    Thread-12 :445005 [dir_watcher.py:_on_file_modified():289] file/dir modified: /home/li/MachineLr/RWKV-Development-Tools-ssg/wkv7_reward_model/wandb/run-20250409_194159-x64ywmac/files/output.log
+2025-04-09 19:44:05,274 DEBUG   HandlerThread:445005 [handler.py:handle_request():144] handle_request: partial_history
+2025-04-09 19:44:05,275 DEBUG   SenderThread:445005 [sender.py:send():369] send: history
+2025-04-09 19:44:05,275 DEBUG   SenderThread:445005 [sender.py:send_request():396] send_request: summary_record
+2025-04-09 19:44:05,276 INFO    SenderThread:445005 [sender.py:_save_file():1354] saving file wandb-summary.json with policy end
+2025-04-09 19:44:06,199 INFO    Thread-12 :445005 [dir_watcher.py:_on_file_modified():289] file/dir modified: /home/li/MachineLr/RWKV-Development-Tools-ssg/wkv7_reward_model/wandb/run-20250409_194159-x64ywmac/files/wandb-summary.json
+2025-04-09 19:44:06,277 DEBUG   HandlerThread:445005 [handler.py:handle_request():144] handle_request: status_report
+2025-04-09 19:44:06,838 DEBUG   HandlerThread:445005 [handler.py:handle_request():144] handle_request: partial_history
+2025-04-09 19:44:06,839 DEBUG   SenderThread:445005 [sender.py:send():369] send: history
+2025-04-09 19:44:06,840 DEBUG   SenderThread:445005 [sender.py:send_request():396] send_request: summary_record
+2025-04-09 19:44:06,840 INFO    SenderThread:445005 [sender.py:_save_file():1354] saving file wandb-summary.json with policy end
+2025-04-09 19:44:07,199 INFO    Thread-12 :445005 [dir_watcher.py:_on_file_modified():289] file/dir modified: /home/li/MachineLr/RWKV-Development-Tools-ssg/wkv7_reward_model/wandb/run-20250409_194159-x64ywmac/files/wandb-summary.json
+2025-04-09 19:44:07,200 INFO    Thread-12 :445005 [dir_watcher.py:_on_file_modified():289] file/dir modified: /home/li/MachineLr/RWKV-Development-Tools-ssg/wkv7_reward_model/wandb/run-20250409_194159-x64ywmac/files/output.log
+2025-04-09 19:44:08,124 DEBUG   HandlerThread:445005 [handler.py:handle_request():144] handle_request: partial_history
+2025-04-09 19:44:08,125 DEBUG   SenderThread:445005 [sender.py:send():369] send: history
+2025-04-09 19:44:08,125 DEBUG   SenderThread:445005 [sender.py:send_request():396] send_request: summary_record
+2025-04-09 19:44:08,125 INFO    SenderThread:445005 [sender.py:_save_file():1354] saving file wandb-summary.json with policy end
+2025-04-09 19:44:08,200 INFO    Thread-12 :445005 [dir_watcher.py:_on_file_modified():289] file/dir modified: /home/li/MachineLr/RWKV-Development-Tools-ssg/wkv7_reward_model/wandb/run-20250409_194159-x64ywmac/files/wandb-summary.json
+2025-04-09 19:44:09,200 INFO    Thread-12 :445005 [dir_watcher.py:_on_file_modified():289] file/dir modified: /home/li/MachineLr/RWKV-Development-Tools-ssg/wkv7_reward_model/wandb/run-20250409_194159-x64ywmac/files/output.log
+2025-04-09 19:44:10,006 DEBUG   HandlerThread:445005 [handler.py:handle_request():144] handle_request: partial_history
+2025-04-09 19:44:10,007 DEBUG   SenderThread:445005 [sender.py:send():369] send: history
+2025-04-09 19:44:10,007 DEBUG   SenderThread:445005 [sender.py:send_request():396] send_request: summary_record
+2025-04-09 19:44:10,008 INFO    SenderThread:445005 [sender.py:_save_file():1354] saving file wandb-summary.json with policy end
+2025-04-09 19:44:10,201 INFO    Thread-12 :445005 [dir_watcher.py:_on_file_modified():289] file/dir modified: /home/li/MachineLr/RWKV-Development-Tools-ssg/wkv7_reward_model/wandb/run-20250409_194159-x64ywmac/files/wandb-summary.json
+2025-04-09 19:44:11,201 INFO    Thread-12 :445005 [dir_watcher.py:_on_file_modified():289] file/dir modified: /home/li/MachineLr/RWKV-Development-Tools-ssg/wkv7_reward_model/wandb/run-20250409_194159-x64ywmac/files/output.log
+2025-04-09 19:44:11,861 DEBUG   HandlerThread:445005 [handler.py:handle_request():144] handle_request: partial_history
+2025-04-09 19:44:11,862 DEBUG   HandlerThread:445005 [handler.py:handle_request():144] handle_request: status_report
+2025-04-09 19:44:11,862 DEBUG   SenderThread:445005 [sender.py:send():369] send: history
+2025-04-09 19:44:11,862 DEBUG   SenderThread:445005 [sender.py:send_request():396] send_request: summary_record
+2025-04-09 19:44:11,863 INFO    SenderThread:445005 [sender.py:_save_file():1354] saving file wandb-summary.json with policy end
+2025-04-09 19:44:12,201 INFO    Thread-12 :445005 [dir_watcher.py:_on_file_modified():289] file/dir modified: /home/li/MachineLr/RWKV-Development-Tools-ssg/wkv7_reward_model/wandb/run-20250409_194159-x64ywmac/files/wandb-summary.json
+2025-04-09 19:44:13,160 DEBUG   HandlerThread:445005 [handler.py:handle_request():144] handle_request: partial_history
+2025-04-09 19:44:13,161 DEBUG   SenderThread:445005 [sender.py:send():369] send: history
+2025-04-09 19:44:13,162 DEBUG   SenderThread:445005 [sender.py:send_request():396] send_request: summary_record
+2025-04-09 19:44:13,162 INFO    SenderThread:445005 [sender.py:_save_file():1354] saving file wandb-summary.json with policy end
+2025-04-09 19:44:13,202 INFO    Thread-12 :445005 [dir_watcher.py:_on_file_modified():289] file/dir modified: /home/li/MachineLr/RWKV-Development-Tools-ssg/wkv7_reward_model/wandb/run-20250409_194159-x64ywmac/files/wandb-summary.json
+2025-04-09 19:44:13,202 INFO    Thread-12 :445005 [dir_watcher.py:_on_file_modified():289] file/dir modified: /home/li/MachineLr/RWKV-Development-Tools-ssg/wkv7_reward_model/wandb/run-20250409_194159-x64ywmac/files/output.log
+2025-04-09 19:44:14,024 DEBUG   HandlerThread:445005 [handler.py:handle_request():144] handle_request: partial_history
+2025-04-09 19:44:14,025 DEBUG   SenderThread:445005 [sender.py:send():369] send: history
+2025-04-09 19:44:14,026 DEBUG   SenderThread:445005 [sender.py:send_request():396] send_request: summary_record
+2025-04-09 19:44:14,026 INFO    SenderThread:445005 [sender.py:_save_file():1354] saving file wandb-summary.json with policy end
+2025-04-09 19:44:14,202 INFO    Thread-12 :445005 [dir_watcher.py:_on_file_modified():289] file/dir modified: /home/li/MachineLr/RWKV-Development-Tools-ssg/wkv7_reward_model/wandb/run-20250409_194159-x64ywmac/files/wandb-summary.json
+2025-04-09 19:44:15,196 DEBUG   HandlerThread:445005 [handler.py:handle_request():144] handle_request: partial_history
+2025-04-09 19:44:15,197 DEBUG   SenderThread:445005 [sender.py:send():369] send: history
+2025-04-09 19:44:15,198 DEBUG   SenderThread:445005 [sender.py:send_request():396] send_request: summary_record
+2025-04-09 19:44:15,198 INFO    SenderThread:445005 [sender.py:_save_file():1354] saving file wandb-summary.json with policy end
+2025-04-09 19:44:15,203 INFO    Thread-12 :445005 [dir_watcher.py:_on_file_modified():289] file/dir modified: /home/li/MachineLr/RWKV-Development-Tools-ssg/wkv7_reward_model/wandb/run-20250409_194159-x64ywmac/files/wandb-summary.json
+2025-04-09 19:44:15,203 INFO    Thread-12 :445005 [dir_watcher.py:_on_file_modified():289] file/dir modified: /home/li/MachineLr/RWKV-Development-Tools-ssg/wkv7_reward_model/wandb/run-20250409_194159-x64ywmac/files/output.log
+2025-04-09 19:44:16,078 DEBUG   HandlerThread:445005 [handler.py:handle_request():144] handle_request: partial_history
+2025-04-09 19:44:16,079 DEBUG   SenderThread:445005 [sender.py:send():369] send: history
+2025-04-09 19:44:16,079 DEBUG   SenderThread:445005 [sender.py:send_request():396] send_request: summary_record
+2025-04-09 19:44:16,079 INFO    SenderThread:445005 [sender.py:_save_file():1354] saving file wandb-summary.json with policy end
+2025-04-09 19:44:16,203 INFO    Thread-12 :445005 [dir_watcher.py:_on_file_modified():289] file/dir modified: /home/li/MachineLr/RWKV-Development-Tools-ssg/wkv7_reward_model/wandb/run-20250409_194159-x64ywmac/files/wandb-summary.json
+2025-04-09 19:44:17,201 DEBUG   HandlerThread:445005 [handler.py:handle_request():144] handle_request: partial_history
+2025-04-09 19:44:17,202 DEBUG   HandlerThread:445005 [handler.py:handle_request():144] handle_request: status_report
+2025-04-09 19:44:17,202 DEBUG   SenderThread:445005 [sender.py:send():369] send: history
+2025-04-09 19:44:17,203 DEBUG   SenderThread:445005 [sender.py:send_request():396] send_request: summary_record
+2025-04-09 19:44:17,203 INFO    SenderThread:445005 [sender.py:_save_file():1354] saving file wandb-summary.json with policy end
+2025-04-09 19:44:17,204 INFO    Thread-12 :445005 [dir_watcher.py:_on_file_modified():289] file/dir modified: /home/li/MachineLr/RWKV-Development-Tools-ssg/wkv7_reward_model/wandb/run-20250409_194159-x64ywmac/files/wandb-summary.json
+2025-04-09 19:44:17,204 INFO    Thread-12 :445005 [dir_watcher.py:_on_file_modified():289] file/dir modified: /home/li/MachineLr/RWKV-Development-Tools-ssg/wkv7_reward_model/wandb/run-20250409_194159-x64ywmac/files/output.log
+2025-04-09 19:44:17,435 DEBUG   HandlerThread:445005 [handler.py:handle_request():144] handle_request: stop_status
+2025-04-09 19:44:17,435 DEBUG   SenderThread:445005 [sender.py:send_request():396] send_request: stop_status
+2025-04-09 19:44:18,994 DEBUG   HandlerThread:445005 [handler.py:handle_request():144] handle_request: partial_history
+2025-04-09 19:44:18,995 DEBUG   SenderThread:445005 [sender.py:send():369] send: history
+2025-04-09 19:44:18,995 DEBUG   SenderThread:445005 [sender.py:send_request():396] send_request: summary_record
+2025-04-09 19:44:18,995 INFO    SenderThread:445005 [sender.py:_save_file():1354] saving file wandb-summary.json with policy end
+2025-04-09 19:44:19,204 INFO    Thread-12 :445005 [dir_watcher.py:_on_file_modified():289] file/dir modified: /home/li/MachineLr/RWKV-Development-Tools-ssg/wkv7_reward_model/wandb/run-20250409_194159-x64ywmac/files/wandb-summary.json
+2025-04-09 19:44:19,205 INFO    Thread-12 :445005 [dir_watcher.py:_on_file_modified():289] file/dir modified: /home/li/MachineLr/RWKV-Development-Tools-ssg/wkv7_reward_model/wandb/run-20250409_194159-x64ywmac/files/output.log
+2025-04-09 19:44:20,855 DEBUG   HandlerThread:445005 [handler.py:handle_request():144] handle_request: partial_history
+2025-04-09 19:44:20,855 DEBUG   SenderThread:445005 [sender.py:send():369] send: history
+2025-04-09 19:44:20,856 DEBUG   SenderThread:445005 [sender.py:send_request():396] send_request: summary_record
+2025-04-09 19:44:20,856 INFO    SenderThread:445005 [sender.py:_save_file():1354] saving file wandb-summary.json with policy end
+2025-04-09 19:44:21,205 INFO    Thread-12 :445005 [dir_watcher.py:_on_file_modified():289] file/dir modified: /home/li/MachineLr/RWKV-Development-Tools-ssg/wkv7_reward_model/wandb/run-20250409_194159-x64ywmac/files/wandb-summary.json
+2025-04-09 19:44:21,206 INFO    Thread-12 :445005 [dir_watcher.py:_on_file_modified():289] file/dir modified: /home/li/MachineLr/RWKV-Development-Tools-ssg/wkv7_reward_model/wandb/run-20250409_194159-x64ywmac/files/output.log
+2025-04-09 19:44:21,731 DEBUG   HandlerThread:445005 [handler.py:handle_request():144] handle_request: partial_history
+2025-04-09 19:44:21,732 DEBUG   SenderThread:445005 [sender.py:send():369] send: history
+2025-04-09 19:44:21,732 DEBUG   SenderThread:445005 [sender.py:send_request():396] send_request: summary_record
+2025-04-09 19:44:21,732 INFO    SenderThread:445005 [sender.py:_save_file():1354] saving file wandb-summary.json with policy end
+2025-04-09 19:44:22,206 INFO    Thread-12 :445005 [dir_watcher.py:_on_file_modified():289] file/dir modified: /home/li/MachineLr/RWKV-Development-Tools-ssg/wkv7_reward_model/wandb/run-20250409_194159-x64ywmac/files/wandb-summary.json
+2025-04-09 19:44:22,733 DEBUG   HandlerThread:445005 [handler.py:handle_request():144] handle_request: status_report
+2025-04-09 19:44:22,859 DEBUG   HandlerThread:445005 [handler.py:handle_request():144] handle_request: partial_history
+2025-04-09 19:44:22,860 DEBUG   SenderThread:445005 [sender.py:send():369] send: history
+2025-04-09 19:44:22,861 DEBUG   SenderThread:445005 [sender.py:send_request():396] send_request: summary_record
+2025-04-09 19:44:22,861 INFO    SenderThread:445005 [sender.py:_save_file():1354] saving file wandb-summary.json with policy end
+2025-04-09 19:44:23,206 INFO    Thread-12 :445005 [dir_watcher.py:_on_file_modified():289] file/dir modified: /home/li/MachineLr/RWKV-Development-Tools-ssg/wkv7_reward_model/wandb/run-20250409_194159-x64ywmac/files/wandb-summary.json
+2025-04-09 19:44:23,206 INFO    Thread-12 :445005 [dir_watcher.py:_on_file_modified():289] file/dir modified: /home/li/MachineLr/RWKV-Development-Tools-ssg/wkv7_reward_model/wandb/run-20250409_194159-x64ywmac/files/output.log
+2025-04-09 19:44:24,052 DEBUG   HandlerThread:445005 [handler.py:handle_request():144] handle_request: partial_history
+2025-04-09 19:44:24,053 DEBUG   SenderThread:445005 [sender.py:send():369] send: history
+2025-04-09 19:44:24,053 DEBUG   SenderThread:445005 [sender.py:send_request():396] send_request: summary_record
+2025-04-09 19:44:24,053 INFO    SenderThread:445005 [sender.py:_save_file():1354] saving file wandb-summary.json with policy end
+2025-04-09 19:44:24,206 INFO    Thread-12 :445005 [dir_watcher.py:_on_file_modified():289] file/dir modified: /home/li/MachineLr/RWKV-Development-Tools-ssg/wkv7_reward_model/wandb/run-20250409_194159-x64ywmac/files/wandb-summary.json
+2025-04-09 19:44:25,203 DEBUG   HandlerThread:445005 [handler.py:handle_request():144] handle_request: partial_history
+2025-04-09 19:44:25,205 DEBUG   SenderThread:445005 [sender.py:send():369] send: history
+2025-04-09 19:44:25,205 DEBUG   SenderThread:445005 [sender.py:send_request():396] send_request: summary_record
+2025-04-09 19:44:25,205 INFO    SenderThread:445005 [sender.py:_save_file():1354] saving file wandb-summary.json with policy end
+2025-04-09 19:44:25,207 INFO    Thread-12 :445005 [dir_watcher.py:_on_file_modified():289] file/dir modified: /home/li/MachineLr/RWKV-Development-Tools-ssg/wkv7_reward_model/wandb/run-20250409_194159-x64ywmac/files/wandb-summary.json
+2025-04-09 19:44:25,207 INFO    Thread-12 :445005 [dir_watcher.py:_on_file_modified():289] file/dir modified: /home/li/MachineLr/RWKV-Development-Tools-ssg/wkv7_reward_model/wandb/run-20250409_194159-x64ywmac/files/output.log
+2025-04-09 19:44:26,330 DEBUG   HandlerThread:445005 [handler.py:handle_request():144] handle_request: partial_history
+2025-04-09 19:44:26,331 DEBUG   SenderThread:445005 [sender.py:send():369] send: history
+2025-04-09 19:44:26,331 DEBUG   SenderThread:445005 [sender.py:send_request():396] send_request: summary_record
+2025-04-09 19:44:26,332 INFO    SenderThread:445005 [sender.py:_save_file():1354] saving file wandb-summary.json with policy end
+2025-04-09 19:44:27,063 DEBUG   HandlerThread:445005 [handler.py:handle_request():144] handle_request: partial_history
+2025-04-09 19:44:27,064 DEBUG   SenderThread:445005 [sender.py:send():369] send: history
+2025-04-09 19:44:27,064 DEBUG   SenderThread:445005 [sender.py:send_request():396] send_request: summary_record
+2025-04-09 19:44:27,064 INFO    SenderThread:445005 [sender.py:_save_file():1354] saving file wandb-summary.json with policy end
+2025-04-09 19:44:27,208 INFO    Thread-12 :445005 [dir_watcher.py:_on_file_modified():289] file/dir modified: /home/li/MachineLr/RWKV-Development-Tools-ssg/wkv7_reward_model/wandb/run-20250409_194159-x64ywmac/files/wandb-summary.json
+2025-04-09 19:44:27,208 INFO    Thread-12 :445005 [dir_watcher.py:_on_file_modified():289] file/dir modified: /home/li/MachineLr/RWKV-Development-Tools-ssg/wkv7_reward_model/wandb/run-20250409_194159-x64ywmac/files/output.log
+2025-04-09 19:44:28,013 DEBUG   HandlerThread:445005 [handler.py:handle_request():144] handle_request: partial_history
+2025-04-09 19:44:28,014 DEBUG   HandlerThread:445005 [handler.py:handle_request():144] handle_request: status_report
+2025-04-09 19:44:28,014 DEBUG   SenderThread:445005 [sender.py:send():369] send: history
+2025-04-09 19:44:28,014 DEBUG   SenderThread:445005 [sender.py:send_request():396] send_request: summary_record
+2025-04-09 19:44:28,014 INFO    SenderThread:445005 [sender.py:_save_file():1354] saving file wandb-summary.json with policy end
+2025-04-09 19:44:28,208 INFO    Thread-12 :445005 [dir_watcher.py:_on_file_modified():289] file/dir modified: /home/li/MachineLr/RWKV-Development-Tools-ssg/wkv7_reward_model/wandb/run-20250409_194159-x64ywmac/files/wandb-summary.json
+2025-04-09 19:44:28,981 DEBUG   HandlerThread:445005 [handler.py:handle_request():144] handle_request: partial_history
+2025-04-09 19:44:28,983 DEBUG   SenderThread:445005 [sender.py:send():369] send: history
+2025-04-09 19:44:28,983 DEBUG   SenderThread:445005 [sender.py:send_request():396] send_request: summary_record
+2025-04-09 19:44:28,983 INFO    SenderThread:445005 [sender.py:_save_file():1354] saving file wandb-summary.json with policy end
+2025-04-09 19:44:29,208 INFO    Thread-12 :445005 [dir_watcher.py:_on_file_modified():289] file/dir modified: /home/li/MachineLr/RWKV-Development-Tools-ssg/wkv7_reward_model/wandb/run-20250409_194159-x64ywmac/files/wandb-summary.json
+2025-04-09 19:44:29,209 INFO    Thread-12 :445005 [dir_watcher.py:_on_file_modified():289] file/dir modified: /home/li/MachineLr/RWKV-Development-Tools-ssg/wkv7_reward_model/wandb/run-20250409_194159-x64ywmac/files/output.log
+2025-04-09 19:44:30,061 DEBUG   HandlerThread:445005 [handler.py:handle_request():144] handle_request: partial_history
+2025-04-09 19:44:30,062 DEBUG   SenderThread:445005 [sender.py:send():369] send: history
+2025-04-09 19:44:30,063 DEBUG   SenderThread:445005 [sender.py:send_request():396] send_request: summary_record
+2025-04-09 19:44:30,063 INFO    SenderThread:445005 [sender.py:_save_file():1354] saving file wandb-summary.json with policy end
+2025-04-09 19:44:30,209 INFO    Thread-12 :445005 [dir_watcher.py:_on_file_modified():289] file/dir modified: /home/li/MachineLr/RWKV-Development-Tools-ssg/wkv7_reward_model/wandb/run-20250409_194159-x64ywmac/files/wandb-summary.json
+2025-04-09 19:44:30,511 DEBUG   SenderThread:445005 [sender.py:send():369] send: stats
+2025-04-09 19:44:31,209 INFO    Thread-12 :445005 [dir_watcher.py:_on_file_modified():289] file/dir modified: /home/li/MachineLr/RWKV-Development-Tools-ssg/wkv7_reward_model/wandb/run-20250409_194159-x64ywmac/files/output.log
+2025-04-09 19:44:31,355 DEBUG   HandlerThread:445005 [handler.py:handle_request():144] handle_request: partial_history
+2025-04-09 19:44:31,356 DEBUG   SenderThread:445005 [sender.py:send():369] send: history
+2025-04-09 19:44:31,357 DEBUG   SenderThread:445005 [sender.py:send_request():396] send_request: summary_record
+2025-04-09 19:44:31,357 INFO    SenderThread:445005 [sender.py:_save_file():1354] saving file wandb-summary.json with policy end
+2025-04-09 19:44:32,210 INFO    Thread-12 :445005 [dir_watcher.py:_on_file_modified():289] file/dir modified: /home/li/MachineLr/RWKV-Development-Tools-ssg/wkv7_reward_model/wandb/run-20250409_194159-x64ywmac/files/wandb-summary.json
+2025-04-09 19:44:32,435 DEBUG   HandlerThread:445005 [handler.py:handle_request():144] handle_request: stop_status
+2025-04-09 19:44:32,435 DEBUG   SenderThread:445005 [sender.py:send_request():396] send_request: stop_status
+2025-04-09 19:44:32,658 DEBUG   HandlerThread:445005 [handler.py:handle_request():144] handle_request: partial_history
+2025-04-09 19:44:32,782 DEBUG   SenderThread:445005 [sender.py:send():369] send: history
+2025-04-09 19:44:32,782 DEBUG   SenderThread:445005 [sender.py:send_request():396] send_request: summary_record
+2025-04-09 19:44:32,783 INFO    SenderThread:445005 [sender.py:_save_file():1354] saving file wandb-summary.json with policy end
+2025-04-09 19:44:33,210 INFO    Thread-12 :445005 [dir_watcher.py:_on_file_modified():289] file/dir modified: /home/li/MachineLr/RWKV-Development-Tools-ssg/wkv7_reward_model/wandb/run-20250409_194159-x64ywmac/files/wandb-summary.json
+2025-04-09 19:44:33,210 INFO    Thread-12 :445005 [dir_watcher.py:_on_file_modified():289] file/dir modified: /home/li/MachineLr/RWKV-Development-Tools-ssg/wkv7_reward_model/wandb/run-20250409_194159-x64ywmac/files/output.log
+2025-04-09 19:44:33,783 DEBUG   HandlerThread:445005 [handler.py:handle_request():144] handle_request: status_report
+2025-04-09 19:44:34,058 DEBUG   HandlerThread:445005 [handler.py:handle_request():144] handle_request: partial_history
+2025-04-09 19:44:34,059 DEBUG   SenderThread:445005 [sender.py:send():369] send: history
+2025-04-09 19:44:34,060 DEBUG   SenderThread:445005 [sender.py:send_request():396] send_request: summary_record
+2025-04-09 19:44:34,060 INFO    SenderThread:445005 [sender.py:_save_file():1354] saving file wandb-summary.json with policy end
+2025-04-09 19:44:34,210 INFO    Thread-12 :445005 [dir_watcher.py:_on_file_modified():289] file/dir modified: /home/li/MachineLr/RWKV-Development-Tools-ssg/wkv7_reward_model/wandb/run-20250409_194159-x64ywmac/files/wandb-summary.json
+2025-04-09 19:44:35,211 INFO    Thread-12 :445005 [dir_watcher.py:_on_file_modified():289] file/dir modified: /home/li/MachineLr/RWKV-Development-Tools-ssg/wkv7_reward_model/wandb/run-20250409_194159-x64ywmac/files/output.log
+2025-04-09 19:44:36,352 DEBUG   HandlerThread:445005 [handler.py:handle_request():144] handle_request: partial_history
+2025-04-09 19:44:36,353 DEBUG   SenderThread:445005 [sender.py:send():369] send: history
+2025-04-09 19:44:36,353 DEBUG   SenderThread:445005 [sender.py:send_request():396] send_request: summary_record
+2025-04-09 19:44:36,354 INFO    SenderThread:445005 [sender.py:_save_file():1354] saving file wandb-summary.json with policy end
+2025-04-09 19:44:37,212 INFO    Thread-12 :445005 [dir_watcher.py:_on_file_modified():289] file/dir modified: /home/li/MachineLr/RWKV-Development-Tools-ssg/wkv7_reward_model/wandb/run-20250409_194159-x64ywmac/files/wandb-summary.json
+2025-04-09 19:44:37,212 INFO    Thread-12 :445005 [dir_watcher.py:_on_file_modified():289] file/dir modified: /home/li/MachineLr/RWKV-Development-Tools-ssg/wkv7_reward_model/wandb/run-20250409_194159-x64ywmac/files/output.log
+2025-04-09 19:44:38,175 DEBUG   HandlerThread:445005 [handler.py:handle_request():144] handle_request: partial_history
+2025-04-09 19:44:38,176 DEBUG   SenderThread:445005 [sender.py:send():369] send: history
+2025-04-09 19:44:38,177 DEBUG   SenderThread:445005 [sender.py:send_request():396] send_request: summary_record
+2025-04-09 19:44:38,177 INFO    SenderThread:445005 [sender.py:_save_file():1354] saving file wandb-summary.json with policy end
+2025-04-09 19:44:38,212 INFO    Thread-12 :445005 [dir_watcher.py:_on_file_modified():289] file/dir modified: /home/li/MachineLr/RWKV-Development-Tools-ssg/wkv7_reward_model/wandb/run-20250409_194159-x64ywmac/files/wandb-summary.json
+2025-04-09 19:44:39,178 DEBUG   HandlerThread:445005 [handler.py:handle_request():144] handle_request: status_report
+2025-04-09 19:44:39,212 INFO    Thread-12 :445005 [dir_watcher.py:_on_file_modified():289] file/dir modified: /home/li/MachineLr/RWKV-Development-Tools-ssg/wkv7_reward_model/wandb/run-20250409_194159-x64ywmac/files/output.log
+2025-04-09 19:44:39,222 DEBUG   HandlerThread:445005 [handler.py:handle_request():144] handle_request: partial_history
+2025-04-09 19:44:39,224 DEBUG   SenderThread:445005 [sender.py:send():369] send: history
+2025-04-09 19:44:39,224 DEBUG   SenderThread:445005 [sender.py:send_request():396] send_request: summary_record
+2025-04-09 19:44:39,224 INFO    SenderThread:445005 [sender.py:_save_file():1354] saving file wandb-summary.json with policy end
+2025-04-09 19:44:40,213 INFO    Thread-12 :445005 [dir_watcher.py:_on_file_modified():289] file/dir modified: /home/li/MachineLr/RWKV-Development-Tools-ssg/wkv7_reward_model/wandb/run-20250409_194159-x64ywmac/files/wandb-summary.json
+2025-04-09 19:44:40,665 DEBUG   HandlerThread:445005 [handler.py:handle_request():144] handle_request: partial_history
+2025-04-09 19:44:40,666 DEBUG   SenderThread:445005 [sender.py:send():369] send: history
+2025-04-09 19:44:40,666 DEBUG   SenderThread:445005 [sender.py:send_request():396] send_request: summary_record
+2025-04-09 19:44:40,666 INFO    SenderThread:445005 [sender.py:_save_file():1354] saving file wandb-summary.json with policy end
+2025-04-09 19:44:41,213 INFO    Thread-12 :445005 [dir_watcher.py:_on_file_modified():289] file/dir modified: /home/li/MachineLr/RWKV-Development-Tools-ssg/wkv7_reward_model/wandb/run-20250409_194159-x64ywmac/files/wandb-summary.json
+2025-04-09 19:44:41,213 INFO    Thread-12 :445005 [dir_watcher.py:_on_file_modified():289] file/dir modified: /home/li/MachineLr/RWKV-Development-Tools-ssg/wkv7_reward_model/wandb/run-20250409_194159-x64ywmac/files/output.log
+2025-04-09 19:44:42,140 DEBUG   HandlerThread:445005 [handler.py:handle_request():144] handle_request: partial_history
+2025-04-09 19:44:42,141 DEBUG   SenderThread:445005 [sender.py:send():369] send: history
+2025-04-09 19:44:42,141 DEBUG   SenderThread:445005 [sender.py:send_request():396] send_request: summary_record
+2025-04-09 19:44:42,142 INFO    SenderThread:445005 [sender.py:_save_file():1354] saving file wandb-summary.json with policy end
+2025-04-09 19:44:42,213 INFO    Thread-12 :445005 [dir_watcher.py:_on_file_modified():289] file/dir modified: /home/li/MachineLr/RWKV-Development-Tools-ssg/wkv7_reward_model/wandb/run-20250409_194159-x64ywmac/files/wandb-summary.json
+2025-04-09 19:44:43,109 DEBUG   HandlerThread:445005 [handler.py:handle_request():144] handle_request: partial_history
+2025-04-09 19:44:43,110 DEBUG   SenderThread:445005 [sender.py:send():369] send: history
+2025-04-09 19:44:43,110 DEBUG   SenderThread:445005 [sender.py:send_request():396] send_request: summary_record
+2025-04-09 19:44:43,110 INFO    SenderThread:445005 [sender.py:_save_file():1354] saving file wandb-summary.json with policy end
+2025-04-09 19:44:43,214 INFO    Thread-12 :445005 [dir_watcher.py:_on_file_modified():289] file/dir modified: /home/li/MachineLr/RWKV-Development-Tools-ssg/wkv7_reward_model/wandb/run-20250409_194159-x64ywmac/files/wandb-summary.json
+2025-04-09 19:44:43,214 INFO    Thread-12 :445005 [dir_watcher.py:_on_file_modified():289] file/dir modified: /home/li/MachineLr/RWKV-Development-Tools-ssg/wkv7_reward_model/wandb/run-20250409_194159-x64ywmac/files/output.log
+2025-04-09 19:44:44,669 DEBUG   HandlerThread:445005 [handler.py:handle_request():144] handle_request: partial_history
+2025-04-09 19:44:44,670 DEBUG   HandlerThread:445005 [handler.py:handle_request():144] handle_request: status_report
+2025-04-09 19:44:44,670 DEBUG   SenderThread:445005 [sender.py:send():369] send: history
+2025-04-09 19:44:44,670 DEBUG   SenderThread:445005 [sender.py:send_request():396] send_request: summary_record
+2025-04-09 19:44:44,671 INFO    SenderThread:445005 [sender.py:_save_file():1354] saving file wandb-summary.json with policy end
+2025-04-09 19:44:45,215 INFO    Thread-12 :445005 [dir_watcher.py:_on_file_modified():289] file/dir modified: /home/li/MachineLr/RWKV-Development-Tools-ssg/wkv7_reward_model/wandb/run-20250409_194159-x64ywmac/files/wandb-summary.json
+2025-04-09 19:44:45,215 INFO    Thread-12 :445005 [dir_watcher.py:_on_file_modified():289] file/dir modified: /home/li/MachineLr/RWKV-Development-Tools-ssg/wkv7_reward_model/wandb/run-20250409_194159-x64ywmac/files/output.log
+2025-04-09 19:44:46,298 DEBUG   HandlerThread:445005 [handler.py:handle_request():144] handle_request: partial_history
+2025-04-09 19:44:46,299 DEBUG   SenderThread:445005 [sender.py:send():369] send: history
+2025-04-09 19:44:46,300 DEBUG   SenderThread:445005 [sender.py:send_request():396] send_request: summary_record
+2025-04-09 19:44:46,300 INFO    SenderThread:445005 [sender.py:_save_file():1354] saving file wandb-summary.json with policy end
+2025-04-09 19:44:47,215 INFO    Thread-12 :445005 [dir_watcher.py:_on_file_modified():289] file/dir modified: /home/li/MachineLr/RWKV-Development-Tools-ssg/wkv7_reward_model/wandb/run-20250409_194159-x64ywmac/files/wandb-summary.json
+2025-04-09 19:44:47,216 INFO    Thread-12 :445005 [dir_watcher.py:_on_file_modified():289] file/dir modified: /home/li/MachineLr/RWKV-Development-Tools-ssg/wkv7_reward_model/wandb/run-20250409_194159-x64ywmac/files/output.log
+2025-04-09 19:44:47,435 DEBUG   HandlerThread:445005 [handler.py:handle_request():144] handle_request: stop_status
+2025-04-09 19:44:47,436 DEBUG   SenderThread:445005 [sender.py:send_request():396] send_request: stop_status
+2025-04-09 19:44:47,553 DEBUG   HandlerThread:445005 [handler.py:handle_request():144] handle_request: partial_history
+2025-04-09 19:44:47,776 DEBUG   SenderThread:445005 [sender.py:send():369] send: history
+2025-04-09 19:44:47,776 DEBUG   SenderThread:445005 [sender.py:send_request():396] send_request: summary_record
+2025-04-09 19:44:47,777 INFO    SenderThread:445005 [sender.py:_save_file():1354] saving file wandb-summary.json with policy end
+2025-04-09 19:44:48,216 INFO    Thread-12 :445005 [dir_watcher.py:_on_file_modified():289] file/dir modified: /home/li/MachineLr/RWKV-Development-Tools-ssg/wkv7_reward_model/wandb/run-20250409_194159-x64ywmac/files/wandb-summary.json
+2025-04-09 19:44:49,034 DEBUG   HandlerThread:445005 [handler.py:handle_request():144] handle_request: partial_history
+2025-04-09 19:44:49,035 DEBUG   SenderThread:445005 [sender.py:send():369] send: history
+2025-04-09 19:44:49,036 DEBUG   SenderThread:445005 [sender.py:send_request():396] send_request: summary_record
+2025-04-09 19:44:49,036 INFO    SenderThread:445005 [sender.py:_save_file():1354] saving file wandb-summary.json with policy end
+2025-04-09 19:44:49,216 INFO    Thread-12 :445005 [dir_watcher.py:_on_file_modified():289] file/dir modified: /home/li/MachineLr/RWKV-Development-Tools-ssg/wkv7_reward_model/wandb/run-20250409_194159-x64ywmac/files/wandb-summary.json
+2025-04-09 19:44:49,217 INFO    Thread-12 :445005 [dir_watcher.py:_on_file_modified():289] file/dir modified: /home/li/MachineLr/RWKV-Development-Tools-ssg/wkv7_reward_model/wandb/run-20250409_194159-x64ywmac/files/output.log
+2025-04-09 19:44:50,037 DEBUG   HandlerThread:445005 [handler.py:handle_request():144] handle_request: status_report
+2025-04-09 19:44:50,240 DEBUG   HandlerThread:445005 [handler.py:handle_request():144] handle_request: partial_history
+2025-04-09 19:44:50,241 DEBUG   SenderThread:445005 [sender.py:send():369] send: history
+2025-04-09 19:44:50,241 DEBUG   SenderThread:445005 [sender.py:send_request():396] send_request: summary_record
+2025-04-09 19:44:50,242 INFO    SenderThread:445005 [sender.py:_save_file():1354] saving file wandb-summary.json with policy end
+2025-04-09 19:44:51,217 INFO    Thread-12 :445005 [dir_watcher.py:_on_file_modified():289] file/dir modified: /home/li/MachineLr/RWKV-Development-Tools-ssg/wkv7_reward_model/wandb/run-20250409_194159-x64ywmac/files/wandb-summary.json
+2025-04-09 19:44:51,217 INFO    Thread-12 :445005 [dir_watcher.py:_on_file_modified():289] file/dir modified: /home/li/MachineLr/RWKV-Development-Tools-ssg/wkv7_reward_model/wandb/run-20250409_194159-x64ywmac/files/output.log
+2025-04-09 19:44:51,520 DEBUG   HandlerThread:445005 [handler.py:handle_request():144] handle_request: partial_history
+2025-04-09 19:44:51,521 DEBUG   SenderThread:445005 [sender.py:send():369] send: history
+2025-04-09 19:44:51,521 DEBUG   SenderThread:445005 [sender.py:send_request():396] send_request: summary_record
+2025-04-09 19:44:51,522 INFO    SenderThread:445005 [sender.py:_save_file():1354] saving file wandb-summary.json with policy end
+2025-04-09 19:44:52,217 INFO    Thread-12 :445005 [dir_watcher.py:_on_file_modified():289] file/dir modified: /home/li/MachineLr/RWKV-Development-Tools-ssg/wkv7_reward_model/wandb/run-20250409_194159-x64ywmac/files/wandb-summary.json
+2025-04-09 19:44:52,989 DEBUG   HandlerThread:445005 [handler.py:handle_request():144] handle_request: partial_history
+2025-04-09 19:44:52,991 DEBUG   SenderThread:445005 [sender.py:send():369] send: history
+2025-04-09 19:44:52,991 DEBUG   SenderThread:445005 [sender.py:send_request():396] send_request: summary_record
+2025-04-09 19:44:52,991 INFO    SenderThread:445005 [sender.py:_save_file():1354] saving file wandb-summary.json with policy end
+2025-04-09 19:44:53,218 INFO    Thread-12 :445005 [dir_watcher.py:_on_file_modified():289] file/dir modified: /home/li/MachineLr/RWKV-Development-Tools-ssg/wkv7_reward_model/wandb/run-20250409_194159-x64ywmac/files/wandb-summary.json
+2025-04-09 19:44:53,218 INFO    Thread-12 :445005 [dir_watcher.py:_on_file_modified():289] file/dir modified: /home/li/MachineLr/RWKV-Development-Tools-ssg/wkv7_reward_model/wandb/run-20250409_194159-x64ywmac/files/output.log
+2025-04-09 19:44:54,364 DEBUG   HandlerThread:445005 [handler.py:handle_request():144] handle_request: partial_history
+2025-04-09 19:44:54,365 DEBUG   SenderThread:445005 [sender.py:send():369] send: history
+2025-04-09 19:44:54,366 DEBUG   SenderThread:445005 [sender.py:send_request():396] send_request: summary_record
+2025-04-09 19:44:54,366 INFO    SenderThread:445005 [sender.py:_save_file():1354] saving file wandb-summary.json with policy end
+2025-04-09 19:44:55,219 INFO    Thread-12 :445005 [dir_watcher.py:_on_file_modified():289] file/dir modified: /home/li/MachineLr/RWKV-Development-Tools-ssg/wkv7_reward_model/wandb/run-20250409_194159-x64ywmac/files/wandb-summary.json
+2025-04-09 19:44:55,219 INFO    Thread-12 :445005 [dir_watcher.py:_on_file_modified():289] file/dir modified: /home/li/MachineLr/RWKV-Development-Tools-ssg/wkv7_reward_model/wandb/run-20250409_194159-x64ywmac/files/output.log
+2025-04-09 19:44:55,367 DEBUG   HandlerThread:445005 [handler.py:handle_request():144] handle_request: status_report
+2025-04-09 19:44:55,907 DEBUG   HandlerThread:445005 [handler.py:handle_request():144] handle_request: partial_history
+2025-04-09 19:44:55,907 DEBUG   SenderThread:445005 [sender.py:send():369] send: history
+2025-04-09 19:44:55,908 DEBUG   SenderThread:445005 [sender.py:send_request():396] send_request: summary_record
+2025-04-09 19:44:55,908 INFO    SenderThread:445005 [sender.py:_save_file():1354] saving file wandb-summary.json with policy end
+2025-04-09 19:44:56,219 INFO    Thread-12 :445005 [dir_watcher.py:_on_file_modified():289] file/dir modified: /home/li/MachineLr/RWKV-Development-Tools-ssg/wkv7_reward_model/wandb/run-20250409_194159-x64ywmac/files/wandb-summary.json
+2025-04-09 19:44:57,219 INFO    Thread-12 :445005 [dir_watcher.py:_on_file_modified():289] file/dir modified: /home/li/MachineLr/RWKV-Development-Tools-ssg/wkv7_reward_model/wandb/run-20250409_194159-x64ywmac/files/output.log
+2025-04-09 19:44:58,073 DEBUG   HandlerThread:445005 [handler.py:handle_request():144] handle_request: partial_history
+2025-04-09 19:44:58,074 DEBUG   SenderThread:445005 [sender.py:send():369] send: history
+2025-04-09 19:44:58,074 DEBUG   SenderThread:445005 [sender.py:send_request():396] send_request: summary_record
+2025-04-09 19:44:58,075 INFO    SenderThread:445005 [sender.py:_save_file():1354] saving file wandb-summary.json with policy end
+2025-04-09 19:44:58,220 INFO    Thread-12 :445005 [dir_watcher.py:_on_file_modified():289] file/dir modified: /home/li/MachineLr/RWKV-Development-Tools-ssg/wkv7_reward_model/wandb/run-20250409_194159-x64ywmac/files/wandb-summary.json
+2025-04-09 19:44:59,220 INFO    Thread-12 :445005 [dir_watcher.py:_on_file_modified():289] file/dir modified: /home/li/MachineLr/RWKV-Development-Tools-ssg/wkv7_reward_model/wandb/run-20250409_194159-x64ywmac/files/output.log
+2025-04-09 19:44:59,278 DEBUG   HandlerThread:445005 [handler.py:handle_request():144] handle_request: partial_history
+2025-04-09 19:44:59,279 DEBUG   SenderThread:445005 [sender.py:send():369] send: history
+2025-04-09 19:44:59,279 DEBUG   SenderThread:445005 [sender.py:send_request():396] send_request: summary_record
+2025-04-09 19:44:59,280 INFO    SenderThread:445005 [sender.py:_save_file():1354] saving file wandb-summary.json with policy end
+2025-04-09 19:45:00,221 INFO    Thread-12 :445005 [dir_watcher.py:_on_file_modified():289] file/dir modified: /home/li/MachineLr/RWKV-Development-Tools-ssg/wkv7_reward_model/wandb/run-20250409_194159-x64ywmac/files/wandb-summary.json
+2025-04-09 19:45:00,513 DEBUG   SenderThread:445005 [sender.py:send():369] send: stats
+2025-04-09 19:45:00,513 DEBUG   HandlerThread:445005 [handler.py:handle_request():144] handle_request: status_report
+2025-04-09 19:45:00,760 DEBUG   HandlerThread:445005 [handler.py:handle_request():144] handle_request: partial_history
+2025-04-09 19:45:00,761 DEBUG   SenderThread:445005 [sender.py:send():369] send: history
+2025-04-09 19:45:00,761 DEBUG   SenderThread:445005 [sender.py:send_request():396] send_request: summary_record
+2025-04-09 19:45:00,761 INFO    SenderThread:445005 [sender.py:_save_file():1354] saving file wandb-summary.json with policy end
+2025-04-09 19:45:01,221 INFO    Thread-12 :445005 [dir_watcher.py:_on_file_modified():289] file/dir modified: /home/li/MachineLr/RWKV-Development-Tools-ssg/wkv7_reward_model/wandb/run-20250409_194159-x64ywmac/files/wandb-summary.json
+2025-04-09 19:45:01,222 INFO    Thread-12 :445005 [dir_watcher.py:_on_file_modified():289] file/dir modified: /home/li/MachineLr/RWKV-Development-Tools-ssg/wkv7_reward_model/wandb/run-20250409_194159-x64ywmac/files/output.log
+2025-04-09 19:45:02,435 DEBUG   HandlerThread:445005 [handler.py:handle_request():144] handle_request: stop_status
+2025-04-09 19:45:02,436 DEBUG   SenderThread:445005 [sender.py:send_request():396] send_request: stop_status
+2025-04-09 19:45:03,159 DEBUG   HandlerThread:445005 [handler.py:handle_request():144] handle_request: partial_history
+2025-04-09 19:45:03,160 DEBUG   SenderThread:445005 [sender.py:send():369] send: history
+2025-04-09 19:45:03,160 DEBUG   SenderThread:445005 [sender.py:send_request():396] send_request: summary_record
+2025-04-09 19:45:03,160 INFO    SenderThread:445005 [sender.py:_save_file():1354] saving file wandb-summary.json with policy end
+2025-04-09 19:45:03,222 INFO    Thread-12 :445005 [dir_watcher.py:_on_file_modified():289] file/dir modified: /home/li/MachineLr/RWKV-Development-Tools-ssg/wkv7_reward_model/wandb/run-20250409_194159-x64ywmac/files/wandb-summary.json
+2025-04-09 19:45:04,439 DEBUG   HandlerThread:445005 [handler.py:handle_request():144] handle_request: partial_history
+2025-04-09 19:45:04,439 DEBUG   SenderThread:445005 [sender.py:send():369] send: history
+2025-04-09 19:45:04,440 DEBUG   SenderThread:445005 [sender.py:send_request():396] send_request: summary_record
+2025-04-09 19:45:04,440 INFO    SenderThread:445005 [sender.py:_save_file():1354] saving file wandb-summary.json with policy end
+2025-04-09 19:45:05,223 INFO    Thread-12 :445005 [dir_watcher.py:_on_file_modified():289] file/dir modified: /home/li/MachineLr/RWKV-Development-Tools-ssg/wkv7_reward_model/wandb/run-20250409_194159-x64ywmac/files/wandb-summary.json
+2025-04-09 19:45:05,223 INFO    Thread-12 :445005 [dir_watcher.py:_on_file_modified():289] file/dir modified: /home/li/MachineLr/RWKV-Development-Tools-ssg/wkv7_reward_model/wandb/run-20250409_194159-x64ywmac/files/output.log
+2025-04-09 19:45:05,603 DEBUG   HandlerThread:445005 [handler.py:handle_request():144] handle_request: partial_history
+2025-04-09 19:45:05,604 DEBUG   SenderThread:445005 [sender.py:send():369] send: history
+2025-04-09 19:45:05,604 DEBUG   HandlerThread:445005 [handler.py:handle_request():144] handle_request: status_report
+2025-04-09 19:45:05,604 DEBUG   SenderThread:445005 [sender.py:send_request():396] send_request: summary_record
+2025-04-09 19:45:05,605 INFO    SenderThread:445005 [sender.py:_save_file():1354] saving file wandb-summary.json with policy end
+2025-04-09 19:45:06,223 INFO    Thread-12 :445005 [dir_watcher.py:_on_file_modified():289] file/dir modified: /home/li/MachineLr/RWKV-Development-Tools-ssg/wkv7_reward_model/wandb/run-20250409_194159-x64ywmac/files/wandb-summary.json
+2025-04-09 19:45:07,224 INFO    Thread-12 :445005 [dir_watcher.py:_on_file_modified():289] file/dir modified: /home/li/MachineLr/RWKV-Development-Tools-ssg/wkv7_reward_model/wandb/run-20250409_194159-x64ywmac/files/output.log
+2025-04-09 19:45:07,441 DEBUG   HandlerThread:445005 [handler.py:handle_request():144] handle_request: partial_history
+2025-04-09 19:45:07,442 DEBUG   SenderThread:445005 [sender.py:send():369] send: history
+2025-04-09 19:45:07,442 DEBUG   SenderThread:445005 [sender.py:send_request():396] send_request: summary_record
+2025-04-09 19:45:07,442 INFO    SenderThread:445005 [sender.py:_save_file():1354] saving file wandb-summary.json with policy end
+2025-04-09 19:45:08,224 INFO    Thread-12 :445005 [dir_watcher.py:_on_file_modified():289] file/dir modified: /home/li/MachineLr/RWKV-Development-Tools-ssg/wkv7_reward_model/wandb/run-20250409_194159-x64ywmac/files/wandb-summary.json
+2025-04-09 19:45:08,848 DEBUG   HandlerThread:445005 [handler.py:handle_request():144] handle_request: partial_history
+2025-04-09 19:45:08,849 DEBUG   SenderThread:445005 [sender.py:send():369] send: history
+2025-04-09 19:45:08,849 DEBUG   SenderThread:445005 [sender.py:send_request():396] send_request: summary_record
+2025-04-09 19:45:08,850 INFO    SenderThread:445005 [sender.py:_save_file():1354] saving file wandb-summary.json with policy end
+2025-04-09 19:45:09,224 INFO    Thread-12 :445005 [dir_watcher.py:_on_file_modified():289] file/dir modified: /home/li/MachineLr/RWKV-Development-Tools-ssg/wkv7_reward_model/wandb/run-20250409_194159-x64ywmac/files/wandb-summary.json
+2025-04-09 19:45:09,225 INFO    Thread-12 :445005 [dir_watcher.py:_on_file_modified():289] file/dir modified: /home/li/MachineLr/RWKV-Development-Tools-ssg/wkv7_reward_model/wandb/run-20250409_194159-x64ywmac/files/output.log
+2025-04-09 19:45:09,944 DEBUG   HandlerThread:445005 [handler.py:handle_request():144] handle_request: partial_history
+2025-04-09 19:45:09,945 DEBUG   SenderThread:445005 [sender.py:send():369] send: history
+2025-04-09 19:45:09,945 DEBUG   SenderThread:445005 [sender.py:send_request():396] send_request: summary_record
+2025-04-09 19:45:09,946 INFO    SenderThread:445005 [sender.py:_save_file():1354] saving file wandb-summary.json with policy end
+2025-04-09 19:45:10,225 INFO    Thread-12 :445005 [dir_watcher.py:_on_file_modified():289] file/dir modified: /home/li/MachineLr/RWKV-Development-Tools-ssg/wkv7_reward_model/wandb/run-20250409_194159-x64ywmac/files/wandb-summary.json
+2025-04-09 19:45:10,946 DEBUG   HandlerThread:445005 [handler.py:handle_request():144] handle_request: status_report
+2025-04-09 19:45:11,225 INFO    Thread-12 :445005 [dir_watcher.py:_on_file_modified():289] file/dir modified: /home/li/MachineLr/RWKV-Development-Tools-ssg/wkv7_reward_model/wandb/run-20250409_194159-x64ywmac/files/output.log
+2025-04-09 19:45:11,482 DEBUG   HandlerThread:445005 [handler.py:handle_request():144] handle_request: partial_history
+2025-04-09 19:45:11,483 DEBUG   SenderThread:445005 [sender.py:send():369] send: history
+2025-04-09 19:45:11,483 DEBUG   SenderThread:445005 [sender.py:send_request():396] send_request: summary_record
+2025-04-09 19:45:11,483 INFO    SenderThread:445005 [sender.py:_save_file():1354] saving file wandb-summary.json with policy end
+2025-04-09 19:45:12,226 INFO    Thread-12 :445005 [dir_watcher.py:_on_file_modified():289] file/dir modified: /home/li/MachineLr/RWKV-Development-Tools-ssg/wkv7_reward_model/wandb/run-20250409_194159-x64ywmac/files/wandb-summary.json
+2025-04-09 19:45:13,226 INFO    Thread-12 :445005 [dir_watcher.py:_on_file_modified():289] file/dir modified: /home/li/MachineLr/RWKV-Development-Tools-ssg/wkv7_reward_model/wandb/run-20250409_194159-x64ywmac/files/output.log
+2025-04-09 19:45:13,321 DEBUG   HandlerThread:445005 [handler.py:handle_request():144] handle_request: partial_history
+2025-04-09 19:45:13,322 DEBUG   SenderThread:445005 [sender.py:send():369] send: history
+2025-04-09 19:45:13,322 DEBUG   SenderThread:445005 [sender.py:send_request():396] send_request: summary_record
+2025-04-09 19:45:13,323 INFO    SenderThread:445005 [sender.py:_save_file():1354] saving file wandb-summary.json with policy end
+2025-04-09 19:45:14,226 INFO    Thread-12 :445005 [dir_watcher.py:_on_file_modified():289] file/dir modified: /home/li/MachineLr/RWKV-Development-Tools-ssg/wkv7_reward_model/wandb/run-20250409_194159-x64ywmac/files/wandb-summary.json
+2025-04-09 19:45:14,566 DEBUG   HandlerThread:445005 [handler.py:handle_request():144] handle_request: partial_history
+2025-04-09 19:45:14,567 DEBUG   SenderThread:445005 [sender.py:send():369] send: history
+2025-04-09 19:45:14,567 DEBUG   SenderThread:445005 [sender.py:send_request():396] send_request: summary_record
+2025-04-09 19:45:14,567 INFO    SenderThread:445005 [sender.py:_save_file():1354] saving file wandb-summary.json with policy end
+2025-04-09 19:45:15,227 INFO    Thread-12 :445005 [dir_watcher.py:_on_file_modified():289] file/dir modified: /home/li/MachineLr/RWKV-Development-Tools-ssg/wkv7_reward_model/wandb/run-20250409_194159-x64ywmac/files/wandb-summary.json
+2025-04-09 19:45:15,227 INFO    Thread-12 :445005 [dir_watcher.py:_on_file_modified():289] file/dir modified: /home/li/MachineLr/RWKV-Development-Tools-ssg/wkv7_reward_model/wandb/run-20250409_194159-x64ywmac/files/output.log
+2025-04-09 19:45:15,889 DEBUG   HandlerThread:445005 [handler.py:handle_request():144] handle_request: partial_history
+2025-04-09 19:45:15,891 DEBUG   SenderThread:445005 [sender.py:send():369] send: history
+2025-04-09 19:45:15,891 DEBUG   SenderThread:445005 [sender.py:send_request():396] send_request: summary_record
+2025-04-09 19:45:15,891 INFO    SenderThread:445005 [sender.py:_save_file():1354] saving file wandb-summary.json with policy end
+2025-04-09 19:45:16,227 INFO    Thread-12 :445005 [dir_watcher.py:_on_file_modified():289] file/dir modified: /home/li/MachineLr/RWKV-Development-Tools-ssg/wkv7_reward_model/wandb/run-20250409_194159-x64ywmac/files/wandb-summary.json
+2025-04-09 19:45:16,892 DEBUG   HandlerThread:445005 [handler.py:handle_request():144] handle_request: status_report
+2025-04-09 19:45:16,953 DEBUG   HandlerThread:445005 [handler.py:handle_request():144] handle_request: partial_history
+2025-04-09 19:45:16,954 DEBUG   SenderThread:445005 [sender.py:send():369] send: history
+2025-04-09 19:45:16,954 DEBUG   SenderThread:445005 [sender.py:send_request():396] send_request: summary_record
+2025-04-09 19:45:16,955 INFO    SenderThread:445005 [sender.py:_save_file():1354] saving file wandb-summary.json with policy end
+2025-04-09 19:45:17,228 INFO    Thread-12 :445005 [dir_watcher.py:_on_file_modified():289] file/dir modified: /home/li/MachineLr/RWKV-Development-Tools-ssg/wkv7_reward_model/wandb/run-20250409_194159-x64ywmac/files/wandb-summary.json
+2025-04-09 19:45:17,228 INFO    Thread-12 :445005 [dir_watcher.py:_on_file_modified():289] file/dir modified: /home/li/MachineLr/RWKV-Development-Tools-ssg/wkv7_reward_model/wandb/run-20250409_194159-x64ywmac/files/output.log
+2025-04-09 19:45:17,435 DEBUG   HandlerThread:445005 [handler.py:handle_request():144] handle_request: stop_status
+2025-04-09 19:45:17,436 DEBUG   SenderThread:445005 [sender.py:send_request():396] send_request: stop_status
+2025-04-09 19:45:17,701 DEBUG   HandlerThread:445005 [handler.py:handle_request():144] handle_request: partial_history
+2025-04-09 19:45:17,787 DEBUG   SenderThread:445005 [sender.py:send():369] send: history
+2025-04-09 19:45:17,787 DEBUG   SenderThread:445005 [sender.py:send_request():396] send_request: summary_record
+2025-04-09 19:45:17,788 INFO    SenderThread:445005 [sender.py:_save_file():1354] saving file wandb-summary.json with policy end
+2025-04-09 19:45:18,228 INFO    Thread-12 :445005 [dir_watcher.py:_on_file_modified():289] file/dir modified: /home/li/MachineLr/RWKV-Development-Tools-ssg/wkv7_reward_model/wandb/run-20250409_194159-x64ywmac/files/wandb-summary.json
+2025-04-09 19:45:19,196 DEBUG   HandlerThread:445005 [handler.py:handle_request():144] handle_request: partial_history
+2025-04-09 19:45:19,197 DEBUG   SenderThread:445005 [sender.py:send():369] send: history
+2025-04-09 19:45:19,197 DEBUG   SenderThread:445005 [sender.py:send_request():396] send_request: summary_record
+2025-04-09 19:45:19,198 INFO    SenderThread:445005 [sender.py:_save_file():1354] saving file wandb-summary.json with policy end
+2025-04-09 19:45:19,229 INFO    Thread-12 :445005 [dir_watcher.py:_on_file_modified():289] file/dir modified: /home/li/MachineLr/RWKV-Development-Tools-ssg/wkv7_reward_model/wandb/run-20250409_194159-x64ywmac/files/wandb-summary.json
+2025-04-09 19:45:19,229 INFO    Thread-12 :445005 [dir_watcher.py:_on_file_modified():289] file/dir modified: /home/li/MachineLr/RWKV-Development-Tools-ssg/wkv7_reward_model/wandb/run-20250409_194159-x64ywmac/files/output.log
+2025-04-09 19:45:21,229 INFO    Thread-12 :445005 [dir_watcher.py:_on_file_modified():289] file/dir modified: /home/li/MachineLr/RWKV-Development-Tools-ssg/wkv7_reward_model/wandb/run-20250409_194159-x64ywmac/files/output.log
+2025-04-09 19:45:21,265 DEBUG   HandlerThread:445005 [handler.py:handle_request():144] handle_request: partial_history
+2025-04-09 19:45:21,266 DEBUG   SenderThread:445005 [sender.py:send():369] send: history
+2025-04-09 19:45:21,267 DEBUG   SenderThread:445005 [sender.py:send_request():396] send_request: summary_record
+2025-04-09 19:45:21,267 INFO    SenderThread:445005 [sender.py:_save_file():1354] saving file wandb-summary.json with policy end
+2025-04-09 19:45:22,230 INFO    Thread-12 :445005 [dir_watcher.py:_on_file_modified():289] file/dir modified: /home/li/MachineLr/RWKV-Development-Tools-ssg/wkv7_reward_model/wandb/run-20250409_194159-x64ywmac/files/wandb-summary.json
+2025-04-09 19:45:22,268 DEBUG   HandlerThread:445005 [handler.py:handle_request():144] handle_request: status_report
+2025-04-09 19:45:22,459 DEBUG   HandlerThread:445005 [handler.py:handle_request():144] handle_request: partial_history
+2025-04-09 19:45:22,460 DEBUG   SenderThread:445005 [sender.py:send():369] send: history
+2025-04-09 19:45:22,461 DEBUG   SenderThread:445005 [sender.py:send_request():396] send_request: summary_record
+2025-04-09 19:45:22,461 INFO    SenderThread:445005 [sender.py:_save_file():1354] saving file wandb-summary.json with policy end
+2025-04-09 19:45:23,230 INFO    Thread-12 :445005 [dir_watcher.py:_on_file_modified():289] file/dir modified: /home/li/MachineLr/RWKV-Development-Tools-ssg/wkv7_reward_model/wandb/run-20250409_194159-x64ywmac/files/wandb-summary.json
+2025-04-09 19:45:23,231 INFO    Thread-12 :445005 [dir_watcher.py:_on_file_modified():289] file/dir modified: /home/li/MachineLr/RWKV-Development-Tools-ssg/wkv7_reward_model/wandb/run-20250409_194159-x64ywmac/files/output.log
+2025-04-09 19:45:23,547 DEBUG   HandlerThread:445005 [handler.py:handle_request():144] handle_request: partial_history
+2025-04-09 19:45:23,548 DEBUG   SenderThread:445005 [sender.py:send():369] send: history
+2025-04-09 19:45:23,549 DEBUG   SenderThread:445005 [sender.py:send_request():396] send_request: summary_record
+2025-04-09 19:45:23,549 INFO    SenderThread:445005 [sender.py:_save_file():1354] saving file wandb-summary.json with policy end
+2025-04-09 19:45:24,231 INFO    Thread-12 :445005 [dir_watcher.py:_on_file_modified():289] file/dir modified: /home/li/MachineLr/RWKV-Development-Tools-ssg/wkv7_reward_model/wandb/run-20250409_194159-x64ywmac/files/wandb-summary.json
+2025-04-09 19:45:25,231 INFO    Thread-12 :445005 [dir_watcher.py:_on_file_modified():289] file/dir modified: /home/li/MachineLr/RWKV-Development-Tools-ssg/wkv7_reward_model/wandb/run-20250409_194159-x64ywmac/files/output.log
+2025-04-09 19:45:25,440 DEBUG   HandlerThread:445005 [handler.py:handle_request():144] handle_request: partial_history
+2025-04-09 19:45:25,441 DEBUG   SenderThread:445005 [sender.py:send():369] send: history
+2025-04-09 19:45:25,441 DEBUG   SenderThread:445005 [sender.py:send_request():396] send_request: summary_record
+2025-04-09 19:45:25,442 INFO    SenderThread:445005 [sender.py:_save_file():1354] saving file wandb-summary.json with policy end
+2025-04-09 19:45:26,231 INFO    Thread-12 :445005 [dir_watcher.py:_on_file_modified():289] file/dir modified: /home/li/MachineLr/RWKV-Development-Tools-ssg/wkv7_reward_model/wandb/run-20250409_194159-x64ywmac/files/wandb-summary.json
+2025-04-09 19:45:26,670 DEBUG   HandlerThread:445005 [handler.py:handle_request():144] handle_request: partial_history
+2025-04-09 19:45:26,671 DEBUG   SenderThread:445005 [sender.py:send():369] send: history
+2025-04-09 19:45:26,672 DEBUG   SenderThread:445005 [sender.py:send_request():396] send_request: summary_record
+2025-04-09 19:45:26,672 INFO    SenderThread:445005 [sender.py:_save_file():1354] saving file wandb-summary.json with policy end
+2025-04-09 19:45:27,232 INFO    Thread-12 :445005 [dir_watcher.py:_on_file_modified():289] file/dir modified: /home/li/MachineLr/RWKV-Development-Tools-ssg/wkv7_reward_model/wandb/run-20250409_194159-x64ywmac/files/wandb-summary.json
+2025-04-09 19:45:27,232 INFO    Thread-12 :445005 [dir_watcher.py:_on_file_modified():289] file/dir modified: /home/li/MachineLr/RWKV-Development-Tools-ssg/wkv7_reward_model/wandb/run-20250409_194159-x64ywmac/files/output.log
+2025-04-09 19:45:27,673 DEBUG   HandlerThread:445005 [handler.py:handle_request():144] handle_request: status_report
+2025-04-09 19:45:28,302 DEBUG   HandlerThread:445005 [handler.py:handle_request():144] handle_request: partial_history
+2025-04-09 19:45:28,303 DEBUG   SenderThread:445005 [sender.py:send():369] send: history
+2025-04-09 19:45:28,303 DEBUG   SenderThread:445005 [sender.py:send_request():396] send_request: summary_record
+2025-04-09 19:45:28,304 INFO    SenderThread:445005 [sender.py:_save_file():1354] saving file wandb-summary.json with policy end
+2025-04-09 19:45:29,233 INFO    Thread-12 :445005 [dir_watcher.py:_on_file_modified():289] file/dir modified: /home/li/MachineLr/RWKV-Development-Tools-ssg/wkv7_reward_model/wandb/run-20250409_194159-x64ywmac/files/wandb-summary.json
+2025-04-09 19:45:29,233 INFO    Thread-12 :445005 [dir_watcher.py:_on_file_modified():289] file/dir modified: /home/li/MachineLr/RWKV-Development-Tools-ssg/wkv7_reward_model/wandb/run-20250409_194159-x64ywmac/files/output.log
+2025-04-09 19:45:29,846 DEBUG   HandlerThread:445005 [handler.py:handle_request():144] handle_request: partial_history
+2025-04-09 19:45:29,847 DEBUG   SenderThread:445005 [sender.py:send():369] send: history
+2025-04-09 19:45:29,847 DEBUG   SenderThread:445005 [sender.py:send_request():396] send_request: summary_record
+2025-04-09 19:45:29,848 INFO    SenderThread:445005 [sender.py:_save_file():1354] saving file wandb-summary.json with policy end
+2025-04-09 19:45:30,233 INFO    Thread-12 :445005 [dir_watcher.py:_on_file_modified():289] file/dir modified: /home/li/MachineLr/RWKV-Development-Tools-ssg/wkv7_reward_model/wandb/run-20250409_194159-x64ywmac/files/wandb-summary.json
+2025-04-09 19:45:30,514 DEBUG   SenderThread:445005 [sender.py:send():369] send: stats
+2025-04-09 19:45:31,090 DEBUG   HandlerThread:445005 [handler.py:handle_request():144] handle_request: partial_history
+2025-04-09 19:45:31,091 DEBUG   SenderThread:445005 [sender.py:send():369] send: history
+2025-04-09 19:45:31,091 DEBUG   SenderThread:445005 [sender.py:send_request():396] send_request: summary_record
+2025-04-09 19:45:31,092 INFO    SenderThread:445005 [sender.py:_save_file():1354] saving file wandb-summary.json with policy end
+2025-04-09 19:45:31,234 INFO    Thread-12 :445005 [dir_watcher.py:_on_file_modified():289] file/dir modified: /home/li/MachineLr/RWKV-Development-Tools-ssg/wkv7_reward_model/wandb/run-20250409_194159-x64ywmac/files/wandb-summary.json
+2025-04-09 19:45:31,234 INFO    Thread-12 :445005 [dir_watcher.py:_on_file_modified():289] file/dir modified: /home/li/MachineLr/RWKV-Development-Tools-ssg/wkv7_reward_model/wandb/run-20250409_194159-x64ywmac/files/output.log
+2025-04-09 19:45:32,277 DEBUG   HandlerThread:445005 [handler.py:handle_request():144] handle_request: partial_history
+2025-04-09 19:45:32,278 DEBUG   SenderThread:445005 [sender.py:send():369] send: history
+2025-04-09 19:45:32,279 DEBUG   SenderThread:445005 [sender.py:send_request():396] send_request: summary_record
+2025-04-09 19:45:32,279 INFO    SenderThread:445005 [sender.py:_save_file():1354] saving file wandb-summary.json with policy end
+2025-04-09 19:45:32,435 DEBUG   HandlerThread:445005 [handler.py:handle_request():144] handle_request: stop_status
+2025-04-09 19:45:32,436 DEBUG   SenderThread:445005 [sender.py:send_request():396] send_request: stop_status
+2025-04-09 19:45:32,754 DEBUG   HandlerThread:445005 [handler.py:handle_request():144] handle_request: status_report
+2025-04-09 19:45:33,234 INFO    Thread-12 :445005 [dir_watcher.py:_on_file_modified():289] file/dir modified: /home/li/MachineLr/RWKV-Development-Tools-ssg/wkv7_reward_model/wandb/run-20250409_194159-x64ywmac/files/wandb-summary.json
+2025-04-09 19:45:33,235 INFO    Thread-12 :445005 [dir_watcher.py:_on_file_modified():289] file/dir modified: /home/li/MachineLr/RWKV-Development-Tools-ssg/wkv7_reward_model/wandb/run-20250409_194159-x64ywmac/files/output.log
+2025-04-09 19:45:33,467 DEBUG   HandlerThread:445005 [handler.py:handle_request():144] handle_request: partial_history
+2025-04-09 19:45:33,468 DEBUG   SenderThread:445005 [sender.py:send():369] send: history
+2025-04-09 19:45:33,468 DEBUG   SenderThread:445005 [sender.py:send_request():396] send_request: summary_record
+2025-04-09 19:45:33,468 INFO    SenderThread:445005 [sender.py:_save_file():1354] saving file wandb-summary.json with policy end
+2025-04-09 19:45:34,235 INFO    Thread-12 :445005 [dir_watcher.py:_on_file_modified():289] file/dir modified: /home/li/MachineLr/RWKV-Development-Tools-ssg/wkv7_reward_model/wandb/run-20250409_194159-x64ywmac/files/wandb-summary.json
+2025-04-09 19:45:34,706 DEBUG   HandlerThread:445005 [handler.py:handle_request():144] handle_request: partial_history
+2025-04-09 19:45:34,707 DEBUG   SenderThread:445005 [sender.py:send():369] send: history
+2025-04-09 19:45:34,708 DEBUG   SenderThread:445005 [sender.py:send_request():396] send_request: summary_record
+2025-04-09 19:45:34,708 INFO    SenderThread:445005 [sender.py:_save_file():1354] saving file wandb-summary.json with policy end
+2025-04-09 19:45:35,235 INFO    Thread-12 :445005 [dir_watcher.py:_on_file_modified():289] file/dir modified: /home/li/MachineLr/RWKV-Development-Tools-ssg/wkv7_reward_model/wandb/run-20250409_194159-x64ywmac/files/wandb-summary.json
+2025-04-09 19:45:35,236 INFO    Thread-12 :445005 [dir_watcher.py:_on_file_modified():289] file/dir modified: /home/li/MachineLr/RWKV-Development-Tools-ssg/wkv7_reward_model/wandb/run-20250409_194159-x64ywmac/files/output.log
+2025-04-09 19:45:36,701 DEBUG   HandlerThread:445005 [handler.py:handle_request():144] handle_request: partial_history
+2025-04-09 19:45:36,702 DEBUG   SenderThread:445005 [sender.py:send():369] send: history
+2025-04-09 19:45:36,702 DEBUG   SenderThread:445005 [sender.py:send_request():396] send_request: summary_record
+2025-04-09 19:45:36,703 INFO    SenderThread:445005 [sender.py:_save_file():1354] saving file wandb-summary.json with policy end
+2025-04-09 19:45:37,236 INFO    Thread-12 :445005 [dir_watcher.py:_on_file_modified():289] file/dir modified: /home/li/MachineLr/RWKV-Development-Tools-ssg/wkv7_reward_model/wandb/run-20250409_194159-x64ywmac/files/wandb-summary.json
+2025-04-09 19:45:37,237 INFO    Thread-12 :445005 [dir_watcher.py:_on_file_modified():289] file/dir modified: /home/li/MachineLr/RWKV-Development-Tools-ssg/wkv7_reward_model/wandb/run-20250409_194159-x64ywmac/files/output.log
+2025-04-09 19:45:37,875 DEBUG   HandlerThread:445005 [handler.py:handle_request():144] handle_request: partial_history
+2025-04-09 19:45:37,875 DEBUG   HandlerThread:445005 [handler.py:handle_request():144] handle_request: status_report
+2025-04-09 19:45:37,876 DEBUG   SenderThread:445005 [sender.py:send():369] send: history
+2025-04-09 19:45:37,876 DEBUG   SenderThread:445005 [sender.py:send_request():396] send_request: summary_record
+2025-04-09 19:45:37,876 INFO    SenderThread:445005 [sender.py:_save_file():1354] saving file wandb-summary.json with policy end
+2025-04-09 19:45:38,237 INFO    Thread-12 :445005 [dir_watcher.py:_on_file_modified():289] file/dir modified: /home/li/MachineLr/RWKV-Development-Tools-ssg/wkv7_reward_model/wandb/run-20250409_194159-x64ywmac/files/wandb-summary.json
+2025-04-09 19:45:39,169 DEBUG   HandlerThread:445005 [handler.py:handle_request():144] handle_request: partial_history
+2025-04-09 19:45:39,171 DEBUG   SenderThread:445005 [sender.py:send():369] send: history
+2025-04-09 19:45:39,171 DEBUG   SenderThread:445005 [sender.py:send_request():396] send_request: summary_record
+2025-04-09 19:45:39,171 INFO    SenderThread:445005 [sender.py:_save_file():1354] saving file wandb-summary.json with policy end
+2025-04-09 19:45:39,237 INFO    Thread-12 :445005 [dir_watcher.py:_on_file_modified():289] file/dir modified: /home/li/MachineLr/RWKV-Development-Tools-ssg/wkv7_reward_model/wandb/run-20250409_194159-x64ywmac/files/wandb-summary.json
+2025-04-09 19:45:39,237 INFO    Thread-12 :445005 [dir_watcher.py:_on_file_modified():289] file/dir modified: /home/li/MachineLr/RWKV-Development-Tools-ssg/wkv7_reward_model/wandb/run-20250409_194159-x64ywmac/files/output.log
+2025-04-09 19:45:40,526 DEBUG   HandlerThread:445005 [handler.py:handle_request():144] handle_request: partial_history
+2025-04-09 19:45:40,527 DEBUG   SenderThread:445005 [sender.py:send():369] send: history
+2025-04-09 19:45:40,528 DEBUG   SenderThread:445005 [sender.py:send_request():396] send_request: summary_record
+2025-04-09 19:45:40,528 INFO    SenderThread:445005 [sender.py:_save_file():1354] saving file wandb-summary.json with policy end
+2025-04-09 19:45:41,238 INFO    Thread-12 :445005 [dir_watcher.py:_on_file_modified():289] file/dir modified: /home/li/MachineLr/RWKV-Development-Tools-ssg/wkv7_reward_model/wandb/run-20250409_194159-x64ywmac/files/wandb-summary.json
+2025-04-09 19:45:41,238 INFO    Thread-12 :445005 [dir_watcher.py:_on_file_modified():289] file/dir modified: /home/li/MachineLr/RWKV-Development-Tools-ssg/wkv7_reward_model/wandb/run-20250409_194159-x64ywmac/files/output.log
+2025-04-09 19:45:41,576 DEBUG   HandlerThread:445005 [handler.py:handle_request():144] handle_request: partial_history
+2025-04-09 19:45:41,577 DEBUG   SenderThread:445005 [sender.py:send():369] send: history
+2025-04-09 19:45:41,578 DEBUG   SenderThread:445005 [sender.py:send_request():396] send_request: summary_record
+2025-04-09 19:45:41,578 INFO    SenderThread:445005 [sender.py:_save_file():1354] saving file wandb-summary.json with policy end
+2025-04-09 19:45:42,238 INFO    Thread-12 :445005 [dir_watcher.py:_on_file_modified():289] file/dir modified: /home/li/MachineLr/RWKV-Development-Tools-ssg/wkv7_reward_model/wandb/run-20250409_194159-x64ywmac/files/wandb-summary.json
+2025-04-09 19:45:43,239 INFO    Thread-12 :445005 [dir_watcher.py:_on_file_modified():289] file/dir modified: /home/li/MachineLr/RWKV-Development-Tools-ssg/wkv7_reward_model/wandb/run-20250409_194159-x64ywmac/files/output.log
+2025-04-09 19:45:43,394 DEBUG   HandlerThread:445005 [handler.py:handle_request():144] handle_request: partial_history
+2025-04-09 19:45:43,395 DEBUG   HandlerThread:445005 [handler.py:handle_request():144] handle_request: status_report
+2025-04-09 19:45:43,395 DEBUG   SenderThread:445005 [sender.py:send():369] send: history
+2025-04-09 19:45:43,395 DEBUG   SenderThread:445005 [sender.py:send_request():396] send_request: summary_record
+2025-04-09 19:45:43,396 INFO    SenderThread:445005 [sender.py:_save_file():1354] saving file wandb-summary.json with policy end
+2025-04-09 19:45:44,239 INFO    Thread-12 :445005 [dir_watcher.py:_on_file_modified():289] file/dir modified: /home/li/MachineLr/RWKV-Development-Tools-ssg/wkv7_reward_model/wandb/run-20250409_194159-x64ywmac/files/wandb-summary.json
+2025-04-09 19:45:44,558 DEBUG   HandlerThread:445005 [handler.py:handle_request():144] handle_request: partial_history
+2025-04-09 19:45:44,559 DEBUG   SenderThread:445005 [sender.py:send():369] send: history
+2025-04-09 19:45:44,559 DEBUG   SenderThread:445005 [sender.py:send_request():396] send_request: summary_record
+2025-04-09 19:45:44,560 INFO    SenderThread:445005 [sender.py:_save_file():1354] saving file wandb-summary.json with policy end
+2025-04-09 19:45:45,239 INFO    Thread-12 :445005 [dir_watcher.py:_on_file_modified():289] file/dir modified: /home/li/MachineLr/RWKV-Development-Tools-ssg/wkv7_reward_model/wandb/run-20250409_194159-x64ywmac/files/wandb-summary.json
+2025-04-09 19:45:45,240 INFO    Thread-12 :445005 [dir_watcher.py:_on_file_modified():289] file/dir modified: /home/li/MachineLr/RWKV-Development-Tools-ssg/wkv7_reward_model/wandb/run-20250409_194159-x64ywmac/files/output.log
+2025-04-09 19:45:45,465 DEBUG   HandlerThread:445005 [handler.py:handle_request():144] handle_request: partial_history
+2025-04-09 19:45:45,466 DEBUG   SenderThread:445005 [sender.py:send():369] send: history
+2025-04-09 19:45:45,466 DEBUG   SenderThread:445005 [sender.py:send_request():396] send_request: summary_record
+2025-04-09 19:45:45,467 INFO    SenderThread:445005 [sender.py:_save_file():1354] saving file wandb-summary.json with policy end
+2025-04-09 19:45:46,240 INFO    Thread-12 :445005 [dir_watcher.py:_on_file_modified():289] file/dir modified: /home/li/MachineLr/RWKV-Development-Tools-ssg/wkv7_reward_model/wandb/run-20250409_194159-x64ywmac/files/wandb-summary.json
+2025-04-09 19:45:47,178 DEBUG   HandlerThread:445005 [handler.py:handle_request():144] handle_request: partial_history
+2025-04-09 19:45:47,179 DEBUG   SenderThread:445005 [sender.py:send():369] send: history
+2025-04-09 19:45:47,180 DEBUG   SenderThread:445005 [sender.py:send_request():396] send_request: summary_record
+2025-04-09 19:45:47,180 INFO    SenderThread:445005 [sender.py:_save_file():1354] saving file wandb-summary.json with policy end
+2025-04-09 19:45:47,240 INFO    Thread-12 :445005 [dir_watcher.py:_on_file_modified():289] file/dir modified: /home/li/MachineLr/RWKV-Development-Tools-ssg/wkv7_reward_model/wandb/run-20250409_194159-x64ywmac/files/wandb-summary.json
+2025-04-09 19:45:47,241 INFO    Thread-12 :445005 [dir_watcher.py:_on_file_modified():289] file/dir modified: /home/li/MachineLr/RWKV-Development-Tools-ssg/wkv7_reward_model/wandb/run-20250409_194159-x64ywmac/files/output.log
+2025-04-09 19:45:47,435 DEBUG   HandlerThread:445005 [handler.py:handle_request():144] handle_request: stop_status
+2025-04-09 19:45:47,436 DEBUG   SenderThread:445005 [sender.py:send_request():396] send_request: stop_status
+2025-04-09 19:45:48,780 DEBUG   HandlerThread:445005 [handler.py:handle_request():144] handle_request: status_report
+2025-04-09 19:45:48,781 DEBUG   HandlerThread:445005 [handler.py:handle_request():144] handle_request: partial_history
+2025-04-09 19:45:48,782 DEBUG   SenderThread:445005 [sender.py:send():369] send: history
+2025-04-09 19:45:48,782 DEBUG   SenderThread:445005 [sender.py:send_request():396] send_request: summary_record
+2025-04-09 19:45:48,783 INFO    SenderThread:445005 [sender.py:_save_file():1354] saving file wandb-summary.json with policy end
+2025-04-09 19:45:49,241 INFO    Thread-12 :445005 [dir_watcher.py:_on_file_modified():289] file/dir modified: /home/li/MachineLr/RWKV-Development-Tools-ssg/wkv7_reward_model/wandb/run-20250409_194159-x64ywmac/files/wandb-summary.json
+2025-04-09 19:45:49,241 INFO    Thread-12 :445005 [dir_watcher.py:_on_file_modified():289] file/dir modified: /home/li/MachineLr/RWKV-Development-Tools-ssg/wkv7_reward_model/wandb/run-20250409_194159-x64ywmac/files/output.log
+2025-04-09 19:45:51,155 DEBUG   HandlerThread:445005 [handler.py:handle_request():144] handle_request: partial_history
+2025-04-09 19:45:51,156 DEBUG   SenderThread:445005 [sender.py:send():369] send: history
+2025-04-09 19:45:51,157 DEBUG   SenderThread:445005 [sender.py:send_request():396] send_request: summary_record
+2025-04-09 19:45:51,157 INFO    SenderThread:445005 [sender.py:_save_file():1354] saving file wandb-summary.json with policy end
+2025-04-09 19:45:51,242 INFO    Thread-12 :445005 [dir_watcher.py:_on_file_modified():289] file/dir modified: /home/li/MachineLr/RWKV-Development-Tools-ssg/wkv7_reward_model/wandb/run-20250409_194159-x64ywmac/files/wandb-summary.json
+2025-04-09 19:45:52,751 DEBUG   HandlerThread:445005 [handler.py:handle_request():144] handle_request: partial_history
+2025-04-09 19:45:52,752 DEBUG   SenderThread:445005 [sender.py:send():369] send: history
+2025-04-09 19:45:52,752 DEBUG   SenderThread:445005 [sender.py:send_request():396] send_request: summary_record
+2025-04-09 19:45:52,753 INFO    SenderThread:445005 [sender.py:_save_file():1354] saving file wandb-summary.json with policy end
+2025-04-09 19:45:53,243 INFO    Thread-12 :445005 [dir_watcher.py:_on_file_modified():289] file/dir modified: /home/li/MachineLr/RWKV-Development-Tools-ssg/wkv7_reward_model/wandb/run-20250409_194159-x64ywmac/files/wandb-summary.json
+2025-04-09 19:45:53,243 INFO    Thread-12 :445005 [dir_watcher.py:_on_file_modified():289] file/dir modified: /home/li/MachineLr/RWKV-Development-Tools-ssg/wkv7_reward_model/wandb/run-20250409_194159-x64ywmac/files/output.log
+2025-04-09 19:45:53,852 DEBUG   HandlerThread:445005 [handler.py:handle_request():144] handle_request: partial_history
+2025-04-09 19:45:53,852 DEBUG   HandlerThread:445005 [handler.py:handle_request():144] handle_request: status_report
+2025-04-09 19:45:53,853 DEBUG   SenderThread:445005 [sender.py:send():369] send: history
+2025-04-09 19:45:53,853 DEBUG   SenderThread:445005 [sender.py:send_request():396] send_request: summary_record
+2025-04-09 19:45:53,854 INFO    SenderThread:445005 [sender.py:_save_file():1354] saving file wandb-summary.json with policy end
+2025-04-09 19:45:54,243 INFO    Thread-12 :445005 [dir_watcher.py:_on_file_modified():289] file/dir modified: /home/li/MachineLr/RWKV-Development-Tools-ssg/wkv7_reward_model/wandb/run-20250409_194159-x64ywmac/files/wandb-summary.json
+2025-04-09 19:45:55,244 INFO    Thread-12 :445005 [dir_watcher.py:_on_file_modified():289] file/dir modified: /home/li/MachineLr/RWKV-Development-Tools-ssg/wkv7_reward_model/wandb/run-20250409_194159-x64ywmac/files/output.log
+2025-04-09 19:45:55,512 DEBUG   HandlerThread:445005 [handler.py:handle_request():144] handle_request: partial_history
+2025-04-09 19:45:55,513 DEBUG   SenderThread:445005 [sender.py:send():369] send: history
+2025-04-09 19:45:55,513 DEBUG   SenderThread:445005 [sender.py:send_request():396] send_request: summary_record
+2025-04-09 19:45:55,513 INFO    SenderThread:445005 [sender.py:_save_file():1354] saving file wandb-summary.json with policy end
+2025-04-09 19:45:56,244 INFO    Thread-12 :445005 [dir_watcher.py:_on_file_modified():289] file/dir modified: /home/li/MachineLr/RWKV-Development-Tools-ssg/wkv7_reward_model/wandb/run-20250409_194159-x64ywmac/files/wandb-summary.json
+2025-04-09 19:45:56,752 DEBUG   HandlerThread:445005 [handler.py:handle_request():144] handle_request: partial_history
+2025-04-09 19:45:56,753 DEBUG   SenderThread:445005 [sender.py:send():369] send: history
+2025-04-09 19:45:56,753 DEBUG   SenderThread:445005 [sender.py:send_request():396] send_request: summary_record
+2025-04-09 19:45:56,754 INFO    SenderThread:445005 [sender.py:_save_file():1354] saving file wandb-summary.json with policy end
+2025-04-09 19:45:57,245 INFO    Thread-12 :445005 [dir_watcher.py:_on_file_modified():289] file/dir modified: /home/li/MachineLr/RWKV-Development-Tools-ssg/wkv7_reward_model/wandb/run-20250409_194159-x64ywmac/files/wandb-summary.json
+2025-04-09 19:45:57,245 INFO    Thread-12 :445005 [dir_watcher.py:_on_file_modified():289] file/dir modified: /home/li/MachineLr/RWKV-Development-Tools-ssg/wkv7_reward_model/wandb/run-20250409_194159-x64ywmac/files/output.log
+2025-04-09 19:45:57,806 DEBUG   HandlerThread:445005 [handler.py:handle_request():144] handle_request: partial_history
+2025-04-09 19:45:57,808 DEBUG   SenderThread:445005 [sender.py:send():369] send: history
+2025-04-09 19:45:57,808 DEBUG   SenderThread:445005 [sender.py:send_request():396] send_request: summary_record
+2025-04-09 19:45:57,808 INFO    SenderThread:445005 [sender.py:_save_file():1354] saving file wandb-summary.json with policy end
+2025-04-09 19:45:58,245 INFO    Thread-12 :445005 [dir_watcher.py:_on_file_modified():289] file/dir modified: /home/li/MachineLr/RWKV-Development-Tools-ssg/wkv7_reward_model/wandb/run-20250409_194159-x64ywmac/files/wandb-summary.json
+2025-04-09 19:45:58,733 DEBUG   HandlerThread:445005 [handler.py:handle_request():144] handle_request: partial_history
+2025-04-09 19:45:58,735 DEBUG   SenderThread:445005 [sender.py:send():369] send: history
+2025-04-09 19:45:58,735 DEBUG   SenderThread:445005 [sender.py:send_request():396] send_request: summary_record
+2025-04-09 19:45:58,735 INFO    SenderThread:445005 [sender.py:_save_file():1354] saving file wandb-summary.json with policy end
+2025-04-09 19:45:59,245 INFO    Thread-12 :445005 [dir_watcher.py:_on_file_modified():289] file/dir modified: /home/li/MachineLr/RWKV-Development-Tools-ssg/wkv7_reward_model/wandb/run-20250409_194159-x64ywmac/files/wandb-summary.json
+2025-04-09 19:45:59,246 INFO    Thread-12 :445005 [dir_watcher.py:_on_file_modified():289] file/dir modified: /home/li/MachineLr/RWKV-Development-Tools-ssg/wkv7_reward_model/wandb/run-20250409_194159-x64ywmac/files/output.log
+2025-04-09 19:45:59,736 DEBUG   HandlerThread:445005 [handler.py:handle_request():144] handle_request: status_report
+2025-04-09 19:46:00,109 DEBUG   HandlerThread:445005 [handler.py:handle_request():144] handle_request: partial_history
+2025-04-09 19:46:00,110 DEBUG   SenderThread:445005 [sender.py:send():369] send: history
+2025-04-09 19:46:00,110 DEBUG   SenderThread:445005 [sender.py:send_request():396] send_request: summary_record
+2025-04-09 19:46:00,111 INFO    SenderThread:445005 [sender.py:_save_file():1354] saving file wandb-summary.json with policy end
+2025-04-09 19:46:00,246 INFO    Thread-12 :445005 [dir_watcher.py:_on_file_modified():289] file/dir modified: /home/li/MachineLr/RWKV-Development-Tools-ssg/wkv7_reward_model/wandb/run-20250409_194159-x64ywmac/files/wandb-summary.json
+2025-04-09 19:46:00,515 DEBUG   SenderThread:445005 [sender.py:send():369] send: stats
+2025-04-09 19:46:01,246 INFO    Thread-12 :445005 [dir_watcher.py:_on_file_modified():289] file/dir modified: /home/li/MachineLr/RWKV-Development-Tools-ssg/wkv7_reward_model/wandb/run-20250409_194159-x64ywmac/files/output.log
+2025-04-09 19:46:01,631 DEBUG   HandlerThread:445005 [handler.py:handle_request():144] handle_request: partial_history
+2025-04-09 19:46:01,632 DEBUG   SenderThread:445005 [sender.py:send():369] send: history
+2025-04-09 19:46:01,633 DEBUG   SenderThread:445005 [sender.py:send_request():396] send_request: summary_record
+2025-04-09 19:46:01,633 INFO    SenderThread:445005 [sender.py:_save_file():1354] saving file wandb-summary.json with policy end
+2025-04-09 19:46:02,247 INFO    Thread-12 :445005 [dir_watcher.py:_on_file_modified():289] file/dir modified: /home/li/MachineLr/RWKV-Development-Tools-ssg/wkv7_reward_model/wandb/run-20250409_194159-x64ywmac/files/wandb-summary.json
+2025-04-09 19:46:02,436 DEBUG   HandlerThread:445005 [handler.py:handle_request():144] handle_request: stop_status
+2025-04-09 19:46:02,436 DEBUG   SenderThread:445005 [sender.py:send_request():396] send_request: stop_status
+2025-04-09 19:46:03,247 INFO    Thread-12 :445005 [dir_watcher.py:_on_file_modified():289] file/dir modified: /home/li/MachineLr/RWKV-Development-Tools-ssg/wkv7_reward_model/wandb/run-20250409_194159-x64ywmac/files/output.log
+2025-04-09 19:46:03,338 DEBUG   HandlerThread:445005 [handler.py:handle_request():144] handle_request: partial_history
+2025-04-09 19:46:03,339 DEBUG   SenderThread:445005 [sender.py:send():369] send: history
+2025-04-09 19:46:03,340 DEBUG   SenderThread:445005 [sender.py:send_request():396] send_request: summary_record
+2025-04-09 19:46:03,340 INFO    SenderThread:445005 [sender.py:_save_file():1354] saving file wandb-summary.json with policy end
+2025-04-09 19:46:04,247 INFO    Thread-12 :445005 [dir_watcher.py:_on_file_modified():289] file/dir modified: /home/li/MachineLr/RWKV-Development-Tools-ssg/wkv7_reward_model/wandb/run-20250409_194159-x64ywmac/files/wandb-summary.json
+2025-04-09 19:46:04,855 DEBUG   HandlerThread:445005 [handler.py:handle_request():144] handle_request: partial_history
+2025-04-09 19:46:04,856 DEBUG   HandlerThread:445005 [handler.py:handle_request():144] handle_request: status_report
+2025-04-09 19:46:04,856 DEBUG   SenderThread:445005 [sender.py:send():369] send: history
+2025-04-09 19:46:04,857 DEBUG   SenderThread:445005 [sender.py:send_request():396] send_request: summary_record
+2025-04-09 19:46:04,857 INFO    SenderThread:445005 [sender.py:_save_file():1354] saving file wandb-summary.json with policy end
+2025-04-09 19:46:05,248 INFO    Thread-12 :445005 [dir_watcher.py:_on_file_modified():289] file/dir modified: /home/li/MachineLr/RWKV-Development-Tools-ssg/wkv7_reward_model/wandb/run-20250409_194159-x64ywmac/files/wandb-summary.json
+2025-04-09 19:46:05,248 INFO    Thread-12 :445005 [dir_watcher.py:_on_file_modified():289] file/dir modified: /home/li/MachineLr/RWKV-Development-Tools-ssg/wkv7_reward_model/wandb/run-20250409_194159-x64ywmac/files/output.log
+2025-04-09 19:46:07,919 DEBUG   HandlerThread:445005 [handler.py:handle_request():144] handle_request: partial_history
+2025-04-09 19:46:07,920 DEBUG   SenderThread:445005 [sender.py:send():369] send: history
+2025-04-09 19:46:07,920 DEBUG   SenderThread:445005 [sender.py:send_request():396] send_request: summary_record
+2025-04-09 19:46:07,921 INFO    SenderThread:445005 [sender.py:_save_file():1354] saving file wandb-summary.json with policy end
+2025-04-09 19:46:07,955 DEBUG   SenderThread:445005 [sender.py:send():369] send: exit
+2025-04-09 19:46:07,955 INFO    SenderThread:445005 [sender.py:send_exit():574] handling exit code: 1
+2025-04-09 19:46:07,956 INFO    SenderThread:445005 [sender.py:send_exit():576] handling runtime: 247
+2025-04-09 19:46:07,956 INFO    SenderThread:445005 [sender.py:_save_file():1354] saving file wandb-summary.json with policy end
+2025-04-09 19:46:07,956 INFO    SenderThread:445005 [sender.py:send_exit():582] send defer
+2025-04-09 19:46:07,956 DEBUG   HandlerThread:445005 [handler.py:handle_request():144] handle_request: defer
+2025-04-09 19:46:07,957 INFO    HandlerThread:445005 [handler.py:handle_request_defer():170] handle defer: 0
+2025-04-09 19:46:07,957 DEBUG   SenderThread:445005 [sender.py:send_request():396] send_request: defer
+2025-04-09 19:46:07,957 INFO    SenderThread:445005 [sender.py:send_request_defer():598] handle sender defer: 0
+2025-04-09 19:46:07,957 INFO    SenderThread:445005 [sender.py:transition_state():602] send defer: 1
+2025-04-09 19:46:07,957 DEBUG   HandlerThread:445005 [handler.py:handle_request():144] handle_request: defer
+2025-04-09 19:46:07,957 INFO    HandlerThread:445005 [handler.py:handle_request_defer():170] handle defer: 1
+2025-04-09 19:46:07,958 DEBUG   SenderThread:445005 [sender.py:send_request():396] send_request: defer
+2025-04-09 19:46:07,958 INFO    SenderThread:445005 [sender.py:send_request_defer():598] handle sender defer: 1
+2025-04-09 19:46:07,958 INFO    SenderThread:445005 [sender.py:transition_state():602] send defer: 2
+2025-04-09 19:46:07,958 DEBUG   HandlerThread:445005 [handler.py:handle_request():144] handle_request: defer
+2025-04-09 19:46:07,958 INFO    HandlerThread:445005 [handler.py:handle_request_defer():170] handle defer: 2
+2025-04-09 19:46:07,958 INFO    HandlerThread:445005 [system_monitor.py:finish():190] Stopping system monitor
+2025-04-09 19:46:07,959 DEBUG   SystemMonitor:445005 [system_monitor.py:_start():166] Finished system metrics aggregation loop
+2025-04-09 19:46:07,959 DEBUG   SystemMonitor:445005 [system_monitor.py:_start():170] Publishing last batch of metrics
+2025-04-09 19:46:07,960 INFO    HandlerThread:445005 [interfaces.py:finish():202] Joined cpu monitor
+2025-04-09 19:46:07,961 INFO    HandlerThread:445005 [interfaces.py:finish():202] Joined disk monitor
+2025-04-09 19:46:08,040 INFO    HandlerThread:445005 [interfaces.py:finish():202] Joined gpu monitor
+2025-04-09 19:46:08,041 INFO    HandlerThread:445005 [interfaces.py:finish():202] Joined memory monitor
+2025-04-09 19:46:08,041 INFO    HandlerThread:445005 [interfaces.py:finish():202] Joined network monitor
+2025-04-09 19:46:08,041 DEBUG   SenderThread:445005 [sender.py:send_request():396] send_request: defer
+2025-04-09 19:46:08,042 INFO    SenderThread:445005 [sender.py:send_request_defer():598] handle sender defer: 2
+2025-04-09 19:46:08,042 INFO    SenderThread:445005 [sender.py:transition_state():602] send defer: 3
+2025-04-09 19:46:08,042 DEBUG   SenderThread:445005 [sender.py:send():369] send: stats
+2025-04-09 19:46:08,042 DEBUG   HandlerThread:445005 [handler.py:handle_request():144] handle_request: defer
+2025-04-09 19:46:08,043 INFO    HandlerThread:445005 [handler.py:handle_request_defer():170] handle defer: 3
+2025-04-09 19:46:08,043 DEBUG   SenderThread:445005 [sender.py:send_request():396] send_request: defer
+2025-04-09 19:46:08,043 INFO    SenderThread:445005 [sender.py:send_request_defer():598] handle sender defer: 3
+2025-04-09 19:46:08,043 INFO    SenderThread:445005 [sender.py:transition_state():602] send defer: 4
+2025-04-09 19:46:08,043 DEBUG   HandlerThread:445005 [handler.py:handle_request():144] handle_request: defer
+2025-04-09 19:46:08,043 INFO    HandlerThread:445005 [handler.py:handle_request_defer():170] handle defer: 4
+2025-04-09 19:46:08,044 DEBUG   SenderThread:445005 [sender.py:send_request():396] send_request: defer
+2025-04-09 19:46:08,044 INFO    SenderThread:445005 [sender.py:send_request_defer():598] handle sender defer: 4
+2025-04-09 19:46:08,044 INFO    SenderThread:445005 [sender.py:transition_state():602] send defer: 5
+2025-04-09 19:46:08,044 DEBUG   HandlerThread:445005 [handler.py:handle_request():144] handle_request: defer
+2025-04-09 19:46:08,044 INFO    HandlerThread:445005 [handler.py:handle_request_defer():170] handle defer: 5
+2025-04-09 19:46:08,044 DEBUG   SenderThread:445005 [sender.py:send():369] send: summary
+2025-04-09 19:46:08,045 INFO    SenderThread:445005 [sender.py:_save_file():1354] saving file wandb-summary.json with policy end
+2025-04-09 19:46:08,045 DEBUG   SenderThread:445005 [sender.py:send_request():396] send_request: defer
+2025-04-09 19:46:08,045 INFO    SenderThread:445005 [sender.py:send_request_defer():598] handle sender defer: 5
+2025-04-09 19:46:08,045 INFO    SenderThread:445005 [sender.py:transition_state():602] send defer: 6
+2025-04-09 19:46:08,045 DEBUG   HandlerThread:445005 [handler.py:handle_request():144] handle_request: defer
+2025-04-09 19:46:08,046 INFO    HandlerThread:445005 [handler.py:handle_request_defer():170] handle defer: 6
+2025-04-09 19:46:08,046 DEBUG   SenderThread:445005 [sender.py:send_request():396] send_request: defer
+2025-04-09 19:46:08,046 INFO    SenderThread:445005 [sender.py:send_request_defer():598] handle sender defer: 6
+2025-04-09 19:46:08,046 INFO    SenderThread:445005 [sender.py:transition_state():602] send defer: 7
+2025-04-09 19:46:08,046 DEBUG   HandlerThread:445005 [handler.py:handle_request():144] handle_request: status_report
+2025-04-09 19:46:08,046 DEBUG   HandlerThread:445005 [handler.py:handle_request():144] handle_request: defer
+2025-04-09 19:46:08,046 INFO    HandlerThread:445005 [handler.py:handle_request_defer():170] handle defer: 7
+2025-04-09 19:46:08,047 DEBUG   SenderThread:445005 [sender.py:send_request():396] send_request: defer
+2025-04-09 19:46:08,047 INFO    SenderThread:445005 [sender.py:send_request_defer():598] handle sender defer: 7
+2025-04-09 19:46:08,249 INFO    Thread-12 :445005 [dir_watcher.py:_on_file_modified():289] file/dir modified: /home/li/MachineLr/RWKV-Development-Tools-ssg/wkv7_reward_model/wandb/run-20250409_194159-x64ywmac/files/wandb-summary.json
+2025-04-09 19:46:08,954 DEBUG   HandlerThread:445005 [handler.py:handle_request():144] handle_request: poll_exit
+2025-04-09 19:46:09,254 INFO    SenderThread:445005 [sender.py:transition_state():602] send defer: 8
+2025-04-09 19:46:09,255 DEBUG   SenderThread:445005 [sender.py:send_request():396] send_request: poll_exit
+2025-04-09 19:46:09,255 DEBUG   HandlerThread:445005 [handler.py:handle_request():144] handle_request: defer
+2025-04-09 19:46:09,255 INFO    HandlerThread:445005 [handler.py:handle_request_defer():170] handle defer: 8
+2025-04-09 19:46:09,256 DEBUG   SenderThread:445005 [sender.py:send_request():396] send_request: defer
+2025-04-09 19:46:09,256 INFO    SenderThread:445005 [sender.py:send_request_defer():598] handle sender defer: 8
+2025-04-09 19:46:09,256 INFO    SenderThread:445005 [job_builder.py:build():232] Attempting to build job artifact
+2025-04-09 19:46:09,256 INFO    Thread-12 :445005 [dir_watcher.py:_on_file_modified():289] file/dir modified: /home/li/MachineLr/RWKV-Development-Tools-ssg/wkv7_reward_model/wandb/run-20250409_194159-x64ywmac/files/output.log
+2025-04-09 19:46:09,257 INFO    SenderThread:445005 [job_builder.py:build():256] is repo sourced job
+2025-04-09 19:46:09,258 INFO    SenderThread:445005 [job_builder.py:build():297] adding wandb-job metadata file
+2025-04-09 19:46:09,262 INFO    SenderThread:445005 [sender.py:transition_state():602] send defer: 9
+2025-04-09 19:46:09,263 DEBUG   HandlerThread:445005 [handler.py:handle_request():144] handle_request: defer
+2025-04-09 19:46:09,263 INFO    HandlerThread:445005 [handler.py:handle_request_defer():170] handle defer: 9
+2025-04-09 19:46:09,263 DEBUG   SenderThread:445005 [sender.py:send():369] send: artifact
+2025-04-09 19:46:09,955 DEBUG   HandlerThread:445005 [handler.py:handle_request():144] handle_request: poll_exit
+2025-04-09 19:46:10,501 INFO    SenderThread:445005 [sender.py:send_artifact():1450] sent artifact job-https___github.com_Ourboros-Alignment-Team_RWKV-Development-Tools__wkv7_reward_model_train_model.py - {'id': 'QXJ0aWZhY3Q6MTYzOTAyNjQ1MQ==', 'digest': '1f6ca09cfd0f15c63569e94c79de1112', 'state': 'COMMITTED', 'aliases': [{'artifactCollectionName': 'job-https___github.com_Ourboros-Alignment-Team_RWKV-Development-Tools__wkv7_reward_model_train_model.py', 'alias': 'latest'}, {'artifactCollectionName': 'job-https___github.com_Ourboros-Alignment-Team_RWKV-Development-Tools__wkv7_reward_model_train_model.py', 'alias': 'v1'}], 'artifactSequence': {'id': 'QXJ0aWZhY3RDb2xsZWN0aW9uOjYwNzQ2ODY0MQ==', 'latestArtifact': {'id': 'QXJ0aWZhY3Q6MTYzOTAyNjQ1MQ==', 'versionIndex': 1}}, 'version': 'v1'}
+2025-04-09 19:46:10,501 DEBUG   SenderThread:445005 [sender.py:send_request():396] send_request: defer
+2025-04-09 19:46:10,501 INFO    SenderThread:445005 [sender.py:send_request_defer():598] handle sender defer: 9
+2025-04-09 19:46:10,501 INFO    SenderThread:445005 [dir_watcher.py:finish():359] shutting down directory watcher
+2025-04-09 19:46:11,258 INFO    SenderThread:445005 [dir_watcher.py:finish():389] scan: /home/li/MachineLr/RWKV-Development-Tools-ssg/wkv7_reward_model/wandb/run-20250409_194159-x64ywmac/files
+2025-04-09 19:46:11,258 INFO    SenderThread:445005 [dir_watcher.py:finish():403] scan save: /home/li/MachineLr/RWKV-Development-Tools-ssg/wkv7_reward_model/wandb/run-20250409_194159-x64ywmac/files/wandb-metadata.json wandb-metadata.json
+2025-04-09 19:46:11,258 INFO    SenderThread:445005 [dir_watcher.py:finish():403] scan save: /home/li/MachineLr/RWKV-Development-Tools-ssg/wkv7_reward_model/wandb/run-20250409_194159-x64ywmac/files/config.yaml config.yaml
+2025-04-09 19:46:11,259 INFO    SenderThread:445005 [dir_watcher.py:finish():403] scan save: /home/li/MachineLr/RWKV-Development-Tools-ssg/wkv7_reward_model/wandb/run-20250409_194159-x64ywmac/files/output.log output.log
+2025-04-09 19:46:11,259 INFO    SenderThread:445005 [dir_watcher.py:finish():403] scan save: /home/li/MachineLr/RWKV-Development-Tools-ssg/wkv7_reward_model/wandb/run-20250409_194159-x64ywmac/files/requirements.txt requirements.txt
+2025-04-09 19:46:11,259 INFO    SenderThread:445005 [dir_watcher.py:finish():403] scan save: /home/li/MachineLr/RWKV-Development-Tools-ssg/wkv7_reward_model/wandb/run-20250409_194159-x64ywmac/files/wandb-summary.json wandb-summary.json
+2025-04-09 19:46:11,259 INFO    SenderThread:445005 [dir_watcher.py:finish():403] scan save: /home/li/MachineLr/RWKV-Development-Tools-ssg/wkv7_reward_model/wandb/run-20250409_194159-x64ywmac/files/conda-environment.yaml conda-environment.yaml
+2025-04-09 19:46:11,259 INFO    SenderThread:445005 [sender.py:transition_state():602] send defer: 10
+2025-04-09 19:46:11,260 DEBUG   SenderThread:445005 [sender.py:send_request():396] send_request: poll_exit
+2025-04-09 19:46:11,260 DEBUG   HandlerThread:445005 [handler.py:handle_request():144] handle_request: defer
+2025-04-09 19:46:11,261 INFO    HandlerThread:445005 [handler.py:handle_request_defer():170] handle defer: 10
+2025-04-09 19:46:11,266 DEBUG   SenderThread:445005 [sender.py:send_request():396] send_request: defer
+2025-04-09 19:46:11,282 INFO    SenderThread:445005 [sender.py:send_request_defer():598] handle sender defer: 10
+2025-04-09 19:46:11,282 INFO    SenderThread:445005 [file_pusher.py:finish():159] shutting down file pusher
+2025-04-09 19:46:12,229 INFO    wandb-upload_1:445005 [upload_job.py:push():133] Uploaded file /home/li/MachineLr/RWKV-Development-Tools-ssg/wkv7_reward_model/wandb/run-20250409_194159-x64ywmac/files/config.yaml
+2025-04-09 19:46:12,949 INFO    wandb-upload_0:445005 [upload_job.py:push():133] Uploaded file /home/li/MachineLr/RWKV-Development-Tools-ssg/wkv7_reward_model/wandb/run-20250409_194159-x64ywmac/files/output.log
+2025-04-09 19:46:14,958 DEBUG   HandlerThread:445005 [handler.py:handle_request():144] handle_request: keepalive
+2025-04-09 19:46:16,283 DEBUG   HandlerThread:445005 [handler.py:handle_request():144] handle_request: status_report
+2025-04-09 19:46:19,961 DEBUG   HandlerThread:445005 [handler.py:handle_request():144] handle_request: keepalive
+2025-04-09 19:46:21,284 DEBUG   HandlerThread:445005 [handler.py:handle_request():144] handle_request: status_report
+2025-04-09 19:46:22,277 INFO    wandb-upload_4:445005 [upload_job.py:push():133] Uploaded file /home/li/MachineLr/RWKV-Development-Tools-ssg/wkv7_reward_model/wandb/run-20250409_194159-x64ywmac/files/conda-environment.yaml
+2025-04-09 19:46:22,293 INFO    wandb-upload_2:445005 [upload_job.py:push():133] Uploaded file /home/li/MachineLr/RWKV-Development-Tools-ssg/wkv7_reward_model/wandb/run-20250409_194159-x64ywmac/files/requirements.txt
+2025-04-09 19:46:22,447 INFO    wandb-upload_3:445005 [upload_job.py:push():133] Uploaded file /home/li/MachineLr/RWKV-Development-Tools-ssg/wkv7_reward_model/wandb/run-20250409_194159-x64ywmac/files/wandb-summary.json
+2025-04-09 19:46:22,648 INFO    Thread-11 (_thread_body):445005 [sender.py:transition_state():602] send defer: 11
+2025-04-09 19:46:22,648 DEBUG   HandlerThread:445005 [handler.py:handle_request():144] handle_request: defer
+2025-04-09 19:46:22,649 INFO    HandlerThread:445005 [handler.py:handle_request_defer():170] handle defer: 11
+2025-04-09 19:46:22,649 DEBUG   SenderThread:445005 [sender.py:send_request():396] send_request: defer
+2025-04-09 19:46:22,649 INFO    SenderThread:445005 [sender.py:send_request_defer():598] handle sender defer: 11
+2025-04-09 19:46:22,650 INFO    SenderThread:445005 [file_pusher.py:join():164] waiting for file pusher
+2025-04-09 19:46:22,650 INFO    SenderThread:445005 [sender.py:transition_state():602] send defer: 12
+2025-04-09 19:46:22,650 DEBUG   HandlerThread:445005 [handler.py:handle_request():144] handle_request: defer
+2025-04-09 19:46:22,650 INFO    HandlerThread:445005 [handler.py:handle_request_defer():170] handle defer: 12
+2025-04-09 19:46:22,650 DEBUG   SenderThread:445005 [sender.py:send_request():396] send_request: defer
+2025-04-09 19:46:22,651 INFO    SenderThread:445005 [sender.py:send_request_defer():598] handle sender defer: 12
+2025-04-09 19:46:23,078 INFO    SenderThread:445005 [sender.py:transition_state():602] send defer: 13
+2025-04-09 19:46:23,079 DEBUG   HandlerThread:445005 [handler.py:handle_request():144] handle_request: defer
+2025-04-09 19:46:23,079 INFO    HandlerThread:445005 [handler.py:handle_request_defer():170] handle defer: 13
+2025-04-09 19:46:23,079 DEBUG   SenderThread:445005 [sender.py:send_request():396] send_request: defer
+2025-04-09 19:46:23,079 INFO    SenderThread:445005 [sender.py:send_request_defer():598] handle sender defer: 13
+2025-04-09 19:46:23,080 INFO    SenderThread:445005 [sender.py:transition_state():602] send defer: 14
+2025-04-09 19:46:23,080 DEBUG   HandlerThread:445005 [handler.py:handle_request():144] handle_request: defer
+2025-04-09 19:46:23,080 INFO    HandlerThread:445005 [handler.py:handle_request_defer():170] handle defer: 14
+2025-04-09 19:46:23,081 DEBUG   SenderThread:445005 [sender.py:send():369] send: final
+2025-04-09 19:46:23,081 DEBUG   SenderThread:445005 [sender.py:send():369] send: footer
+2025-04-09 19:46:23,081 DEBUG   SenderThread:445005 [sender.py:send_request():396] send_request: defer
+2025-04-09 19:46:23,081 INFO    SenderThread:445005 [sender.py:send_request_defer():598] handle sender defer: 14
+2025-04-09 19:46:23,082 DEBUG   HandlerThread:445005 [handler.py:handle_request():144] handle_request: poll_exit
+2025-04-09 19:46:23,083 DEBUG   HandlerThread:445005 [handler.py:handle_request():144] handle_request: server_info
+2025-04-09 19:46:23,083 DEBUG   SenderThread:445005 [sender.py:send_request():396] send_request: poll_exit
+2025-04-09 19:46:23,084 DEBUG   HandlerThread:445005 [handler.py:handle_request():144] handle_request: get_summary
+2025-04-09 19:46:23,084 DEBUG   SenderThread:445005 [sender.py:send_request():396] send_request: server_info
+2025-04-09 19:46:23,088 DEBUG   HandlerThread:445005 [handler.py:handle_request():144] handle_request: sampled_history
+2025-04-09 19:46:23,313 INFO    MainThread:445005 [wandb_run.py:_footer_history_summary_info():3467] rendering history
+2025-04-09 19:46:23,314 INFO    MainThread:445005 [wandb_run.py:_footer_history_summary_info():3499] rendering summary
+2025-04-09 19:46:23,314 INFO    MainThread:445005 [wandb_run.py:_footer_sync_info():3426] logging synced files
+2025-04-09 19:46:23,315 DEBUG   HandlerThread:445005 [handler.py:handle_request():144] handle_request: shutdown
+2025-04-09 19:46:23,315 INFO    HandlerThread:445005 [handler.py:finish():854] shutting down handler
+2025-04-09 19:46:24,084 INFO    WriterThread:445005 [datastore.py:close():298] close: /home/li/MachineLr/RWKV-Development-Tools-ssg/wkv7_reward_model/wandb/run-20250409_194159-x64ywmac/run-x64ywmac.wandb
+2025-04-09 19:46:24,313 INFO    SenderThread:445005 [sender.py:finish():1526] shutting down sender
+2025-04-09 19:46:24,313 INFO    SenderThread:445005 [file_pusher.py:finish():159] shutting down file pusher
+2025-04-09 19:46:24,313 INFO    SenderThread:445005 [file_pusher.py:join():164] waiting for file pusher
