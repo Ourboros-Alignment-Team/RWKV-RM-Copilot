@@ -33,6 +33,8 @@
         "adam_eps": 1.0e-8,
         "optimzer_style": "adam",
         "weight_decay": 0.01,
-        "adamw_mode": true
+        "adamw_mode": true,
+        "batch_size": 4,
+        "ckpt_dir": "/home/ubuntu/MachineLr/datadisk/rwkv-checkpoint"
     }
 }

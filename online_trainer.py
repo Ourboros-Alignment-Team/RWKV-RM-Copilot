@@ -126,7 +126,7 @@ class RMOnlineTrainer:
 
         return padded_list
 
-    def inference(self, history, response):
+    def inference(self, history, response) -> float:
         self.model_engine.eval()
         with torch.no_grad():
             input_tokens = [
@@ -142,13 +142,10 @@ class RMOnlineTrainer:
 
     def train(
         self,
-        history: str,
-        response_list: List[str],
-        score_list: List[float],
-        save_history:bool =False,
-        save_history_dir:str =None,
-        save_ckpt:bool =False,
-        save_ckpt_dir:str =None,
+        data_list: List[str],
+        batch_size: int = 1,
+        save_ckpt: bool = False,
+        save_ckpt_dir: str = None,
     ):
         self.model_engine.train()
         input_tokens = [
@@ -156,37 +153,33 @@ class RMOnlineTrainer:
             + rm_prefix
             + self.train_tokenizer.encode(response)
             + rm_postfix
-            for response in response_list
+            for history, response, _ in data_list
         ]
-        input_tokens = self.pad_to_chunk_length(input_tokens, CHUNK_LEN)
-        predict_scores = self.model_engine(input_tokens)*2-1
-        
-        targets = (
-            torch.tensor(score_list)
-            .to(
-                predict_scores.device,
-                dtype=predict_scores.dtype,
+        score_list = [score for _, _, score in data_list]
+
+        for i in range(0, len(input_tokens), batch_size):
+            batch_input_tokens = input_tokens[i : i + batch_size]
+            batch_score_list = score_list[i : i + batch_size]
+            batch_input_tokens = self.pad_to_chunk_length(batch_input_tokens, CHUNK_LEN)
+            batch_score_list = (
+                torch.tensor(batch_score_list)
+                .to(
+                    self.model_engine.device,
+                    dtype=self.model_engine.dtype,
+                )
+                .unsqueeze(-1)
             )
-            .unsqueeze(-1)
-        )
+            predict_scores = self.model_engine(batch_input_tokens) * 2 - 1
+            assert (
+                predict_scores.shape == batch_score_list.shape
+            ), f"{predict_scores.shape}!= {batch_score_list.shape}"
+            loss = F.l1_loss(predict_scores, batch_score_list)
+            self.model_engine.backward(loss)
+            self.model_engine.step()
+            gc.collect()
+            torch.cuda.empty_cache()
+            print("loss", loss.item())
 
-        assert (
-            predict_scores.shape == targets.shape
-        ), f"{predict_scores.shape} != {targets.shape}"
-
-        loss = F.l1_loss(predict_scores, targets)
-        self.model_engine.backward(loss)
-        self.model_engine.step()
-        gc.collect()
-        torch.cuda.empty_cache()
-
-        print("loss", loss.item())
-        
-        if save_history:
-            with open(save_history_dir, "a", encoding="utf-8") as f:
-                for response, score in zip(response_list, score_list):
-                    f.write(json.dumps({"history": history, "response": response, "score": score}, ensure_ascii=False) + "\n")
-            print(f"save history at {save_history_dir}")
         if save_ckpt:
             self.save_checkpoint(save_ckpt_dir)
             print(f"save checkpoint at {save_ckpt_dir}")
