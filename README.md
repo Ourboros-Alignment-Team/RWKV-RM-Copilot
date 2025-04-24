@@ -35,6 +35,7 @@ deepspeed --include localhost:[你的gpu] train_model.py
 
 ## 简单测试
 *如果你使用gradio5.4.0，你就不能使用deepspeed0.9.3😅。*
+
 创建一个测试环境：
 ```bash
 conda create [测试环境名] --clone [训练环境名]
