@@ -35,6 +35,6 @@
         "weight_decay": 0.01,
         "adamw_mode": true,
         "batch_size": 4,
-        "ckpt_dir": "/home/ubuntu/MachineLr/datadisk/rwkv-checkpoint"
+        "save_ckpt_dir": "/home/ubuntu/MachineLr/datadisk/rwkv-checkpoint"
     }
 }

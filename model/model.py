@@ -227,7 +227,7 @@ class RWKVRewardModel(nn.Module):
         x = self.ln_out(x)
         # weights = self.out_weights_layer(x[:,-1,:])
         out_score = self.out_score_layer(x[:,-1,:])
-        normalized_score = F.sigmoid(out_score)
+        normalized_score = F.sigmoid(out_score) # -1 1
 
         return normalized_score
 

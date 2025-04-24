@@ -2,7 +2,7 @@
     "tokenizer":"/home/ubuntu/MachineLr/RWKV-RM/vocabs/rwkv_vocab_ourborous_rm.txt",
     "deep_reward_model": {
         "model": {
-            "load_model": "/home/ubuntu/MachineLr/datadisk/rwkv-checkpoint/rw_model_200.pth",
+            "load_model": "/home/ubuntu/MachineLr/datadisk/rwkv-checkpoint/auto_save_rm.ckpt",
             "n_embd": -1,
             "n_layer": -1,
             "vocab_size": -1,

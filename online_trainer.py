@@ -164,8 +164,10 @@ class RMOnlineTrainer:
             batch_score_list = (
                 torch.tensor(batch_score_list)
                 .to(
-                    self.model_engine.device,
-                    dtype=self.model_engine.dtype,
+                    # self.model_engine.device,
+                    # dtype=self.model_engine.dtype,
+                    device=next(self.model_engine.parameters()).device,
+                    dtype=next(self.model_engine.parameters()).dtype,
                 )
                 .unsqueeze(-1)
             )
@@ -178,6 +180,10 @@ class RMOnlineTrainer:
             self.model_engine.step()
             gc.collect()
             torch.cuda.empty_cache()
+            for i in range(len(predict_scores)):
+                predict_score = predict_scores[i].item()
+                batch_score = batch_score_list[i].item()
+                print(f"predict_scores: {predict_score} <--> grand_truth_score: {batch_score}")
             print("loss", loss.item())
 
         if save_ckpt:
