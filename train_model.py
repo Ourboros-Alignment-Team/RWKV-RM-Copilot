@@ -30,7 +30,7 @@ def load_config(path) -> SimpleNamespace:
 import os
 
 config = load_config(
-    "/home/ubuntu/MachineLr/RWKV-RM/configs/train_config.json",
+    "/home/ubuntu/MachineLr/RWKV-RM-Copilot/configs/train_config.json",
 )
 os.environ["RWKV_REWARD_MODEL_HEAD_SIZE_A"] = str(
     config.deep_reward_model.model.head_size

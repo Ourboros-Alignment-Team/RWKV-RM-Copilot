@@ -26,12 +26,13 @@ pip install torch==2.5.1 torchaudio==2.5.1 torchvision==0.20.1
 ## 预训练
 在`train_config.json`中配置读取预训练模型的路径，然后运行：
 ```bash
-deepspeed --num_gpus 1 train_model.py
+deepspeed --master_port [使用的端口] --num_gpus 1 train_model.py
 ```
 或
 ```bash
-deepspeed --include localhost:[你的gpu] train_model.py
+deepspeed ---master_port [使用的端口] --include localhost:[你的gpu] train_model.py
 ```
+在不同进程中使用同一端口会报错。
 
 ## 简单测试
 *如果你使用gradio5.4.0，你就不能使用deepspeed0.9.3😅。*

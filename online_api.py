@@ -26,7 +26,7 @@ def train():
     batch_size = req.get("batch_size", config.train.batch_size)
     save_ckpt = req.get("save_ckpt", False)
     save_ckpt_dir = req.get(
-        "save_ckpt_dir", f"{config.train.save_ckpt_dir}/auto_save_rm.ckpt"
+        "save_ckpt_dir", f"{config.train.save_ckpt_dir}/auto_save_rm.pth"
     )
 
     thread = Thread(
