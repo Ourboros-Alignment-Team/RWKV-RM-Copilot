@@ -4,7 +4,7 @@
     "train_tokenizer": "/home/ubuntu/MachineLr/RWKV-RM-Copilot/vocabs/rwkv_vocab_ourborous_rm.txt",
     "infer_tokenizer": "/home/ubuntu/MachineLr/RWKV-RM-Copilot/vocabs/rwkv_vocab_ourborous_rm.txt",
     "model": {
-        "load_model": "/home/ubuntu/MachineLr/datadisk/rwkv-checkpoint/rwkv_rw_model_0.4b_epoch100可用.pth",
+        "load_model": "/home/ubuntu/MachineLr/datadisk/rwkv-checkpoint/rakv_rw_model_0.4b_day1.ckpt",
         "n_embd": -1,
         "n_layer": -1,
         "vocab_size": -1,
